@@ -12,8 +12,6 @@ Project: Fehlertoleranz und lokalitätsoptimiertes Work-Stealing für parallele 
 
 [LRPD26] T. R. Lahnor, M. Reitz, J. Posner, P. Diehl: Exploring Performance-Productivity Trade-offs in AMT Runtimes: A Task Bench Study of Itoyori, ItoyoriFBC, HPX, and MPI. Workshop on Asynchronous Many‑Task Systems and Applications (WAMTA), 2026, To appear.
 
-[R25] M. Reitz: Load Balancing and Fault Tolerance for Asynchronous Many-Task Programs. Dissertation, Universität Kassel, 2025.
-
 [RP25] M. Reitz, J. Posner: Stackless vs. Stackful Coroutines: A Comparative Study for RDMA-based Asynchronous Many-Task (AMT) Runtimes. Supercomputing, Parallel Applications Workshop (PAW-ATM). 2025, pp. 1341 - 1350.
 
 [RHF25a] M. Reitz, J. Hundhausen, C. Fohry: Fail-stop Failure Protection for Coordinated Work Stealing of Tasks that Communicate through Futures. Workshop on Asynchronous Many-Task Systems and Applications, 2025. Submitted for peer review.
