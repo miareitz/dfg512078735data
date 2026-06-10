@@ -1,0 +1,67 @@
+JobId=1585355 JobName=itoyorifutures-numNodes8-numCores320-totalCores320-._._examples_nqueens.out-n16-r1-c8
+   UserId=reitz(59092) GroupId=apgas(58116) MCS_label=N/A
+   Priority=1056905 Nice=0 Account=apgas QOS=normal
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   DerivedExitCode=0:0
+   RunTime=00:00:00 TimeLimit=00:02:00 TimeMin=N/A
+   SubmitTime=2025-12-30T20:30:05 EligibleTime=2025-12-30T20:30:05
+   AccrueTime=2025-12-30T20:30:05
+   StartTime=2025-12-30T20:30:05 EndTime=2025-12-30T20:32:05 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2025-12-30T20:30:05 Scheduler=Main
+   Partition=general1 AllocNode:Sid=login02:1276116
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=node26-[007-008,029-034]
+   BatchHost=node26-007
+   NumNodes=8 NumCPUs=640 NumTasks=320 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=320,mem=640G,node=8,billing=320
+   AllocTRES=cpu=640,mem=1280G,node=8,billing=640
+   Socks/Node=* NtasksPerN:B:S:C=40:0:*:* CoreSpec=*
+   JOB_GRES=(null)
+     Nodes=node26-[007-008,029-034] CPU_IDs=0-79 Mem=163840 GRES=
+   MinCPUsNode=40 MinMemoryCPU=2G MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null)
+   Command=/tmp/tmp.X50kPWZnTA
+   WorkDir=/home/apgas/reitz/itoyorifuture/scripts
+   StdErr=/home/apgas/reitz/out/itoyorifutures-numNodes8-numCores320-totalCores320-._._examples_nqueens.out-n16-r1-c8.err.1585355
+   StdIn=/dev/null
+   StdOut=/home/apgas/reitz/out/itoyorifutures-numNodes8-numCores320-totalCores320-._._examples_nqueens.out-n16-r1-c8.out.1585355
+   Power=
+   
+
+=============================================================
+[NQueens]
+# of processes:               320
+N:                            16
+Cutoff:                       8
+# of repeats:                 1
+Verify result:                1
+-------------------------------------------------------------
+[Compile Options]
+ITYR_MAX_VERBOSE_LEVEL=0
+ITYR_PROFILER_MODE=disabled
+ITYR_RMA_IMPL=mpi
+ITYR_ALLOCATOR_USE_BOOST=0
+ITYR_ALLOCATOR_USE_DYNAMIC_WIN=false
+ITYR_ITO_SCHEDULER=randws
+-------------------------------------------------------------
+[Runtime Options]
+ITYR_ENABLE_SHARED_MEMORY=1
+ITYR_GLOBAL_CLOCK_SYNC_ROUND_TRIPS=100
+ITYR_PROF_OUTPUT_PER_RANK=0
+ITYR_RMA_USE_MPI_WIN_ALLOCATE=0
+ITYR_ALLOCATOR_BLOCK_SIZE=2097152
+ITYR_ALLOCATOR_MAX_UNFLUSHED_FREE_OBJS=10
+ITYR_ITO_STACK_SIZE=2097152
+ITYR_ITO_WSQUEUE_CAPACITY=1024
+ITYR_ITO_THREAD_STATE_ALLOCATOR_SIZE=2097152
+ITYR_ITO_SUSPENDED_THREAD_ALLOCATOR_SIZE=2097152
+ITYR_ITO_CHECKPOINT_ALLOCATOR_SIZE=268435456
+ITYR_ITO_REGULAR_CHECKPOINT_INTERVAL=10000
+ITYR_ITO_SCHED_LOOP_MAKE_MPI_PROGRESS=1
+=============================================================
+
+[0] Process time 4,007,074,120 ns = 4.007074 s
+ - Result verified: nqueens(16) = 14772512
+

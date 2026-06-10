@@ -1,0 +1,69 @@
+[node26-024:837250:0:837250] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+==== backtrace (tid: 837250) ====
+ 0  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_handle_error+0x294) [0x1555549c4f04]
+ 1  /cluster/ucx/1.19.1/lib/libucs.so.0(+0x340c5) [0x1555549c50c5]
+ 2  /cluster/ucx/1.19.1/lib/libucs.so.0(+0x34396) [0x1555549c5396]
+ 3  /lib64/libc.so.6(+0x3fc30) [0x155554a3fc30]
+ 4  ././examples/fib.out() [0x41348c]
+ 5  ././examples/fib.out() [0x41a04e]
+ 6  ././examples/fib.out() [0x41ba34]
+ 7  ././examples/fib.out() [0x40a4a7]
+ 8  ././examples/fib.out() [0x40c04f]
+ 9  ././examples/fib.out() [0x41c76c]
+10  ././examples/fib.out() [0x40f1c0]
+11  [0x15554890b1a0]
+=================================
+[node26-024:837235:0:837235]      cma_ep.c:85   process_vm_readv(pid=837250 {0x7fffffffcb20,8}-->{0x1897bf0,8}) returned -1: No such process
+==== backtrace (tid: 837235) ====
+ 0  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_handle_error+0x294) [0x1555549c4f04]
+ 1  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_fatal_error_message+0xb2) [0x1555549c20f2]
+ 2  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_log_default_handler+0xee9) [0x1555549c6b29]
+ 3  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_log_dispatch+0xd4) [0x1555549c6e74]
+ 4  /cluster/ucx/1.19.1/lib/ucx/libuct_cma.so.0(+0x38cd) [0x155554c0c8cd]
+ 5  /cluster/ucx/1.19.1/lib/ucx/libuct_cma.so.0(uct_cma_ep_tx+0x186) [0x155554c0cc26]
+ 6  /cluster/ucx/1.19.1/lib/libuct.so.0(uct_scopy_ep_progress_tx+0x55) [0x155554970a55]
+ 7  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_arbiter_dispatch_nonempty+0xa6) [0x1555549b6836]
+ 8  /cluster/ucx/1.19.1/lib/libuct.so.0(uct_scopy_iface_progress+0x59) [0x155554970599]
+ 9  /cluster/ucx/1.19.1/lib/libucs.so.0(+0x260e1) [0x1555549b70e1]
+10  /cluster/ucx/1.19.1/lib/libucp.so.0(ucp_worker_progress+0x2a) [0x155554c5fbaa]
+11  /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_common_ucx_winfo_flush+0xe6) [0x155554d9c336]
+12  /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_common_ucx_ctx_flush+0x92) [0x155554d9c742]
+13  /cluster/mpi/openmpi/5.0.5/lib/libmpi.so.40(MPI_Win_flush+0x57) [0x155555262397]
+14  ././examples/fib.out() [0x405e05]
+15  ././examples/fib.out() [0x407bfa]
+16  ././examples/fib.out() [0x404cf5]
+17  /lib64/libc.so.6(+0x2a610) [0x155554a2a610]
+18  /lib64/libc.so.6(__libc_start_main+0x80) [0x155554a2a6c0]
+19  ././examples/fib.out() [0x404fa5]
+=================================
+[node26-024:837235] *** Process received signal ***
+[node26-024:837235] Signal: Aborted (6)
+[node26-024:837235] Signal code:  (-6)
+[node26-024:837235] [ 0] /lib64/libc.so.6(+0x3fc30)[0x155554a3fc30]
+[node26-024:837235] [ 1] /lib64/libc.so.6(+0x8d02c)[0x155554a8d02c]
+[node26-024:837235] [ 2] /lib64/libc.so.6(raise+0x16)[0x155554a3fb86]
+[node26-024:837235] [ 3] /lib64/libc.so.6(abort+0xd3)[0x155554a29873]
+[node26-024:837235] [ 4] /cluster/ucx/1.19.1/lib/libucs.so.0(+0x310f7)[0x1555549c20f7]
+[node26-024:837235] [ 5] /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_log_default_handler+0xee9)[0x1555549c6b29]
+[node26-024:837235] [ 6] /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_log_dispatch+0xd4)[0x1555549c6e74]
+[node26-024:837235] [ 7] /cluster/ucx/1.19.1/lib/ucx/libuct_cma.so.0(+0x38cd)[0x155554c0c8cd]
+[node26-024:837235] [ 8] /cluster/ucx/1.19.1/lib/ucx/libuct_cma.so.0(uct_cma_ep_tx+0x186)[0x155554c0cc26]
+[node26-024:837235] [ 9] /cluster/ucx/1.19.1/lib/libuct.so.0(uct_scopy_ep_progress_tx+0x55)[0x155554970a55]
+[node26-024:837235] [10] /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_arbiter_dispatch_nonempty+0xa6)[0x1555549b6836]
+[node26-024:837235] [11] /cluster/ucx/1.19.1/lib/libuct.so.0(uct_scopy_iface_progress+0x59)[0x155554970599]
+[node26-024:837235] [12] /cluster/ucx/1.19.1/lib/libucs.so.0(+0x260e1)[0x1555549b70e1]
+[node26-024:837235] [13] /cluster/ucx/1.19.1/lib/libucp.so.0(ucp_worker_progress+0x2a)[0x155554c5fbaa]
+[node26-024:837235] [14] /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_common_ucx_winfo_flush+0xe6)[0x155554d9c336]
+[node26-024:837235] [15] /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_common_ucx_ctx_flush+0x92)[0x155554d9c742]
+[node26-024:837235] [16] /cluster/mpi/openmpi/5.0.5/lib/libmpi.so.40(MPI_Win_flush+0x57)[0x155555262397]
+[node26-024:837235] [17] ././examples/fib.out[0x405e05]
+[node26-024:837235] [18] ././examples/fib.out[0x407bfa]
+[node26-024:837235] [19] ././examples/fib.out[0x404cf5]
+[node26-024:837235] [20] /lib64/libc.so.6(+0x2a610)[0x155554a2a610]
+[node26-024:837235] [21] /lib64/libc.so.6(__libc_start_main+0x80)[0x155554a2a6c0]
+[node26-024:837235] [22] ././examples/fib.out[0x404fa5]
+[node26-024:837235] *** End of error message ***
+--------------------------------------------------------------------------
+prterun noticed that process rank 26 with PID 837250 on node node26-024 exited on
+signal 11 (Segmentation fault).
+--------------------------------------------------------------------------

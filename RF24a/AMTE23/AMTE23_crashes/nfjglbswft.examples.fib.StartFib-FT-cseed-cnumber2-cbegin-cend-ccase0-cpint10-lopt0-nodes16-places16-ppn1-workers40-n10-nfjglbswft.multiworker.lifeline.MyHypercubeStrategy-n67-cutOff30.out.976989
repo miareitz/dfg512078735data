@@ -1,0 +1,2055 @@
+JobId=976989 JobName=nfjglbswft.examples.fib.StartFib-FT-cseed-cnumber2-cbegin-cend-ccase0-cpint10-lopt0-nodes16-places16-ppn1-workers40-n10-nfjglbswft.multiworker.lifeline.MyHypercubeStrategy-n67-cutOff30
+   UserId=reitz(59092) GroupId=apgas(58116) MCS_label=N/A
+   Priority=1046931 Nice=0 Account=apgas QOS=normal
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   DerivedExitCode=0:0
+   RunTime=00:00:01 TimeLimit=00:10:00 TimeMin=N/A
+   SubmitTime=2023-03-09T10:35:46 EligibleTime=2023-03-09T10:35:46
+   AccrueTime=2023-03-09T10:35:46
+   StartTime=2023-03-09T11:03:31 EndTime=2023-03-09T11:13:31 Deadline=N/A
+   PreemptTime=None SuspendTime=None SecsPreSuspend=0
+   LastSchedEval=2023-03-09T11:03:31
+   Partition=general1 AllocNode:Sid=login01:88845
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=node45-[014-015,019],node49-[017-018],node52-[019-020],node53-[018-021,025-027,030-031]
+   BatchHost=node45-014
+   NumNodes=16 NumCPUs=1280 NumTasks=16 CPUs/Task=1 ReqB:S:C:T=0:0:20:1
+   TRES=cpu=1280,mem=2.50T,node=16,billing=1280
+   Socks/Node=2 NtasksPerN:B:S:C=1:0:*:* CoreSpec=*
+     Nodes=node45-[014-015,019],node49-[017-018],node52-[019-020],node53-[018-021,025-027,030-031] CPU_IDs=0-79 Mem=81920 GRES_IDX=
+   MinCPUsNode=1 MinMemoryCPU=2G MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null)
+   Command=/tmp/tmp.IGfNkiUiX9
+   WorkDir=/home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe
+   StdErr=/home/apgas/reitz/out/nfjglbswft.examples.fib.StartFib-FT-cseed-cnumber2-cbegin-cend-ccase0-cpint10-lopt0-nodes16-places16-ppn1-workers40-n10-nfjglbswft.multiworker.lifeline.MyHypercubeStrategy-n67-cutOff30.err.976989
+   StdIn=/dev/null
+   StdOut=/home/apgas/reitz/out/nfjglbswft.examples.fib.StartFib-FT-cseed-cnumber2-cbegin-cend-ccase0-cpint10-lopt0-nodes16-places16-ppn1-workers40-n10-nfjglbswft.multiworker.lifeline.MyHypercubeStrategy-n67-cutOff30.out.976989
+   Power=
+
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 103061
+max locked memory       (kbytes, -l) unlimited
+max memory size         (kbytes, -m) 167772160
+open files                      (-n) 8192
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 8192
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 131064
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+nfjglbswft.examples.fib.StartFib starts, date: Thu, 9 Mar 2023 11:03:32 +0100
+[APGAS] Starting Places time: 10.554955269 sec
+APGAS config:
+  apgas.places=16
+  apgas.threads=128
+  apgas.immediate.threads=8
+  apgas.max.threads=256
+  apgas.resilient=true
+  apgas.backupcount=2
+  apgas.ppernode=null
+  apgas.master=null
+  apgas.hostfile=/home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../bin/hostfile2-976989
+  apgas.java=java
+  apgas.verbose.launcher=true
+  apgas.launcher=apgas.launcher.SrunLauncher
+  apgas.place.id=0
+  apgas.port=5701
+  apgas.network.interface=10.149.*.*
+  apgas.consoleprinter=false
+  apgas.hostmanager.strategy=1
+
+GLB Multiworker config:
+  glb.multiworker.n=10
+  glb.multiworker.w=3
+  glb.multiworker.lifelinestrategy=nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+  glb.multiworker.workerperplace=40
+  glb.multiworker.benchmarkrepetitions=1
+  glb.multiworker.malleability=false
+  glb.multiworker.malleability.delay=10
+  glb.multiworker.malleability.mallplaces=0
+  glb.multiworker.malleability.add=true
+  glb.multiworker.steal.numtasks=1
+  glb.multiworker.faulttolerance.cpinterval=10
+  glb.multiworker.faulttolerance.crashcase=0
+  glb.multiworker.faulttolerance.crashseed=123
+  glb.multiworker.faulttolerance.crashnumber=2
+  glb.multiworker.faulttolerance.crashbegin=117
+  glb.multiworker.faulttolerance.crashend=127
+
+FIB config:
+  n=67
+  cutOff=30
+
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+crashingPlace=11 crashTimes[crashingPlace]=120333333333
+crashingPlace=3 crashTimes[crashingPlace]=123666666666
+nfjglbswft.multiworker.lifeline.MyHypercubeStrategy
+nfjglbswft.multiworker.PlaceLogger@6fca26b
+Shutdown of place 11 at 12276895230472764, elapsed since start: 120338657224, expected: 120333333333
+nfjglbswft.multiworker.PlaceLogger@4b5eeafd
+Shutdown of place 11 at 12276895241277523, elapsed since start: 120340144474, expected: 120333333333
+nfjglbswft.multiworker.PlaceLogger@4e4d9453
+Shutdown of place 11 at 12276895269701255, elapsed since start: 120335297875, expected: 120333333333
+[APGAS] Exception: cannot send to place 11
+[APGAS] Exception: cannot send to place 11
+[APGAS] Exception: cannot send to place 11
+[APGAS] Exception: cannot send to place 11
+nfjglbswft.multiworker.PlaceLogger@1c6c2550
+nfjglbswft.multiworker.PlaceLogger@53d43322
+nfjglbswft.multiworker.PlaceLogger@58c79f20
+nfjglbswft.multiworker.PlaceLogger@4e9d1886
+Shutdown of place 3 at 18656984912816269, elapsed since start: 123670033069, expected: 123666666666
+Shutdown of place 3 at 18656984910673165, elapsed since start: 123667880182, expected: 123666666666
+Shutdown of place 3 at 18656984912756754, elapsed since start: 123669953012, expected: 123666666666
+Shutdown of place 3 at 18656984910396017, elapsed since start: 123667594867, expected: 123666666666
+nfjglbswft.multiworker.PlaceLogger@7ea72672
+Shutdown of place 3 at 18656984917533321, elapsed since start: 123674710118, expected: 123666666666
+nfjglbswft.multiworker.PlaceLogger@60727352
+Shutdown of place 3 at 18656984919362998, elapsed since start: 123676589070, expected: 123666666666
+nfjglbswft.multiworker.PlaceLogger@7ad85fe3
+Shutdown of place 3 at 18656984953916352, elapsed since start: 123676200608, expected: 123666666666
+nfjglbswft.multiworker.PlaceLogger@7da868c9
+Shutdown of place 3 at 18656984954187312, elapsed since start: 123673031552, expected: 123666666666
+nfjglbswft.multiworker.PlaceLogger@4413f37d
+Shutdown of place 3 at 18656984959522162, elapsed since start: 123675297779, expected: 123666666666
+[APGAS] Exception: cannot send to place 3
+[APGAS] Exception: cannot send to place 3
+[APGAS] Exception: cannot send to place 3
+[APGAS] Exception: cannot send to place 11
+[APGAS] Exception: cannot send to place 3
+[APGAS] Exception: cannot send to place 3
+[APGAS] Exception: cannot send to place 3
+[APGAS] Exception: cannot send to place 3
+[APGAS] Exception: cannot send to place 3
+0 RESULT IS 44945570212853 (FROM TASK ID = 0 n = 67 cont=3)
+Program took 267534 ms
+Process time: 255.956878571 s
+Run 1/1; 0; 
+
+#############################################################
+#############################################################
+
+java done

@@ -1,0 +1,66 @@
+[node18-033:93749:0:93749] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+==== backtrace (tid:  93749) ====
+ 0  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_handle_error+0x294) [0x1555549c4f04]
+ 1  /cluster/ucx/1.19.1/lib/libucs.so.0(+0x340c5) [0x1555549c50c5]
+ 2  /cluster/ucx/1.19.1/lib/libucs.so.0(+0x34396) [0x1555549c5396]
+ 3  /lib64/libc.so.6(+0x3fc30) [0x155554a3fc30]
+ 4  ././examples/fib.out() [0x41348c]
+ 5  ././examples/fib.out() [0x41a04e]
+ 6  ././examples/fib.out() [0x41ba34]
+ 7  ././examples/fib.out() [0x40a4a7]
+ 8  ././examples/fib.out() [0x40c04f]
+ 9  ././examples/fib.out() [0x41c76c]
+10  ././examples/fib.out() [0x40f1c0]
+11  [0x155542748d70]
+=================================
+[node20-020:1334427:0:1334427] ib_mlx5_log.c:179  Remote access error on mlx5_0:1/IB (synd 0x13 vend 0x88 hw_synd 0/0)
+[node20-020:1334427:0:1334427] ib_mlx5_log.c:179  DCI QP 0x1a1b9 wqe[14692]: RDMA_WRITE s-- [rqpn 0x4501 rlid 1488] [rva 0x154680004c30 rkey 0x1b4b00] [va 0x15553effd600 len 2056 lkey 0x11c7b6] 
+==== backtrace (tid:1334427) ====
+ 0  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_handle_error+0x294) [0x1555549c4f04]
+ 1  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_fatal_error_message+0xb2) [0x1555549c20f2]
+ 2  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_log_default_handler+0xee9) [0x1555549c6b29]
+ 3  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_log_dispatch+0xd4) [0x1555549c6e74]
+ 4  /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(uct_ib_mlx5_completion_with_err+0x5f0) [0x155554110ae0]
+ 5  /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(uct_dc_mlx5_ep_handle_failure+0xb6) [0x155554144816]
+ 6  /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(uct_ib_mlx5_check_completion+0x35) [0x155554111b85]
+ 7  /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(+0x4893f) [0x15555414693f]
+ 8  /cluster/ucx/1.19.1/lib/libucp.so.0(ucp_worker_progress+0x2a) [0x155554c5fbaa]
+ 9  /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_common_ucx_wpool_progress+0xd5) [0x155554d9b475]
+10  /cluster/mpi/openmpi/5.0.5/lib/libmpi.so.40(+0x20949c) [0x15555539449c]
+11  /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_progress+0x34) [0x155554d1e904]
+12  /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_common_ucx_winfo_flush+0x13a) [0x155554d9c38a]
+13  /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_common_ucx_ctx_flush+0x92) [0x155554d9c742]
+14  /cluster/mpi/openmpi/5.0.5/lib/libmpi.so.40(MPI_Win_flush+0x57) [0x155555262397]
+15  ././examples/fib.out() [0x40b786]
+16  ././examples/fib.out() [0x40bfaf]
+17  ././examples/fib.out() [0x4084f4]
+=================================
+[node20-020:1334427] *** Process received signal ***
+[node20-020:1334427] Signal: Aborted (6)
+[node20-020:1334427] Signal code:  (-6)
+[node20-020:1334427] [ 0] /lib64/libc.so.6(+0x3fc30)[0x155554a3fc30]
+[node20-020:1334427] [ 1] /lib64/libc.so.6(+0x8d02c)[0x155554a8d02c]
+[node20-020:1334427] [ 2] /lib64/libc.so.6(raise+0x16)[0x155554a3fb86]
+[node20-020:1334427] [ 3] /lib64/libc.so.6(abort+0xd3)[0x155554a29873]
+[node20-020:1334427] [ 4] /cluster/ucx/1.19.1/lib/libucs.so.0(+0x310f7)[0x1555549c20f7]
+[node20-020:1334427] [ 5] /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_log_default_handler+0xee9)[0x1555549c6b29]
+[node20-020:1334427] [ 6] /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_log_dispatch+0xd4)[0x1555549c6e74]
+[node20-020:1334427] [ 7] /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(uct_ib_mlx5_completion_with_err+0x5f0)[0x155554110ae0]
+[node20-020:1334427] [ 8] /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(uct_dc_mlx5_ep_handle_failure+0xb6)[0x155554144816]
+[node20-020:1334427] [ 9] /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(uct_ib_mlx5_check_completion+0x35)[0x155554111b85]
+[node20-020:1334427] [10] /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(+0x4893f)[0x15555414693f]
+[node20-020:1334427] [11] /cluster/ucx/1.19.1/lib/libucp.so.0(ucp_worker_progress+0x2a)[0x155554c5fbaa]
+[node20-020:1334427] [12] /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_common_ucx_wpool_progress+0xd5)[0x155554d9b475]
+[node20-020:1334427] [13] /cluster/mpi/openmpi/5.0.5/lib/libmpi.so.40(+0x20949c)[0x15555539449c]
+[node20-020:1334427] [14] /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_progress+0x34)[0x155554d1e904]
+[node20-020:1334427] [15] /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_common_ucx_winfo_flush+0x13a)[0x155554d9c38a]
+[node20-020:1334427] [16] /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_common_ucx_ctx_flush+0x92)[0x155554d9c742]
+[node20-020:1334427] [17] /cluster/mpi/openmpi/5.0.5/lib/libmpi.so.40(MPI_Win_flush+0x57)[0x155555262397]
+[node20-020:1334427] [18] ././examples/fib.out[0x40b786]
+[node20-020:1334427] [19] ././examples/fib.out[0x40bfaf]
+[node20-020:1334427] [20] ././examples/fib.out[0x4084f4]
+[node20-020:1334427] *** End of error message ***
+--------------------------------------------------------------------------
+prterun noticed that process rank 27 with PID 93749 on node node18-033 exited on
+signal 11 (Segmentation fault).
+--------------------------------------------------------------------------

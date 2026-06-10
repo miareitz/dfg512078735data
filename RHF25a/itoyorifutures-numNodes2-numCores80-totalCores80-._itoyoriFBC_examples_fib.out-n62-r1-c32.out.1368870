@@ -1,0 +1,87 @@
+JobId=1368870 JobName=itoyorifutures-numNodes2-numCores80-totalCores80-._itoyoriFBC_examples_fib.out-n62-r1-c32
+   UserId=reitz(59092) GroupId=apgas(58116) MCS_label=N/A
+   Priority=1067193 Nice=0 Account=apgas QOS=normal
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   DerivedExitCode=0:0
+   RunTime=00:00:00 TimeLimit=00:10:00 TimeMin=N/A
+   SubmitTime=2024-12-16T06:07:59 EligibleTime=2024-12-16T06:07:59
+   AccrueTime=2024-12-16T06:07:59
+   StartTime=2024-12-16T06:15:15 EndTime=2024-12-16T06:25:15 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2024-12-16T06:15:15 Scheduler=Backfill
+   Partition=general1 AllocNode:Sid=login02:3813011
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=node54-[037-038]
+   BatchHost=node54-037
+   NumNodes=2 NumCPUs=160 NumTasks=80 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=80,mem=160G,node=2,billing=80
+   AllocTRES=cpu=160,mem=320G,node=2,billing=160
+   Socks/Node=* NtasksPerN:B:S:C=40:0:*:* CoreSpec=*
+   JOB_GRES=(null)
+     Nodes=node54-[037-038] CPU_IDs=0-79 Mem=163840 GRES=
+   MinCPUsNode=40 MinMemoryCPU=2G MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null)
+   Command=/tmp/tmp.PJpWljCeFP
+   WorkDir=/home/apgas/reitz/itoyorifuture/scripts
+   StdErr=/home/apgas/reitz/out/itoyorifutures-numNodes2-numCores80-totalCores80-._itoyoriFBC_examples_fib.out-n62-r1-c32.err.1368870
+   StdIn=/dev/null
+   StdOut=/home/apgas/reitz/out/itoyorifutures-numNodes2-numCores80-totalCores80-._itoyoriFBC_examples_fib.out-n62-r1-c32.out.1368870
+   Power=
+   
+
+rank=0 create_win() with { 4526176, 0x155531e00000, 2097152 }rank=0 create_win() with { 4526176, 0x154100000000, 1073741824 }=============================================================
+[Fibonacci]
+# of processes:               80
+N:                            62
+Cutoff:                       32
+# of repeats:                 1
+Verify result:                1
+-------------------------------------------------------------
+[Compile Options]
+ITYR_MAX_VERBOSE_LEVEL=0
+ITYR_PROFILER_MODE=disabled
+ITYR_RMA_IMPL=mpi
+ITYR_ALLOCATOR_USE_BOOST=0
+ITYR_ALLOCATOR_USE_DYNAMIC_WIN=false
+ITYR_ITO_SCHEDULER=randws
+ITYR_ITO_DAG_PROF=disabled
+ITYR_ORI_CORE=default
+ITYR_ORI_BLOCK_SIZE=65536
+ITYR_ORI_DEFAULT_MEM_MAPPER=cyclic
+ITYR_ORI_ENABLE_WRITE_THROUGH=false
+ITYR_ORI_ENABLE_LAZY_RELEASE=true
+ITYR_ORI_ENABLE_VM_MAP=true
+ITYR_ORI_FORCE_GETPUT=false
+ITYR_ORI_CACHE_PROF=disabled
+ITYR_ORI_CACHE_TLB_SIZE=3
+ITYR_ORI_HOME_TLB_SIZE=3
+-------------------------------------------------------------
+[Runtime Options]
+ITYR_ENABLE_SHARED_MEMORY=1
+ITYR_GLOBAL_CLOCK_SYNC_ROUND_TRIPS=100
+ITYR_PROF_OUTPUT_PER_RANK=0
+ITYR_RMA_USE_MPI_WIN_ALLOCATE=0
+ITYR_ALLOCATOR_BLOCK_SIZE=2097152
+ITYR_ALLOCATOR_MAX_UNFLUSHED_FREE_OBJS=10
+ITYR_ITO_STACK_SIZE=2097152
+ITYR_ITO_WSQUEUE_CAPACITY=1024
+ITYR_ITO_THREAD_STATE_ALLOCATOR_SIZE=2097152
+ITYR_ITO_SUSPENDED_THREAD_ALLOCATOR_SIZE=2097152
+ITYR_ITO_SCHED_LOOP_MAKE_MPI_PROGRESS=1
+ITYR_ITO_ADWS_ENABLE_STEAL=1
+ITYR_ITO_ADWS_WSQUEUE_CAPACITY=256
+ITYR_ITO_ADWS_MAX_DEPTH=20
+ITYR_ITO_ADWS_MAX_DTREE_REUSE=10
+ITYR_ITO_ADWS_MIN_DRANGE_SIZE=0.01
+ITYR_ORI_CACHE_SIZE=16777216
+ITYR_ORI_SUB_BLOCK_SIZE=4096
+ITYR_ORI_MAX_DIRTY_CACHE_SIZE=8388608
+ITYR_ORI_NONCOLL_ALLOCATOR_SIZE=4194304
+ITYR_ORI_LAZY_RELEASE_CHECK_INTERVAL=10
+ITYR_ORI_LAZY_RELEASE_MAKE_MPI_PROGRESS=1
+=============================================================
+
+[0] Process time 127,583,970,785 ns = 127.583971 s
+
+rank=22 create_win() with { 4526176, 0x155534a00000, 2097152 }rank=22 create_win() with { 4526176, 0x154680000000, 1073741824 }rank=68 create_win() with { 4526176, 0x15553a600000, 2097152 }rank=68 create_win() with { 4526176, 0x155200000000, 1073741824 }rank=4 create_win() with { 4526176, 0x155532600000, 2097152 }rank=4 create_win() with { 4526176, 0x154200000000, 1073741824 }rank=2 create_win() with { 4526176, 0x155532200000, 2097152 }rank=2 create_win() with { 4526176, 0x154180000000, 1073741824 }rank=10 create_win() with { 4526176, 0x155533200000, 2097152 }rank=10 create_win() with { 4526176, 0x154380000000, 1073741824 }rank=5 create_win() with { 4526176, 0x155532800000, 2097152 }rank=5 create_win() with { 4526176, 0x154240000000, 1073741824 }rank=18 create_win() with { 4526176, 0x155534200000, 2097152 }rank=18 create_win() with { 4526176, 0x154580000000, 1073741824 }rank=12 create_win() with { 4526176, 0x155533600000, 2097152 }rank=12 create_win() with { 4526176, 0x154400000000, 1073741824 }rank=15 create_win() with { 4526176, 0x155533c00000, 2097152 }rank=15 create_win() with { 4526176, 0x1544c0000000, 1073741824 }rank=3 create_win() with { 4526176, 0x155532400000, 2097152 }rank=3 create_win() with { 4526176, 0x1541c0000000, 1073741824 }rank=13 create_win() with { 4526176, 0x155533800000, 2097152 }rank=13 create_win() with { 4526176, 0x154440000000, 1073741824 }rank=14 create_win() with { 4526176, 0x155533a00000, 2097152 }rank=14 create_win() with { 4526176, 0x154480000000, 1073741824 }rank=19 create_win() with { 4526176, 0x155534400000, 2097152 }rank=19 create_win() with { 4526176, 0x1545c0000000, 1073741824 }rank=8 create_win() with { 4526176, 0x155532e00000, 2097152 }rank=8 create_win() with { 4526176, 0x154300000000, 1073741824 }rank=11 create_win() with { 4526176, 0x155533400000, 2097152 }rank=11 create_win() with { 4526176, 0x1543c0000000, 1073741824 }rank=6 create_win() with { 4526176, 0x155532a00000, 2097152 }rank=6 create_win() with { 4526176, 0x154280000000, 1073741824 }rank=16 create_win() with { 4526176, 0x155533e00000, 2097152 }rank=16 create_win() with { 4526176, 0x154500000000, 1073741824 }rank=17 create_win() with { 4526176, 0x155534000000, 2097152 }rank=17 create_win() with { 4526176, 0x154540000000, 1073741824 }rank=7 create_win() with { 4526176, 0x155532c00000, 2097152 }rank=7 create_win() with { 4526176, 0x1542c0000000, 1073741824 }rank=9 create_win() with { 4526176, 0x155533000000, 2097152 }rank=9 create_win() with { 4526176, 0x154340000000, 1073741824 }rank=1 create_win() with { 4526176, 0x155532000000, 2097152 }rank=1 create_win() with { 4526176, 0x154140000000, 1073741824 }rank=56 create_win() with { 4526176, 0x155538e00000, 2097152 }rank=56 create_win() with { 4526176, 0x154f00000000, 1073741824 }rank=53 create_win() with { 4526176, 0x155538800000, 2097152 }rank=53 create_win() with { 4526176, 0x154e40000000, 1073741824 }rank=42 create_win() with { 4526176, 0x155537200000, 2097152 }rank=42 create_win() with { 4526176, 0x154b80000000, 1073741824 }rank=43 create_win() with { 4526176, 0x155537400000, 2097152 }rank=43 create_win() with { 4526176, 0x154bc0000000, 1073741824 }rank=52 create_win() with { 4526176, 0x155538600000, 2097152 }rank=52 create_win() with { 4526176, 0x154e00000000, 1073741824 }rank=54 create_win() with { 4526176, 0x155538a00000, 2097152 }rank=54 create_win() with { 4526176, 0x154e80000000, 1073741824 }rank=50 create_win() with { 4526176, 0x155538200000, 2097152 }rank=50 create_win() with { 4526176, 0x154d80000000, 1073741824 }rank=49 create_win() with { 4526176, 0x155538000000, 2097152 }rank=49 create_win() with { 4526176, 0x154d40000000, 1073741824 }rank=58 create_win() with { 4526176, 0x155539200000, 2097152 }rank=58 create_win() with { 4526176, 0x154f80000000, 1073741824 }rank=51 create_win() with { 4526176, 0x155538400000, 2097152 }rank=51 create_win() with { 4526176, 0x154dc0000000, 1073741824 }rank=55 create_win() with { 4526176, 0x155538c00000, 2097152 }rank=55 create_win() with { 4526176, 0x154ec0000000, 1073741824 }rank=57 create_win() with { 4526176, 0x155539000000, 2097152 }rank=57 create_win() with { 4526176, 0x154f40000000, 1073741824 }rank=48 create_win() with { 4526176, 0x155537e00000, 2097152 }rank=48 create_win() with { 4526176, 0x154d00000000, 1073741824 }rank=59 create_win() with { 4526176, 0x155539400000, 2097152 }rank=59 create_win() with { 4526176, 0x154fc0000000, 1073741824 }rank=41 create_win() with { 4526176, 0x155537000000, 2097152 }rank=41 create_win() with { 4526176, 0x154b40000000, 1073741824 }rank=44 create_win() with { 4526176, 0x155537600000, 2097152 }rank=44 create_win() with { 4526176, 0x154c00000000, 1073741824 }rank=47 create_win() with { 4526176, 0x155537c00000, 2097152 }rank=47 create_win() with { 4526176, 0x154cc0000000, 1073741824 }rank=46 create_win() with { 4526176, 0x155537a00000, 2097152 }rank=46 create_win() with { 4526176, 0x154c80000000, 1073741824 }rank=45 create_win() with { 4526176, 0x155537800000, 2097152 }rank=45 create_win() with { 4526176, 0x154c40000000, 1073741824 }rank=40 create_win() with { 4526176, 0x155536e00000, 2097152 }rank=40 create_win() with { 4526176, 0x154b00000000, 1073741824 }rank=28 create_win() with { 4526176, 0x155535600000, 2097152 }rank=28 create_win() with { 4526176, 0x154800000000, 1073741824 }rank=66 create_win() with { 4526176, 0x15553a200000, 2097152 }rank=66 create_win() with { 4526176, 0x155180000000, 1073741824 }rank=26 create_win() with { 4526176, 0x155535200000, 2097152 }rank=26 create_win() with { 4526176, 0x154780000000, 1073741824 }rank=38 create_win() with { 4526176, 0x155536a00000, 2097152 }rank=38 create_win() with { 4526176, 0x154a80000000, 1073741824 }rank=34 create_win() with { 4526176, 0x155536200000, 2097152 }rank=34 create_win() with { 4526176, 0x154980000000, 1073741824 }rank=20 create_win() with { 4526176, 0x155534600000, 2097152 }rank=20 create_win() with { 4526176, 0x154600000000, 1073741824 }rank=30 create_win() with { 4526176, 0x155535a00000, 2097152 }rank=30 create_win() with { 4526176, 0x154880000000, 1073741824 }rank=39 create_win() with { 4526176, 0x155536c00000, 2097152 }rank=39 create_win() with { 4526176, 0x154ac0000000, 1073741824 }rank=31 create_win() with { 4526176, 0x155535c00000, 2097152 }rank=31 create_win() with { 4526176, 0x1548c0000000, 1073741824 }rank=33 create_win() with { 4526176, 0x155536000000, 2097152 }rank=33 create_win() with { 4526176, 0x154940000000, 1073741824 }rank=29 create_win() with { 4526176, 0x155535800000, 2097152 }rank=29 create_win() with { 4526176, 0x154840000000, 1073741824 }rank=37 create_win() with { 4526176, 0x155536800000, 2097152 }rank=37 create_win() with { 4526176, 0x154a40000000, 1073741824 }rank=36 create_win() with { 4526176, 0x155536600000, 2097152 }rank=36 create_win() with { 4526176, 0x154a00000000, 1073741824 }rank=23 create_win() with { 4526176, 0x155534c00000, 2097152 }rank=23 create_win() with { 4526176, 0x1546c0000000, 1073741824 }rank=71 create_win() with { 4526176, 0x15553ac00000, 2097152 }rank=71 create_win() with { 4526176, 0x1552c0000000, 1073741824 }rank=61 create_win() with { 4526176, 0x155539800000, 2097152 }rank=61 create_win() with { 4526176, 0x155040000000, 1073741824 }rank=78 create_win() with { 4526176, 0x15553ba00000, 2097152 }rank=78 create_win() with { 4526176, 0x155480000000, 1073741824 }rank=65 create_win() with { 4526176, 0x15553a000000, 2097152 }rank=65 create_win() with { 4526176, 0x155140000000, 1073741824 }rank=73 create_win() with { 4526176, 0x15553b000000, 2097152 }rank=73 create_win() with { 4526176, 0x155340000000, 1073741824 }rank=69 create_win() with { 4526176, 0x15553a800000, 2097152 }rank=69 create_win() with { 4526176, 0x155240000000, 1073741824 }rank=72 create_win() with { 4526176, 0x15553ae00000, 2097152 }rank=72 create_win() with { 4526176, 0x155300000000, 1073741824 }rank=79 create_win() with { 4526176, 0x15553bc00000, 2097152 }rank=79 create_win() with { 4526176, 0x1554c0000000, 1073741824 }rank=74 create_win() with { 4526176, 0x15553b200000, 2097152 }rank=74 create_win() with { 4526176, 0x155380000000, 1073741824 }rank=70 create_win() with { 4526176, 0x15553aa00000, 2097152 }rank=70 create_win() with { 4526176, 0x155280000000, 1073741824 }rank=62 create_win() with { 4526176, 0x155539a00000, 2097152 }rank=62 create_win() with { 4526176, 0x155080000000, 1073741824 }rank=75 create_win() with { 4526176, 0x15553b400000, 2097152 }rank=75 create_win() with { 4526176, 0x1553c0000000, 1073741824 }rank=63 create_win() with { 4526176, 0x155539c00000, 2097152 }rank=63 create_win() with { 4526176, 0x1550c0000000, 1073741824 }rank=76 create_win() with { 4526176, 0x15553b600000, 2097152 }rank=76 create_win() with { 4526176, 0x155400000000, 1073741824 }rank=67 create_win() with { 4526176, 0x15553a400000, 2097152 }rank=67 create_win() with { 4526176, 0x1551c0000000, 1073741824 }rank=77 create_win() with { 4526176, 0x15553b800000, 2097152 }rank=77 create_win() with { 4526176, 0x155440000000, 1073741824 }rank=60 create_win() with { 4526176, 0x155539600000, 2097152 }rank=60 create_win() with { 4526176, 0x155000000000, 1073741824 }rank=64 create_win() with { 4526176, 0x155539e00000, 2097152 }rank=64 create_win() with { 4526176, 0x155100000000, 1073741824 }rank=21 create_win() with { 4526176, 0x155534800000, 2097152 }rank=21 create_win() with { 4526176, 0x154640000000, 1073741824 }rank=32 create_win() with { 4526176, 0x155535e00000, 2097152 }rank=32 create_win() with { 4526176, 0x154900000000, 1073741824 }rank=35 create_win() with { 4526176, 0x155536400000, 2097152 }rank=35 create_win() with { 4526176, 0x1549c0000000, 1073741824 }rank=24 create_win() with { 4526176, 0x155534e00000, 2097152 }rank=24 create_win() with { 4526176, 0x154700000000, 1073741824 }rank=25 create_win() with { 4526176, 0x155535000000, 2097152 }rank=25 create_win() with { 4526176, 0x154740000000, 1073741824 }rank=27 create_win() with { 4526176, 0x155535400000, 2097152 }rank=27 create_win() with { 4526176, 0x1547c0000000, 1073741824 }

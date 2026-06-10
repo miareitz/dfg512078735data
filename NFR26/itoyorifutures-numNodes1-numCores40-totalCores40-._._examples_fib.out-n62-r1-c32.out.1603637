@@ -1,0 +1,67 @@
+JobId=1603637 JobName=itoyorifutures-numNodes1-numCores40-totalCores40-._._examples_fib.out-n62-r1-c32
+   UserId=reitz(59092) GroupId=apgas(58116) MCS_label=N/A
+   Priority=1058157 Nice=0 Account=apgas QOS=normal
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   DerivedExitCode=0:0
+   RunTime=00:00:01 TimeLimit=00:20:00 TimeMin=N/A
+   SubmitTime=2026-02-12T16:26:04 EligibleTime=2026-02-12T16:26:04
+   AccrueTime=2026-02-12T16:26:04
+   StartTime=2026-02-12T16:31:59 EndTime=2026-02-12T16:51:59 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-02-12T16:31:59 Scheduler=Main
+   Partition=general1 AllocNode:Sid=login01:1940689
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=node29-001
+   BatchHost=node29-001
+   NumNodes=1 NumCPUs=80 NumTasks=40 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=40,mem=80G,node=1,billing=40
+   AllocTRES=cpu=80,mem=160G,node=1,billing=80
+   Socks/Node=* NtasksPerN:B:S:C=40:0:*:* CoreSpec=*
+   JOB_GRES=(null)
+     Nodes=node29-001 CPU_IDs=0-79 Mem=163840 GRES=
+   MinCPUsNode=40 MinMemoryCPU=2G MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null)
+   Command=/tmp/tmp.YKNQ4VYJue
+   WorkDir=/home/apgas/reitz/itoyoribetterfutures/scripts
+   StdErr=/home/apgas/reitz/out/itoyorifutures-numNodes1-numCores40-totalCores40-._._examples_fib.out-n62-r1-c32.err.1603637
+   StdIn=/dev/null
+   StdOut=/home/apgas/reitz/out/itoyorifutures-numNodes1-numCores40-totalCores40-._._examples_fib.out-n62-r1-c32.out.1603637
+   Power=
+   
+
+=============================================================
+[Fibonacci]
+# of processes:               40
+N:                            62
+Cutoff:                       32
+# of repeats:                 1
+Verify result:                1
+-------------------------------------------------------------
+[Compile Options]
+ITYR_MAX_VERBOSE_LEVEL=0
+ITYR_PROFILER_MODE=disabled
+ITYR_RMA_IMPL=mpi
+ITYR_ALLOCATOR_USE_BOOST=0
+ITYR_ALLOCATOR_USE_DYNAMIC_WIN=false
+ITYR_ITO_SCHEDULER=randws
+-------------------------------------------------------------
+[Runtime Options]
+ITYR_ENABLE_SHARED_MEMORY=1
+ITYR_GLOBAL_CLOCK_SYNC_ROUND_TRIPS=100
+ITYR_PROF_OUTPUT_PER_RANK=0
+ITYR_RMA_USE_MPI_WIN_ALLOCATE=0
+ITYR_ALLOCATOR_BLOCK_SIZE=2097152
+ITYR_ALLOCATOR_MAX_UNFLUSHED_FREE_OBJS=10
+ITYR_ITO_STACK_SIZE=2097152
+ITYR_ITO_WSQUEUE_CAPACITY=1024
+ITYR_ITO_THREAD_STATE_ALLOCATOR_SIZE=2097152
+ITYR_ITO_SUSPENDED_THREAD_ALLOCATOR_SIZE=2097152
+ITYR_ITO_CHECKPOINT_ALLOCATOR_SIZE=268435456
+ITYR_ITO_REGULAR_CHECKPOINT_INTERVAL=10000
+ITYR_ITO_SCHED_LOOP_MAKE_MPI_PROGRESS=1
+=============================================================
+
+[0] Process time 280,048,542,195 ns = 280.048542 s
+ - Result verified: fib(62) = 6557470319842
+

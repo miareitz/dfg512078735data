@@ -1,0 +1,18 @@
+[node29-022:857908:0:857908] Caught signal 11 (Segmentation fault: address not mapped to object at address 0xffffffffffffffff)
+==== backtrace (tid: 857908) ====
+ 0  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_handle_error+0x294) [0x1555549c4f04]
+ 1  /cluster/ucx/1.19.1/lib/libucs.so.0(+0x340c5) [0x1555549c50c5]
+ 2  /cluster/ucx/1.19.1/lib/libucs.so.0(+0x34396) [0x1555549c5396]
+ 3  /lib64/libc.so.6(+0x3fc30) [0x155554a3fc30]
+ 4  ././examples/fib.out() [0x419cd0]
+ 5  ././examples/fib.out() [0x41a0bb]
+ 6  ././examples/fib.out() [0x41b521]
+ 7  ././examples/fib.out() [0x40b516]
+ 8  ././examples/fib.out() [0x40c04f]
+ 9  ././examples/fib.out() [0x40957f]
+10  [0x1857378]
+=================================
+--------------------------------------------------------------------------
+prterun noticed that process rank 1 with PID 857908 on node node29-022 exited on
+signal 11 (Segmentation fault).
+--------------------------------------------------------------------------

@@ -1,0 +1,707 @@
+JobId=1610314 JobName=itoyorisdc-numNodes8-numCores320-totalCores320-._._examples_fib.out-n62-r1-c32
+   UserId=reitz(59092) GroupId=apgas(58116) MCS_label=N/A
+   Priority=1041090 Nice=0 Account=apgas QOS=normal
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   DerivedExitCode=0:0
+   RunTime=00:00:01 TimeLimit=00:20:00 TimeMin=N/A
+   SubmitTime=2026-02-20T12:56:40 EligibleTime=2026-02-20T12:56:40
+   AccrueTime=2026-02-20T12:56:40
+   StartTime=2026-02-20T12:59:17 EndTime=2026-02-20T13:19:17 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-02-20T12:59:17 Scheduler=Main
+   Partition=general1 AllocNode:Sid=login02:1985827
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=node19-005,node20-[019-021,028-030,032]
+   BatchHost=node19-005
+   NumNodes=8 NumCPUs=640 NumTasks=320 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=320,mem=640G,node=8,billing=320
+   AllocTRES=cpu=640,mem=1280G,node=8,billing=640
+   Socks/Node=* NtasksPerN:B:S:C=40:0:*:* CoreSpec=*
+   JOB_GRES=(null)
+     Nodes=node19-005,node20-[019-021,028-030,032] CPU_IDs=0-79 Mem=163840 GRES=
+   MinCPUsNode=40 MinMemoryCPU=2G MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null)
+   Command=/tmp/tmp.jRvFFXph0R
+   WorkDir=/home/apgas/reitz/itoyorisdcruediger/scripts
+   StdErr=/home/apgas/reitz/out/itoyorisdc-numNodes8-numCores320-totalCores320-._._examples_fib.out-n62-r1-c32.err.1610314
+   StdIn=/dev/null
+   StdOut=/home/apgas/reitz/out/itoyorisdc-numNodes8-numCores320-totalCores320-._._examples_fib.out-n62-r1-c32.out.1610314
+   Power=
+   
+
+6305758357524976 [23]: 23 root_exec begin n = 62
+
+6305758357525445 [18]: 18 root_exec begin n = 62
+
+6305758357524927 [24]: 24 root_exec begin n = 62
+
+6305758357525554 [14]: 14 root_exec begin n = 62
+
+6305758357525087 [17]: 17 root_exec begin n = 62
+
+6305758357525391 [15]: 15 root_exec begin n = 62
+
+6305758357524778 [33]: 33 root_exec begin n = 62
+
+6305758357524754 [37]: 37 root_exec begin n = 62
+
+6305758357525497 [5]: 5 root_exec begin n = 62
+
+6305758357525528 [7]: 7 root_exec begin n = 62
+
+6305758357525541 [2]: 2 root_exec begin n = 62
+
+6305758357524773 [22]: 22 root_exec begin n = 62
+
+6305758357525117 [32]: 32 root_exec begin n = 62
+
+6305758357524948 [29]: 29 root_exec begin n = 62
+
+6305758357524658 [36]: 36 root_exec begin n = 62
+
+6305758357525294 [19]: 19 root_exec begin n = 62
+
+6305758357525245 [11]: 11 root_exec begin n = 62
+
+6305758357525427 [4]: 4 root_exec begin n = 62
+
+6305758357525359 [1]: 1 root_exec begin n = 62
+
+6305758357525452 [10]: 10 root_exec begin n = 62
+
+6305758357524696 [21]: 21 root_exec begin n = 62
+
+6305758357524818 [25]: 25 root_exec begin n = 62
+
+6305758357524966 [34]: 34 root_exec begin n = 62
+
+6305758357525139 [13]: 13 root_exec begin n = 62
+
+6305758357525261 [9]: 9 root_exec begin n = 62
+
+6305758357524558 [28]: 28 root_exec begin n = 62
+
+6305758357525203 [16]: 16 root_exec begin n = 62
+
+6305758357525133 [20]: 20 root_exec begin n = 62
+
+6305758357524638 [35]: 35 root_exec begin n = 62
+
+6305758357525642 [12]: 12 root_exec begin n = 62
+
+6305758357524483 [26]: 26 root_exec begin n = 62
+
+6305758357525208 [8]: 8 root_exec begin n = 62
+
+6305758357525093 [27]: 27 root_exec begin n = 62
+
+6305758357525466 [3]: 3 root_exec begin n = 62
+
+6305758357525611 [6]: 6 root_exec begin n = 62
+
+6305758357524583 [31]: 31 root_exec begin n = 62
+
+6305758357524829 [38]: 38 root_exec begin n = 62
+
+6305758357525050 [39]: 39 root_exec begin n = 62
+
+6305758357524849 [30]: 30 root_exec begin n = 62
+
+=============================================================
+[Fibonacci]
+# of processes:               320
+N:                            62
+Cutoff:                       32
+# of repeats:                 1
+Verify result:                1
+-------------------------------------------------------------
+[Compile Options]
+ITYR_MAX_VERBOSE_LEVEL=0
+ITYR_PROFILER_MODE=disabled
+ITYR_RMA_IMPL=mpi
+ITYR_ALLOCATOR_USE_BOOST=0
+ITYR_ALLOCATOR_USE_DYNAMIC_WIN=false
+ITYR_ITO_SCHEDULER=randws
+-------------------------------------------------------------
+[Runtime Options]
+ITYR_ENABLE_SHARED_MEMORY=1
+ITYR_GLOBAL_CLOCK_SYNC_ROUND_TRIPS=100
+ITYR_PROF_OUTPUT_PER_RANK=0
+ITYR_RMA_USE_MPI_WIN_ALLOCATE=0
+ITYR_ALLOCATOR_BLOCK_SIZE=2097152
+ITYR_ALLOCATOR_MAX_UNFLUSHED_FREE_OBJS=10
+ITYR_ITO_STACK_SIZE=2097152
+ITYR_ITO_WSQUEUE_CAPACITY=1024
+ITYR_ITO_THREAD_STATE_ALLOCATOR_SIZE=2097152
+ITYR_ITO_SUSPENDED_THREAD_ALLOCATOR_SIZE=2097152
+ITYR_ITO_CHECKPOINT_ALLOCATOR_SIZE=268435456
+ITYR_ITO_REGULAR_CHECKPOINT_INTERVAL=10000
+ITYR_ITO_SCHED_LOOP_MAKE_MPI_PROGRESS=1
+=============================================================
+
+6305758357688028 [0]: 0 root_exec begin n = 62
+
+6305754340725934 [302]: 302 root_exec begin n = 62
+
+1607805386214722 [178]: 178 root_exec begin n = 62
+
+6305754340727698 [297]: 297 root_exec begin n = 62
+
+6305754340725963 [310]: 310 root_exec begin n = 62
+
+6305754340727302 [299]: 299 root_exec begin n = 62
+
+6305754340727692 [280]: 280 root_exec begin n = 62
+
+6305754340727438 [281]: 281 root_exec begin n = 62
+
+1607805386215349 [198]: 198 root_exec begin n = 62
+
+6305754340727722 [288]: 288 root_exec begin n = 62
+
+1607805386215297 [199]: 199 root_exec begin n = 62
+
+6305754340727665 [292]: 292 root_exec begin n = 62
+
+1607805386214697 [176]: 176 root_exec begin n = 62
+
+6305754340727559 [296]: 296 root_exec begin n = 62
+
+6305754340727454 [283]: 283 root_exec begin n = 62
+
+6305754340727760 [291]: 291 root_exec begin n = 62
+
+1607805386214776 [171]: 171 root_exec begin n = 62
+
+6305754340726107 [313]: 313 root_exec begin n = 62
+
+1607805386214604 [179]: 179 root_exec begin n = 62
+
+6305751339644861 [203]: 203 root_exec begin n = 62
+
+6305753389378015 [80]: 80 root_exec begin n = 62
+
+1607805386214809 [173]: 173 root_exec begin n = 62
+
+6305754340725629 [307]: 307 root_exec begin n = 62
+
+1607805386215362 [182]: 182 root_exec begin n = 62
+
+6305754340727530 [286]: 286 root_exec begin n = 62
+
+6305754340726904 [312]: 312 root_exec begin n = 62
+
+6305754340725819 [305]: 305 root_exec begin n = 62
+
+6305754340727093 [294]: 294 root_exec begin n = 62
+
+6305753304106650 [273]: 273 root_exec begin n = 62
+
+1607805386215429 [188]: 188 root_exec begin n = 62
+
+1607805386214655 [162]: 162 root_exec begin n = 62
+
+6305751339645312 [235]: 235 root_exec begin n = 62
+
+1607805386214893 [165]: 165 root_exec begin n = 62
+
+1607805386215392 [184]: 184 root_exec begin n = 62
+
+6305754340727591 [290]: 290 root_exec begin n = 62
+
+1607805386215503 [189]: 189 root_exec begin n = 62
+
+6305754340725900 [315]: 315 root_exec begin n = 62
+
+6305751339644612 [210]: 210 root_exec begin n = 62
+
+6305751339645911 [200]: 200 root_exec begin n = 62
+
+6305753389378079 [112]: 112 root_exec begin n = 62
+
+1607805386214547 [166]: 166 root_exec begin n = 62
+
+1607805386215269 [185]: 185 root_exec begin n = 62
+
+6305751339645411 [230]: 230 root_exec begin n = 62
+
+6305751339645236 [229]: 229 root_exec begin n = 62
+
+6305753389376869 [85]: 85 root_exec begin n = 62
+
+6305753389377791 [117]: 117 root_exec begin n = 62
+
+6305753304104901 [252]: 252 root_exec begin n = 62
+
+1607805386215129 [161]: 161 root_exec begin n = 62
+
+1607805386214887 [172]: 172 root_exec begin n = 62
+
+6305751339644791 [209]: 209 root_exec begin n = 62
+
+6305751339644526 [218]: 218 root_exec begin n = 62
+
+6305753389376745 [97]: 97 root_exec begin n = 62
+
+6305753389377874 [101]: 101 root_exec begin n = 62
+
+6305751339644785 [217]: 217 root_exec begin n = 62
+
+6305751339644171 [216]: 216 root_exec begin n = 62
+
+6305753304106698 [268]: 268 root_exec begin n = 62
+
+6305753339507161 [135]: 135 root_exec begin n = 62
+
+6305753304106084 [243]: 243 root_exec begin n = 62
+
+6305753389377769 [103]: 103 root_exec begin n = 62
+
+6305753389377599 [116]: 116 root_exec begin n = 62
+
+6305751339645261 [233]: 233 root_exec begin n = 62
+
+6305751339645213 [228]: 228 root_exec begin n = 62
+
+6305753304106417 [260]: 260 root_exec begin n = 62
+
+6305753304106796 [264]: 264 root_exec begin n = 62
+
+6305753389377719 [118]: 118 root_exec begin n = 62
+
+6305753389376991 [98]: 98 root_exec begin n = 62
+
+6305751339644779 [201]: 201 root_exec begin n = 62
+
+6305751339645326 [239]: 239 root_exec begin n = 62
+
+6305753304105607 [241]: 241 root_exec begin n = 62
+
+6305753304106949 [269]: 269 root_exec begin n = 62
+
+6305753389376995 [93]: 93 root_exec begin n = 62
+
+6305753389376657 [95]: 95 root_exec begin n = 62
+
+6305751339645211 [224]: 224 root_exec begin n = 62
+
+6305751339645003 [238]: 238 root_exec begin n = 62
+
+6305753304106696 [272]: 272 root_exec begin n = 62
+
+6305753389376675 [92]: 92 root_exec begin n = 62
+
+6305753304105471 [258]: 258 root_exec begin n = 62
+
+6305751339644390 [214]: 214 root_exec begin n = 62
+
+6305751339644754 [202]: 202 root_exec begin n = 62
+
+6305753389376901 [89]: 89 root_exec begin n = 62
+
+6305753389377114 [84]: 84 root_exec begin n = 62
+
+6305753304106183 [261]: 261 root_exec begin n = 62
+
+6305753304105533 [256]: 256 root_exec begin n = 62
+
+6305753389377918 [111]: 111 root_exec begin n = 62
+
+6305753389377988 [119]: 119 root_exec begin n = 62
+
+6305753304106609 [274]: 274 root_exec begin n = 62
+
+6305753304105497 [257]: 257 root_exec begin n = 62
+
+6305753304104739 [251]: 251 root_exec begin n = 62
+
+6305753304105140 [247]: 247 root_exec begin n = 62
+
+6305752349585063 [52]: 52 root_exec begin n = 62
+
+6305753304106831 [265]: 265 root_exec begin n = 62
+
+6305753304106593 [275]: 275 root_exec begin n = 62
+
+6305753339506047 [154]: 154 root_exec begin n = 62
+
+6305753339507494 [127]: 127 root_exec begin n = 62
+
+6305752349584939 [48]: 48 root_exec begin n = 62
+
+6305752349585357 [75]: 75 root_exec begin n = 62
+
+6305752349585333 [67]: 67 root_exec begin n = 62
+
+6305752349585676 [72]: 72 root_exec begin n = 62
+
+6305752349585596 [69]: 69 root_exec begin n = 62
+
+6305752349585460 [60]: 60 root_exec begin n = 62
+
+6305752349584923 [50]: 50 root_exec begin n = 62
+
+6305752349585366 [58]: 58 root_exec begin n = 62
+
+6305752349585334 [65]: 65 root_exec begin n = 62
+
+6305752349584844 [46]: 46 root_exec begin n = 62
+
+6305752349585380 [70]: 70 root_exec begin n = 62
+
+6305752349585252 [44]: 44 root_exec begin n = 62
+
+6305752349584973 [41]: 41 root_exec begin n = 62
+
+6305752349585422 [55]: 55 root_exec begin n = 62
+
+6305752349585394 [71]: 71 root_exec begin n = 62
+
+6305753339506357 [153]: 153 root_exec begin n = 62
+
+6305753339506897 [137]: 137 root_exec begin n = 62
+
+1607805386215339 [193]: 193 root_exec begin n = 62
+
+1607805386215508 [160]: 160 root_exec begin n = 62
+
+6305753339507070 [122]: 122 root_exec begin n = 62
+
+6305753339505943 [156]: 156 root_exec begin n = 62
+
+1607805386215257 [196]: 196 root_exec begin n = 62
+
+1607805386214581 [168]: 168 root_exec begin n = 62
+
+1607805386214533 [177]: 177 root_exec begin n = 62
+
+6305754340727474 [287]: 287 root_exec begin n = 62
+
+6305754340725863 [300]: 300 root_exec begin n = 62
+
+6305754340727285 [284]: 284 root_exec begin n = 62
+
+6305754340726156 [314]: 314 root_exec begin n = 62
+
+6305754340727257 [293]: 293 root_exec begin n = 62
+
+6305754340728056 [285]: 285 root_exec begin n = 62
+
+6305754340727555 [289]: 289 root_exec begin n = 62
+
+6305754340727672 [298]: 298 root_exec begin n = 62
+
+6305754340727487 [282]: 282 root_exec begin n = 62
+
+6305754340726597 [318]: 318 root_exec begin n = 62
+
+6305753339507411 [139]: 139 root_exec begin n = 62
+
+6305754340726132 [309]: 309 root_exec begin n = 62
+
+6305753339506347 [145]: 145 root_exec begin n = 62
+
+6305753339507117 [129]: 129 root_exec begin n = 62
+
+6305754340726332 [319]: 319 root_exec begin n = 62
+
+6305753339506115 [158]: 158 root_exec begin n = 62
+
+6305754340727768 [295]: 295 root_exec begin n = 62
+
+6305754340726080 [317]: 317 root_exec begin n = 62
+
+6305754340726222 [306]: 306 root_exec begin n = 62
+
+6305754340726066 [311]: 311 root_exec begin n = 62
+
+6305754340725988 [304]: 304 root_exec begin n = 62
+
+6305754340725923 [316]: 316 root_exec begin n = 62
+
+6305753339507366 [128]: 128 root_exec begin n = 62
+
+6305753339506208 [147]: 147 root_exec begin n = 62
+
+6305753339506142 [159]: 159 root_exec begin n = 62
+
+1607805386215526 [183]: 183 root_exec begin n = 62
+
+1607805386215037 [190]: 190 root_exec begin n = 62
+
+1607805386215307 [186]: 186 root_exec begin n = 62
+
+6305753339506069 [150]: 150 root_exec begin n = 62
+
+1607805386214395 [164]: 164 root_exec begin n = 62
+
+6305753339506276 [149]: 149 root_exec begin n = 62
+
+1607805386214570 [170]: 170 root_exec begin n = 62
+
+1607805386215247 [181]: 181 root_exec begin n = 62
+
+1607805386215384 [194]: 194 root_exec begin n = 62
+
+1607805386214670 [174]: 174 root_exec begin n = 62
+
+6305753339506223 [141]: 141 root_exec begin n = 62
+
+6305753339505979 [152]: 152 root_exec begin n = 62
+
+6305754340725651 [303]: 303 root_exec begin n = 62
+
+6305754340725806 [301]: 301 root_exec begin n = 62
+
+6305754340725882 [308]: 308 root_exec begin n = 62
+
+6305753339506988 [131]: 131 root_exec begin n = 62
+
+6305753339507325 [133]: 133 root_exec begin n = 62
+
+1607805386214761 [167]: 167 root_exec begin n = 62
+
+1607805386215336 [197]: 197 root_exec begin n = 62
+
+1607805386215488 [192]: 192 root_exec begin n = 62
+
+1607805386214840 [169]: 169 root_exec begin n = 62
+
+1607805386215533 [191]: 191 root_exec begin n = 62
+
+6305751339645383 [220]: 220 root_exec begin n = 62
+
+6305751339645503 [232]: 232 root_exec begin n = 62
+
+6305751339644674 [212]: 212 root_exec begin n = 62
+
+6305751339644484 [213]: 213 root_exec begin n = 62
+
+6305751339644477 [215]: 215 root_exec begin n = 62
+
+1607805386214649 [175]: 175 root_exec begin n = 62
+
+1607805386214721 [163]: 163 root_exec begin n = 62
+
+1607805386215280 [180]: 180 root_exec begin n = 62
+
+1607805386215288 [195]: 195 root_exec begin n = 62
+
+1607805386215664 [187]: 187 root_exec begin n = 62
+
+6305753304106614 [277]: 277 root_exec begin n = 62
+
+6305753304104812 [248]: 248 root_exec begin n = 62
+
+6305753304105266 [253]: 253 root_exec begin n = 62
+
+6305753304106458 [276]: 276 root_exec begin n = 62
+
+6305753304104765 [250]: 250 root_exec begin n = 62
+
+6305751339644967 [207]: 207 root_exec begin n = 62
+
+6305751339645441 [236]: 236 root_exec begin n = 62
+
+6305751339645258 [225]: 225 root_exec begin n = 62
+
+6305751339644546 [208]: 208 root_exec begin n = 62
+
+6305751339645363 [221]: 221 root_exec begin n = 62
+
+6305751339645553 [205]: 205 root_exec begin n = 62
+
+6305751339645632 [231]: 231 root_exec begin n = 62
+
+6305751339645611 [234]: 234 root_exec begin n = 62
+
+6305751339645476 [237]: 237 root_exec begin n = 62
+
+6305753389377021 [99]: 99 root_exec begin n = 62
+
+6305753389377680 [108]: 108 root_exec begin n = 62
+
+6305753389377155 [88]: 88 root_exec begin n = 62
+
+6305753389377499 [105]: 105 root_exec begin n = 62
+
+6305753389377672 [102]: 102 root_exec begin n = 62
+
+6305753389376702 [90]: 90 root_exec begin n = 62
+
+6305753389378002 [110]: 110 root_exec begin n = 62
+
+6305753389378695 [114]: 114 root_exec begin n = 62
+
+6305751339645429 [227]: 227 root_exec begin n = 62
+
+6305753389377060 [87]: 87 root_exec begin n = 62
+
+6305751339644611 [204]: 204 root_exec begin n = 62
+
+6305751339645277 [226]: 226 root_exec begin n = 62
+
+6305751339644942 [219]: 219 root_exec begin n = 62
+
+6305753304105237 [244]: 244 root_exec begin n = 62
+
+6305753304106642 [278]: 278 root_exec begin n = 62
+
+6305753304106893 [267]: 267 root_exec begin n = 62
+
+6305753304105703 [246]: 246 root_exec begin n = 62
+
+6305751339645738 [206]: 206 root_exec begin n = 62
+
+6305753389376598 [82]: 82 root_exec begin n = 62
+
+6305751339644290 [211]: 211 root_exec begin n = 62
+
+6305753389377870 [106]: 106 root_exec begin n = 62
+
+6305751339645022 [222]: 222 root_exec begin n = 62
+
+6305751339645317 [223]: 223 root_exec begin n = 62
+
+6305753389377157 [83]: 83 root_exec begin n = 62
+
+6305753389377105 [96]: 96 root_exec begin n = 62
+
+6305753389376703 [86]: 86 root_exec begin n = 62
+
+6305753389376949 [81]: 81 root_exec begin n = 62
+
+6305753389376920 [94]: 94 root_exec begin n = 62
+
+6305753389377096 [91]: 91 root_exec begin n = 62
+
+6305753389377815 [104]: 104 root_exec begin n = 62
+
+6305753304104725 [245]: 245 root_exec begin n = 62
+
+6305753304105588 [240]: 240 root_exec begin n = 62
+
+6305753304105360 [249]: 249 root_exec begin n = 62
+
+6305753304106750 [262]: 262 root_exec begin n = 62
+
+6305753304106272 [266]: 266 root_exec begin n = 62
+
+6305753304105734 [255]: 255 root_exec begin n = 62
+
+6305753304106549 [271]: 271 root_exec begin n = 62
+
+6305753304106676 [279]: 279 root_exec begin n = 62
+
+6305753304105418 [259]: 259 root_exec begin n = 62
+
+6305753339507253 [138]: 138 root_exec begin n = 62
+
+6305753339506014 [157]: 157 root_exec begin n = 62
+
+6305753389378106 [100]: 100 root_exec begin n = 62
+
+6305753389377731 [107]: 107 root_exec begin n = 62
+
+6305753389377703 [113]: 113 root_exec begin n = 62
+
+6305753389378042 [115]: 115 root_exec begin n = 62
+
+6305753389378026 [109]: 109 root_exec begin n = 62
+
+6305753339506417 [143]: 143 root_exec begin n = 62
+
+6305753339506327 [155]: 155 root_exec begin n = 62
+
+6305753339506173 [144]: 144 root_exec begin n = 62
+
+6305753304106551 [270]: 270 root_exec begin n = 62
+
+6305753304106850 [263]: 263 root_exec begin n = 62
+
+6305753304105467 [254]: 254 root_exec begin n = 62
+
+6305753304105626 [242]: 242 root_exec begin n = 62
+
+6305752349585298 [74]: 74 root_exec begin n = 62
+
+6305752349585420 [73]: 73 root_exec begin n = 62
+
+6305752349585263 [54]: 54 root_exec begin n = 62
+
+6305752349585465 [59]: 59 root_exec begin n = 62
+
+6305752349585334 [51]: 51 root_exec begin n = 62
+
+6305752349585543 [66]: 66 root_exec begin n = 62
+
+6305752349585129 [64]: 64 root_exec begin n = 62
+
+6305752349585217 [56]: 56 root_exec begin n = 62
+
+6305752349585491 [61]: 61 root_exec begin n = 62
+
+6305752349585380 [45]: 45 root_exec begin n = 62
+
+6305752349585448 [68]: 68 root_exec begin n = 62
+
+6305752349585018 [43]: 43 root_exec begin n = 62
+
+6305752349585713 [77]: 77 root_exec begin n = 62
+
+6305752349585624 [79]: 79 root_exec begin n = 62
+
+6305752349585572 [63]: 63 root_exec begin n = 62
+
+6305752349585152 [42]: 42 root_exec begin n = 62
+
+6305752349585308 [53]: 53 root_exec begin n = 62
+
+6305752349585045 [62]: 62 root_exec begin n = 62
+
+6305753339507005 [134]: 134 root_exec begin n = 62
+
+6305753339507465 [130]: 130 root_exec begin n = 62
+
+6305752349585400 [57]: 57 root_exec begin n = 62
+
+6305752349585430 [47]: 47 root_exec begin n = 62
+
+6305752349585374 [78]: 78 root_exec begin n = 62
+
+6305752349585640 [76]: 76 root_exec begin n = 62
+
+6305752349585052 [49]: 49 root_exec begin n = 62
+
+6305753339506085 [146]: 146 root_exec begin n = 62
+
+6305752349585177 [40]: 40 root_exec begin n = 62
+
+6305753339507056 [136]: 136 root_exec begin n = 62
+
+6305753339507400 [121]: 121 root_exec begin n = 62
+
+6305753339506031 [151]: 151 root_exec begin n = 62
+
+6305753339506451 [142]: 142 root_exec begin n = 62
+
+6305753339506284 [148]: 148 root_exec begin n = 62
+
+6305753339506186 [140]: 140 root_exec begin n = 62
+
+6305753339507073 [123]: 123 root_exec begin n = 62
+
+6305753339507202 [125]: 125 root_exec begin n = 62
+
+6305753339507064 [126]: 126 root_exec begin n = 62
+
+6305753339506908 [132]: 132 root_exec begin n = 62
+
+6305753339507269 [120]: 120 root_exec begin n = 62
+
+6305753339507024 [124]: 124 root_exec begin n = 62
+
+[0] Process time 68,848,134,405 ns = 68.848134 s
+ - Result verified: fib(62) = 6557470319842
+

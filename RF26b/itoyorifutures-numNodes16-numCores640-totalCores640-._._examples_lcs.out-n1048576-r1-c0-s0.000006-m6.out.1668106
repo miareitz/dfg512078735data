@@ -1,0 +1,2043 @@
+JobId=1668106 JobName=itoyorifutures-numNodes16-numCores640-totalCores640-._._examples_lcs.out-n1048576-r1-c0-s0.000006-m6
+   UserId=reitz(59092) GroupId=apgas(58116) MCS_label=N/A
+   Priority=1019872 Nice=0 Account=apgas QOS=normal
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   DerivedExitCode=0:0
+   RunTime=00:00:00 TimeLimit=00:20:00 TimeMin=N/A
+   SubmitTime=2026-04-26T23:36:38 EligibleTime=2026-04-26T23:36:38
+   AccrueTime=2026-04-26T23:36:38
+   StartTime=2026-04-26T23:44:13 EndTime=2026-04-27T00:04:13 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-04-26T23:44:13 Scheduler=Main
+   Partition=general1 AllocNode:Sid=login01:521574
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=node23-[021-028],node24-[010-017]
+   BatchHost=node23-021
+   NumNodes=16 NumCPUs=1280 NumTasks=640 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=640,mem=1280G,node=16,billing=640
+   AllocTRES=cpu=1280,mem=2.50T,node=16,billing=1280
+   Socks/Node=* NtasksPerN:B:S:C=40:0:*:* CoreSpec=*
+   JOB_GRES=(null)
+     Nodes=node23-[021-028],node24-[010-017] CPU_IDs=0-79 Mem=163840 GRES=
+   MinCPUsNode=40 MinMemoryCPU=2G MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null)
+   Command=/tmp/tmp.xTeF3WvMq2
+   WorkDir=/home/apgas/reitz/itoyorift/scripts
+   StdErr=/home/apgas/reitz/out/itoyorifutures-numNodes16-numCores640-totalCores640-._._examples_lcs.out-n1048576-r1-c0-s0.000006-m6.err.1668106
+   StdIn=/dev/null
+   StdOut=/home/apgas/reitz/out/itoyorifutures-numNodes16-numCores640-totalCores640-._._examples_lcs.out-n1048576-r1-c0-s0.000006-m6.out.1668106
+   Power=
+   
+
+=============================================================
+[Longest Common Subsequence (LCS)]
+# of processes:               640
+N (Input size):               1048576
+# of repeats:                 1
+Check enabled:                0
+Max injected SDCs:            6
+Cutoff:                       512
+-------------------------------------------------------------
+[Compile Options]
+ITYR_MAX_VERBOSE_LEVEL=0
+ITYR_PROFILER_MODE=disabled
+ITYR_RMA_IMPL=mpi
+ITYR_ALLOCATOR_USE_BOOST=0
+ITYR_ALLOCATOR_USE_DYNAMIC_WIN=false
+ITYR_ITO_SCHEDULER=randws
+-------------------------------------------------------------
+[Runtime Options]
+ITYR_ENABLE_SHARED_MEMORY=1
+ITYR_GLOBAL_CLOCK_SYNC_ROUND_TRIPS=100
+ITYR_PROF_OUTPUT_PER_RANK=1
+ITYR_RMA_USE_MPI_WIN_ALLOCATE=0
+ITYR_ALLOCATOR_BLOCK_SIZE=2097152
+ITYR_ALLOCATOR_MAX_UNFLUSHED_FREE_OBJS=10
+ITYR_ITO_STACK_SIZE=2097152
+ITYR_ITO_WSQUEUE_CAPACITY=1024
+ITYR_ITO_THREAD_STATE_ALLOCATOR_SIZE=2097152
+ITYR_ITO_SUSPENDED_THREAD_ALLOCATOR_SIZE=134217728
+ITYR_ITO_CHECKPOINT_ALLOCATOR_SIZE=268435456
+ITYR_ITO_FUTURE_POOL_SIZE=2147483648
+ITYR_ITO_REGULAR_CHECKPOINT_INTERVAL=10000
+ITYR_ITO_SCHED_LOOP_MAKE_MPI_PROGRESS=1
+ITYR_REPLAY_RECURSIVE_SYNTH_BUDGET=128
+ITYR_REPLAY_RECURSIVE_SYNTH_NODE_LIMIT=2048
+ITYR_REPLAY_TRAVERSAL_WORK_QUEUE=1
+ITYR_REPLAY_TRAVERSAL_WORK_QUEUE_MIN_RANKS=64
+ITYR_REPLAY_TRAVERSAL_WORK_QUEUE_OWNER_YIELD_POLLS=64
+ITYR_REPLAY_TRAVERSAL_WORK_QUEUE_ROOT_SPLIT_BUDGET=3
+=============================================================
+
+injecting SDC at tile=(437,152) field=down target=671
+injecting SDC at tile=(331,1012) field=down target=864
+injecting SDC at tile=(337,1009) field=down target=837
+injecting SDC at tile=(812,552) field=down target=538
+injecting SDC at tile=(928,494) field=right target=59
+injecting SDC at tile=(65,1740) field=down target=739
+[0] First tree duration 5,719,073,678 ns = 5.719074 s
+[0] Twin tree duration 5,471,878,339 ns = 5.471878 s
+[0] Traversal duration 265,983,464 ns = 0.265983 s
+[0] Replay source-skip patch lcs_slot0_internal=1 value_mismatch_detail=1
+[0] Precompute_direct instrumentation tasks_executed=0 eom_calls=25 eom_ns=81945990 marked_hist=[0,0,0,0,0]
+[0] Traversal phase breakdown root_exec_once=63310 clear_analysis=336 seed_needed=15115 propagate_needed=29126 precompute_direct=249378687 materialize_marked=228958
+[0] Traversal materialize_marked detail alloc_init=50531 cache_publish=1412 entries=5 cache_writes=24 leaf_scans=0
+[0] Traversal materialize_marked split self=306 child=228155
+[0] Traversal materialize_marked child split marked=0 direct=228155 source=0
+[0] Traversal materialize_marked direct branch parent=33904 callee=194251
+[0] Traversal materialize_marked direct branch cache=1056
+[0] Traversal materialize_marked direct branch output_match=0
+[0] Traversal materialize_direct detail self=596 child_direct=0 child_source=0 output_match=119032
+[0] Traversal materialize_direct self split lookup_second=0 child_shape=0
+[0] Traversal profile run_root=16825 pre_cache=0 analyze_marked=0 build_analysis=0 resolve_deps=0 mark_needed=0 finalize=0 materialize=0 lookup_second_calls=1 lookup_second=224 output_match_calls=0 output_match=0 marked_visible_calls=0 marked_visible=0 values_match=0 value_ptr_scan=0
+[0] Exact-proof values_match local(output=0 leaf=0 generic=0) size_mismatch=0 full=0 equal=0 unequal=0 fetch_bytes=0 avg_fetch=0 buckets(le64=0 le512=0 gt512=0) ns=0
+[0] Output-match paths recursive(bridge=0 visible=0) callers(dep_nonleaf=0 dep_leaf=0 between_runs=0 unknown_fallback=0 materialize_root=0 materialize_child=4 replay_child=0) path(visible_taken=0 true=0 false=0 values_taken=0 true=0 false=0)
+[0] Output-match bridge detail cache(hit_true=0 hit_false=0) dep_shortcut(hit=0 miss=0 nonleaf_calls=0 nonleaf_ns=0) bridge_ns=0
+[0] Third tree duration 5,426,899,772 ns = 5.426900 s
+[0] Replay fork profile total=177194631 parent_validate=228 child_resolve=329 child_validate=425 decision=921
+[0] Replay detail parent_rechecks=1 materialize_calls=0 materialize=0 leaf_fast=0 leaf_slow=0 value_cache_hit=0 value_recompute=0 replay_exec=1 affected_tasks=5
+[0] Replay child-derive null(first=0 second=0 both=0) classify(marked=0 unmarked=0 unmarked_true=0 unmarked_false=0) null_resolve=0 (parents=0 children=0 classify=0)
+[0] EOM leaf-compare reached_calls=0 reached_ns=0
+[0] Replay decision causes skip(exact_leaf=0 exact_recursive=0 source_leaf=0 source_alias=0) exec(incorrect_child=1 cheap_false=0 cheap_true_no_skip=0)
+[0] Replay sync profile sync_calls=20302 sync_total=124284466 sync_done=64542967 sync_copy=58632772 resume_calls=6480 resume_total=30974852 resume_copy=30784313
+[0] Replay source-skip reasons success=0 null_replay=0 invalid_entries=0 needed=0 infected=4 local_mismatch=0 value_mismatch=0
+[0] Replay source-skip value-mismatch detail subtree_open=0 shape=0 layout=0 child_shape=0 child_nonleaf=0 child_output=0
+[0] Replay recursive/materialize reasons missing_replay_child=0 recurse=0 direct_clean=0 recurse_incorrect=0 recurse_needed=0 recurse_infected=0
+[0] Replay traversal derivation local_visible=0 local_value=0 local_leaf=0 local_fallback=0 local_forced_false=0 infected_dep_mismatch=0 infected_owner_rescued=0
+[0] Replay traversal classify second_missing=0 local_false_no_proof=0 infected_final=0 needed(second_missing=0 root=0 child=0)
+[0] Replay traversal dep-edge known_mask=0 unknown_mask=0 success_mask=0 success_consumer=0 fail_missing_second=0 fail_shape=0 fail_mask_miss=0 fail_consumer_miss=0 fallback_hit=0 fallback_miss=0
+[0] Replay traversal dep-edge causal known_mask(fallback=0 direct_owner=0 infected=0) consumer_miss(fallback=0 direct_owner=0 infected=0) missing_second(fallback=0 direct_owner=0 infected=0) shape(fallback=0 direct_owner=0 infected=0)
+[0] Replay fork derivation clean=0 local_only_bad=0 infected_only=0 both_bad=0 cheap_true=0 cheap_false_needed=0 cheap_false_local=0 cheap_false_infected=0
+[1] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=126753949 marked_hist=[0,0,0,0,0] tasks_executed=0
+[1] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[1] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[2] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=181411640 marked_hist=[0,0,0,0,0] tasks_executed=0
+[2] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[2] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[3] PerRank precompute_direct ns=0 eom_calls=49 eom_ns=187144347 marked_hist=[0,0,0,0,0] tasks_executed=0
+[3] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[3] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[5] PerRank precompute_direct ns=0 eom_calls=41 eom_ns=175545467 marked_hist=[0,0,0,0,0] tasks_executed=0
+[5] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[5] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[4] PerRank precompute_direct ns=0 eom_calls=45 eom_ns=199930160 marked_hist=[0,0,0,0,0] tasks_executed=0
+[4] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[4] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[6] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=164230651 marked_hist=[0,0,0,0,0] tasks_executed=0
+[6] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[6] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[7] PerRank precompute_direct ns=0 eom_calls=24 eom_ns=82075941 marked_hist=[0,0,0,0,0] tasks_executed=0
+[7] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[7] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[9] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=184594692 marked_hist=[0,0,0,0,0] tasks_executed=0
+[9] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[9] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[8] PerRank precompute_direct ns=0 eom_calls=44 eom_ns=170044806 marked_hist=[0,0,0,0,0] tasks_executed=0
+[8] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[8] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[10] PerRank precompute_direct ns=0 eom_calls=41 eom_ns=169113463 marked_hist=[0,0,0,0,0] tasks_executed=0
+[10] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[10] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[12] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=138970049 marked_hist=[0,0,0,0,0] tasks_executed=0
+[12] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[12] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[11] PerRank precompute_direct ns=0 eom_calls=44 eom_ns=186194369 marked_hist=[0,0,0,0,0] tasks_executed=0
+[11] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[11] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[14] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=130003328 marked_hist=[0,0,0,0,0] tasks_executed=0
+[14] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[14] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[13] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=150470676 marked_hist=[0,0,0,0,0] tasks_executed=0
+[13] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[13] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[15] PerRank precompute_direct ns=0 eom_calls=47 eom_ns=199129102 marked_hist=[0,0,0,0,0] tasks_executed=0
+[15] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[15] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[16] PerRank precompute_direct ns=0 eom_calls=52 eom_ns=224990690 marked_hist=[0,0,0,0,0] tasks_executed=0
+[16] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[16] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[17] PerRank precompute_direct ns=0 eom_calls=43 eom_ns=184472978 marked_hist=[0,0,0,0,0] tasks_executed=0
+[17] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[17] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[18] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=131709654 marked_hist=[0,0,0,0,0] tasks_executed=0
+[18] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[18] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[19] PerRank precompute_direct ns=0 eom_calls=31 eom_ns=124611733 marked_hist=[0,0,0,0,0] tasks_executed=0
+[19] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[19] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[20] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=141473742 marked_hist=[0,0,0,0,0] tasks_executed=0
+[20] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[20] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[22] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=144785221 marked_hist=[0,0,0,0,0] tasks_executed=0
+[22] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[22] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[21] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=144075802 marked_hist=[0,0,0,0,0] tasks_executed=0
+[21] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[21] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[25] PerRank precompute_direct ns=0 eom_calls=31 eom_ns=136632359 marked_hist=[0,0,0,0,0] tasks_executed=0
+[25] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[25] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[23] PerRank precompute_direct ns=0 eom_calls=37 eom_ns=150249377 marked_hist=[0,0,0,0,0] tasks_executed=0
+[23] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[23] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[24] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=135895058 marked_hist=[0,0,0,0,0] tasks_executed=0
+[24] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[24] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[27] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=139662274 marked_hist=[0,0,0,0,0] tasks_executed=0
+[27] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[27] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[26] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=142338854 marked_hist=[0,0,0,0,0] tasks_executed=0
+[26] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[26] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[28] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=135885872 marked_hist=[0,0,0,0,0] tasks_executed=0
+[28] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[28] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[30] PerRank precompute_direct ns=0 eom_calls=40 eom_ns=145925657 marked_hist=[0,0,0,0,0] tasks_executed=0
+[30] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[30] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[29] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=140703174 marked_hist=[0,0,0,0,0] tasks_executed=0
+[29] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[29] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[31] PerRank precompute_direct ns=0 eom_calls=40 eom_ns=200004179 marked_hist=[0,0,0,0,0] tasks_executed=0
+[31] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[31] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[32] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=196265931 marked_hist=[0,0,0,0,0] tasks_executed=0
+[32] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[32] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[34] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=140932218 marked_hist=[0,0,0,0,0] tasks_executed=0
+[34] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[34] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[33] PerRank precompute_direct ns=0 eom_calls=30 eom_ns=123900550 marked_hist=[0,0,0,0,0] tasks_executed=0
+[33] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[33] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[35] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=150972904 marked_hist=[0,0,0,0,0] tasks_executed=0
+[35] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[35] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[36] PerRank precompute_direct ns=0 eom_calls=41 eom_ns=159757427 marked_hist=[0,0,0,0,0] tasks_executed=0
+[36] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[36] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[37] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=143941321 marked_hist=[0,0,0,0,0] tasks_executed=0
+[37] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[37] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[39] PerRank precompute_direct ns=0 eom_calls=29 eom_ns=99497330 marked_hist=[0,0,0,0,0] tasks_executed=0
+[39] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[39] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[38] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=178914541 marked_hist=[0,0,0,0,0] tasks_executed=0
+[38] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[38] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[40] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=130338428 marked_hist=[0,0,0,0,0] tasks_executed=0
+[40] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[40] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[41] PerRank precompute_direct ns=0 eom_calls=37 eom_ns=153080814 marked_hist=[0,0,0,0,0] tasks_executed=0
+[41] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[41] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[42] PerRank precompute_direct ns=0 eom_calls=43 eom_ns=189552190 marked_hist=[0,0,0,0,0] tasks_executed=0
+[42] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[42] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[43] PerRank precompute_direct ns=0 eom_calls=28 eom_ns=101532372 marked_hist=[0,0,0,0,0] tasks_executed=0
+[43] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[43] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[44] PerRank precompute_direct ns=0 eom_calls=22 eom_ns=80291519 marked_hist=[0,0,0,0,0] tasks_executed=0
+[44] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[44] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[45] PerRank precompute_direct ns=0 eom_calls=40 eom_ns=179009044 marked_hist=[0,0,0,0,0] tasks_executed=0
+[45] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[45] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[46] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=152133991 marked_hist=[0,0,0,0,0] tasks_executed=0
+[46] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[46] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[47] PerRank precompute_direct ns=0 eom_calls=31 eom_ns=97776455 marked_hist=[0,0,0,0,0] tasks_executed=0
+[47] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[47] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[48] PerRank precompute_direct ns=0 eom_calls=45 eom_ns=173808268 marked_hist=[0,0,0,0,0] tasks_executed=0
+[48] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[48] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[49] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=130184325 marked_hist=[0,0,0,0,0] tasks_executed=0
+[49] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[49] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[80] PerRank precompute_direct ns=0 eom_calls=40 eom_ns=184525325 marked_hist=[0,0,0,0,0] tasks_executed=0
+[80] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[80] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[50] PerRank precompute_direct ns=0 eom_calls=23 eom_ns=90907370 marked_hist=[0,0,0,0,0] tasks_executed=0
+[50] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[50] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[82] PerRank precompute_direct ns=0 eom_calls=42 eom_ns=174474950 marked_hist=[0,0,0,0,0] tasks_executed=0
+[82] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[82] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[51] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=158616699 marked_hist=[0,0,0,0,0] tasks_executed=0
+[51] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[51] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[52] PerRank precompute_direct ns=0 eom_calls=41 eom_ns=191811537 marked_hist=[0,0,0,0,0] tasks_executed=0
+[52] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[52] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[81] PerRank precompute_direct ns=0 eom_calls=52 eom_ns=251298944 marked_hist=[0,0,0,0,0] tasks_executed=0
+[81] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[81] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[84] PerRank precompute_direct ns=0 eom_calls=37 eom_ns=134598034 marked_hist=[0,0,0,0,0] tasks_executed=0
+[84] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[84] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[83] PerRank precompute_direct ns=0 eom_calls=42 eom_ns=192158144 marked_hist=[0,0,0,0,0] tasks_executed=0
+[83] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[83] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[88] PerRank precompute_direct ns=0 eom_calls=43 eom_ns=173725511 marked_hist=[0,0,0,0,0] tasks_executed=0
+[88] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[88] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[87] PerRank precompute_direct ns=0 eom_calls=3 eom_ns=461838530 marked_hist=[0,0,0,0,0] tasks_executed=0
+[87] PerRank values_match full=2187 equal=2187 unequal=0 fetch_bytes=17933400 ns=0
+[87] PerRank output_match bridge=3279 visible=0 bridge_ns=0 values_taken=2187 values_true=2187 values_false=0
+[85] PerRank precompute_direct ns=0 eom_calls=52 eom_ns=209013407 marked_hist=[0,0,0,0,0] tasks_executed=0
+[85] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[85] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[86] PerRank precompute_direct ns=0 eom_calls=46 eom_ns=213497953 marked_hist=[0,0,0,0,0] tasks_executed=0
+[86] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[86] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[89] PerRank precompute_direct ns=0 eom_calls=40 eom_ns=148303681 marked_hist=[0,0,0,0,0] tasks_executed=0
+[89] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[89] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[90] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=114891483 marked_hist=[0,0,0,0,0] tasks_executed=0
+[90] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[90] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[91] PerRank precompute_direct ns=0 eom_calls=41 eom_ns=154818849 marked_hist=[0,0,0,0,0] tasks_executed=0
+[91] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[91] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[92] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=163689411 marked_hist=[0,0,0,0,0] tasks_executed=0
+[92] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[92] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[53] PerRank precompute_direct ns=0 eom_calls=46 eom_ns=211900145 marked_hist=[0,0,0,0,0] tasks_executed=0
+[53] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[53] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[55] PerRank precompute_direct ns=0 eom_calls=29 eom_ns=118066925 marked_hist=[0,0,0,0,0] tasks_executed=0
+[55] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[55] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[54] PerRank precompute_direct ns=0 eom_calls=40 eom_ns=167780694 marked_hist=[0,0,0,0,0] tasks_executed=0
+[54] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[54] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[58] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=131196426 marked_hist=[0,0,0,0,0] tasks_executed=0
+[58] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[58] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[0] PerRank precompute_direct ns=249378687 eom_calls=25 eom_ns=81945990 marked_hist=[0,0,0,0,0] tasks_executed=0
+[0] PerRank values_match full=1 equal=1 unequal=0 fetch_bytes=8 ns=2920
+[0] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[122] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=161358234 marked_hist=[0,0,0,0,0] tasks_executed=0
+[122] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[122] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[57] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=143891912 marked_hist=[0,0,0,0,0] tasks_executed=0
+[57] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[57] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[56] PerRank precompute_direct ns=0 eom_calls=31 eom_ns=118959891 marked_hist=[0,0,0,0,0] tasks_executed=0
+[56] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[56] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[121] PerRank precompute_direct ns=0 eom_calls=53 eom_ns=245958068 marked_hist=[0,0,0,0,0] tasks_executed=0
+[121] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[121] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[123] PerRank precompute_direct ns=0 eom_calls=37 eom_ns=138218300 marked_hist=[0,0,0,0,0] tasks_executed=0
+[123] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[123] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[120] PerRank precompute_direct ns=0 eom_calls=29 eom_ns=109095535 marked_hist=[0,0,0,0,0] tasks_executed=0
+[120] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[120] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[124] PerRank precompute_direct ns=0 eom_calls=40 eom_ns=191595875 marked_hist=[0,0,0,0,0] tasks_executed=0
+[124] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[124] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[0] First tree TOTAL TASKS: 5592405
+[0] Twin tree TOTAL TASKS: 5592405
+[0] Third tree TOTAL TASKS: 5592405
+[0] Replay fork stats exact_skip=0 source_skip=0 parent_drop=0 child_null=0 child_invalid=0 child_validation_miss=0 replay_exec=4 needed=0 value_mismatch=4 source_invalid=0 local_mismatch=4 infected=4
+[0] Replay child-derive global null(first=0 second=0 both=0) classify(marked=0 unmarked=0 unmarked_true=0 unmarked_false=0) null_resolve=0
+[0] Replay decision causes global skip(exact_leaf=0 exact_recursive=0 source_leaf=0 source_alias=0) exec(incorrect_child=4 cheap_false=0 cheap_true_no_skip=0)
+[0] Replay traversal classify global second_missing=0 local_false_no_proof=0 infected_final=0 needed(second_missing=0 root=0 child=0)
+[0] Replay source-skip reasons global success=0 null_replay=0 invalid_entries=0 needed=0 infected=4 local_mismatch=0 value_mismatch=0
+[0] Replay source-skip value-mismatch detail global subtree_open=0 shape=0 layout=0 child_shape=0 child_nonleaf=0 child_output=0
+[0] Replay recursive/materialize reasons global missing_replay_child=0 recurse=0 direct_clean=0 recurse_incorrect=0 recurse_needed=0 recurse_infected=0
+[125] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=140695971 marked_hist=[0,0,0,0,0] tasks_executed=0
+[125] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[125] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[127] PerRank precompute_direct ns=0 eom_calls=29 eom_ns=122152345 marked_hist=[0,0,0,0,0] tasks_executed=0
+[127] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[127] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[0] Process time 16,898,564,819 ns = 16.898565 s
+
+[126] PerRank precompute_direct ns=0 eom_calls=40 eom_ns=198883810 marked_hist=[0,0,0,0,0] tasks_executed=0
+[126] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[126] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[128] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=113361307 marked_hist=[0,0,0,0,0] tasks_executed=0
+[128] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[128] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[129] PerRank precompute_direct ns=0 eom_calls=42 eom_ns=174132181 marked_hist=[0,0,0,0,0] tasks_executed=0
+[129] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[129] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[130] PerRank precompute_direct ns=0 eom_calls=37 eom_ns=198284715 marked_hist=[0,0,0,0,0] tasks_executed=0
+[130] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[130] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[131] PerRank precompute_direct ns=0 eom_calls=40 eom_ns=155842874 marked_hist=[0,0,0,0,0] tasks_executed=0
+[131] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[131] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[132] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=154278244 marked_hist=[0,0,0,0,0] tasks_executed=0
+[132] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[132] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[163] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=145359865 marked_hist=[0,0,0,0,0] tasks_executed=0
+[163] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[163] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[160] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=141187592 marked_hist=[0,0,0,0,0] tasks_executed=0
+[160] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[160] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[161] PerRank precompute_direct ns=0 eom_calls=40 eom_ns=167715358 marked_hist=[0,0,0,0,0] tasks_executed=0
+[161] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[161] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[162] PerRank precompute_direct ns=0 eom_calls=27 eom_ns=111183910 marked_hist=[0,0,0,0,0] tasks_executed=0
+[162] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[162] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[165] PerRank precompute_direct ns=0 eom_calls=25 eom_ns=99606436 marked_hist=[0,0,0,0,0] tasks_executed=0
+[165] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[165] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[164] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=182720246 marked_hist=[0,0,0,0,0] tasks_executed=0
+[164] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[164] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[166] PerRank precompute_direct ns=0 eom_calls=29 eom_ns=99664731 marked_hist=[0,0,0,0,0] tasks_executed=0
+[166] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[166] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[168] PerRank precompute_direct ns=0 eom_calls=31 eom_ns=113441165 marked_hist=[0,0,0,0,0] tasks_executed=0
+[168] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[168] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[59] PerRank precompute_direct ns=0 eom_calls=31 eom_ns=123160782 marked_hist=[0,0,0,0,0] tasks_executed=0
+[59] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[59] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[60] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=132194114 marked_hist=[0,0,0,0,0] tasks_executed=0
+[60] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[60] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[167] PerRank precompute_direct ns=0 eom_calls=40 eom_ns=163989172 marked_hist=[0,0,0,0,0] tasks_executed=0
+[167] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[167] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[169] PerRank precompute_direct ns=0 eom_calls=30 eom_ns=122086541 marked_hist=[0,0,0,0,0] tasks_executed=0
+[169] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[169] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[170] PerRank precompute_direct ns=0 eom_calls=28 eom_ns=108621262 marked_hist=[0,0,0,0,0] tasks_executed=0
+[170] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[170] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[171] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=140911390 marked_hist=[0,0,0,0,0] tasks_executed=0
+[171] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[171] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[62] PerRank precompute_direct ns=0 eom_calls=43 eom_ns=185211886 marked_hist=[0,0,0,0,0] tasks_executed=0
+[62] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[62] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[172] PerRank precompute_direct ns=0 eom_calls=26 eom_ns=105426540 marked_hist=[0,0,0,0,0] tasks_executed=0
+[172] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[172] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[61] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=177851289 marked_hist=[0,0,0,0,0] tasks_executed=0
+[61] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[61] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[63] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=177949530 marked_hist=[0,0,0,0,0] tasks_executed=0
+[63] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[63] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[64] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=151742402 marked_hist=[0,0,0,0,0] tasks_executed=0
+[64] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[64] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[65] PerRank precompute_direct ns=0 eom_calls=42 eom_ns=165666724 marked_hist=[0,0,0,0,0] tasks_executed=0
+[65] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[65] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[66] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=130432068 marked_hist=[0,0,0,0,0] tasks_executed=0
+[66] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[66] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[68] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=139146971 marked_hist=[0,0,0,0,0] tasks_executed=0
+[68] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[68] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[67] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=131075091 marked_hist=[0,0,0,0,0] tasks_executed=0
+[67] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[67] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[69] PerRank precompute_direct ns=0 eom_calls=45 eom_ns=200304359 marked_hist=[0,0,0,0,0] tasks_executed=0
+[69] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[69] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[201] PerRank precompute_direct ns=0 eom_calls=26 eom_ns=106309545 marked_hist=[0,0,0,0,0] tasks_executed=0
+[201] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[201] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[70] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=127453532 marked_hist=[0,0,0,0,0] tasks_executed=0
+[70] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[70] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[71] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=122973255 marked_hist=[0,0,0,0,0] tasks_executed=0
+[71] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[71] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[200] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=163358215 marked_hist=[0,0,0,0,0] tasks_executed=0
+[200] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[200] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[202] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=150210190 marked_hist=[0,0,0,0,0] tasks_executed=0
+[202] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[202] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[203] PerRank precompute_direct ns=0 eom_calls=30 eom_ns=153547229 marked_hist=[0,0,0,0,0] tasks_executed=0
+[203] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[203] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[204] PerRank precompute_direct ns=0 eom_calls=41 eom_ns=176421019 marked_hist=[0,0,0,0,0] tasks_executed=0
+[204] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[204] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[205] PerRank precompute_direct ns=0 eom_calls=28 eom_ns=120174250 marked_hist=[0,0,0,0,0] tasks_executed=0
+[205] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[205] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[207] PerRank precompute_direct ns=0 eom_calls=31 eom_ns=118471317 marked_hist=[0,0,0,0,0] tasks_executed=0
+[207] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[207] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[208] PerRank precompute_direct ns=0 eom_calls=50 eom_ns=209841641 marked_hist=[0,0,0,0,0] tasks_executed=0
+[208] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[208] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[206] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=229347098 marked_hist=[0,0,0,0,0] tasks_executed=0
+[206] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[206] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[210] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=131103907 marked_hist=[0,0,0,0,0] tasks_executed=0
+[210] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[210] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[211] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=163201313 marked_hist=[0,0,0,0,0] tasks_executed=0
+[211] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[211] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[209] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=132726504 marked_hist=[0,0,0,0,0] tasks_executed=0
+[209] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[209] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[212] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=147481334 marked_hist=[0,0,0,0,0] tasks_executed=0
+[212] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[212] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[213] PerRank precompute_direct ns=0 eom_calls=27 eom_ns=109739673 marked_hist=[0,0,0,0,0] tasks_executed=0
+[213] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[213] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[241] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=134912716 marked_hist=[0,0,0,0,0] tasks_executed=0
+[241] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[241] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[240] PerRank precompute_direct ns=0 eom_calls=30 eom_ns=126450803 marked_hist=[0,0,0,0,0] tasks_executed=0
+[240] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[240] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[242] PerRank precompute_direct ns=0 eom_calls=43 eom_ns=174811672 marked_hist=[0,0,0,0,0] tasks_executed=0
+[242] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[242] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[280] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=152917539 marked_hist=[0,0,0,0,0] tasks_executed=0
+[280] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[280] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[243] PerRank precompute_direct ns=0 eom_calls=40 eom_ns=181753217 marked_hist=[0,0,0,0,0] tasks_executed=0
+[243] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[243] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[245] PerRank precompute_direct ns=0 eom_calls=31 eom_ns=131895861 marked_hist=[0,0,0,0,0] tasks_executed=0
+[245] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[245] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[244] PerRank precompute_direct ns=0 eom_calls=28 eom_ns=102150251 marked_hist=[0,0,0,0,0] tasks_executed=0
+[244] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[244] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[94] PerRank precompute_direct ns=0 eom_calls=45 eom_ns=157171328 marked_hist=[0,0,0,0,0] tasks_executed=0
+[94] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[94] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[95] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=146137874 marked_hist=[0,0,0,0,0] tasks_executed=0
+[95] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[95] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[246] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=138833032 marked_hist=[0,0,0,0,0] tasks_executed=0
+[246] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[246] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[247] PerRank precompute_direct ns=0 eom_calls=29 eom_ns=115590525 marked_hist=[0,0,0,0,0] tasks_executed=0
+[247] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[247] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[93] PerRank precompute_direct ns=0 eom_calls=50 eom_ns=201161238 marked_hist=[0,0,0,0,0] tasks_executed=0
+[93] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[93] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[248] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=137486713 marked_hist=[0,0,0,0,0] tasks_executed=0
+[248] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[248] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[249] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=146631396 marked_hist=[0,0,0,0,0] tasks_executed=0
+[249] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[249] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[250] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=155914743 marked_hist=[0,0,0,0,0] tasks_executed=0
+[250] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[250] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[281] PerRank precompute_direct ns=0 eom_calls=41 eom_ns=172939522 marked_hist=[0,0,0,0,0] tasks_executed=0
+[281] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[281] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[282] PerRank precompute_direct ns=0 eom_calls=42 eom_ns=181052669 marked_hist=[0,0,0,0,0] tasks_executed=0
+[282] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[282] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[283] PerRank precompute_direct ns=0 eom_calls=43 eom_ns=186730319 marked_hist=[0,0,0,0,0] tasks_executed=0
+[283] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[283] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[284] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=132023402 marked_hist=[0,0,0,0,0] tasks_executed=0
+[284] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[284] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[285] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=152829078 marked_hist=[0,0,0,0,0] tasks_executed=0
+[285] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[285] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[286] PerRank precompute_direct ns=0 eom_calls=31 eom_ns=125034450 marked_hist=[0,0,0,0,0] tasks_executed=0
+[286] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[286] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[287] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=149966333 marked_hist=[0,0,0,0,0] tasks_executed=0
+[287] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[287] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[288] PerRank precompute_direct ns=0 eom_calls=44 eom_ns=169536270 marked_hist=[0,0,0,0,0] tasks_executed=0
+[288] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[288] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[289] PerRank precompute_direct ns=0 eom_calls=29 eom_ns=114634017 marked_hist=[0,0,0,0,0] tasks_executed=0
+[289] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[289] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[290] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=138530136 marked_hist=[0,0,0,0,0] tasks_executed=0
+[290] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[290] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[96] PerRank precompute_direct ns=0 eom_calls=31 eom_ns=106704043 marked_hist=[0,0,0,0,0] tasks_executed=0
+[96] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[96] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[98] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=156486901 marked_hist=[0,0,0,0,0] tasks_executed=0
+[98] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[98] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[97] PerRank precompute_direct ns=0 eom_calls=44 eom_ns=194250468 marked_hist=[0,0,0,0,0] tasks_executed=0
+[97] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[97] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[99] PerRank precompute_direct ns=0 eom_calls=50 eom_ns=204644940 marked_hist=[0,0,0,0,0] tasks_executed=0
+[99] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[99] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[74] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=154075735 marked_hist=[0,0,0,0,0] tasks_executed=0
+[74] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[74] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[72] PerRank precompute_direct ns=0 eom_calls=28 eom_ns=123375885 marked_hist=[0,0,0,0,0] tasks_executed=0
+[72] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[72] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[73] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=133741315 marked_hist=[0,0,0,0,0] tasks_executed=0
+[73] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[73] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[76] PerRank precompute_direct ns=0 eom_calls=47 eom_ns=231617999 marked_hist=[0,0,0,0,0] tasks_executed=0
+[76] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[76] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[78] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=147396708 marked_hist=[0,0,0,0,0] tasks_executed=0
+[78] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[78] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[77] PerRank precompute_direct ns=0 eom_calls=30 eom_ns=118969300 marked_hist=[0,0,0,0,0] tasks_executed=0
+[77] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[77] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[75] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=174234121 marked_hist=[0,0,0,0,0] tasks_executed=0
+[75] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[75] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[79] PerRank precompute_direct ns=0 eom_calls=44 eom_ns=190421320 marked_hist=[0,0,0,0,0] tasks_executed=0
+[79] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[79] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[100] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=198432976 marked_hist=[0,0,0,0,0] tasks_executed=0
+[100] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[100] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[102] PerRank precompute_direct ns=0 eom_calls=37 eom_ns=156711022 marked_hist=[0,0,0,0,0] tasks_executed=0
+[102] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[102] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[103] PerRank precompute_direct ns=0 eom_calls=40 eom_ns=174263905 marked_hist=[0,0,0,0,0] tasks_executed=0
+[103] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[103] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[320] PerRank precompute_direct ns=0 eom_calls=25 eom_ns=91572057 marked_hist=[0,0,0,0,0] tasks_executed=0
+[320] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[320] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[101] PerRank precompute_direct ns=0 eom_calls=25 eom_ns=92391288 marked_hist=[0,0,0,0,0] tasks_executed=0
+[101] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[101] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[104] PerRank precompute_direct ns=0 eom_calls=30 eom_ns=145491201 marked_hist=[0,0,0,0,0] tasks_executed=0
+[104] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[104] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[105] PerRank precompute_direct ns=0 eom_calls=24 eom_ns=90536772 marked_hist=[0,0,0,0,0] tasks_executed=0
+[105] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[105] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[321] PerRank precompute_direct ns=0 eom_calls=42 eom_ns=192241440 marked_hist=[0,0,0,0,0] tasks_executed=0
+[321] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[321] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[106] PerRank precompute_direct ns=0 eom_calls=37 eom_ns=157116077 marked_hist=[0,0,0,0,0] tasks_executed=0
+[106] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[106] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[108] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=169423096 marked_hist=[0,0,0,0,0] tasks_executed=0
+[108] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[108] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[107] PerRank precompute_direct ns=0 eom_calls=30 eom_ns=115820933 marked_hist=[0,0,0,0,0] tasks_executed=0
+[107] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[107] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[109] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=162314053 marked_hist=[0,0,0,0,0] tasks_executed=0
+[109] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[109] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[111] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=128899545 marked_hist=[0,0,0,0,0] tasks_executed=0
+[111] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[111] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[361] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=137921340 marked_hist=[0,0,0,0,0] tasks_executed=0
+[361] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[361] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[110] PerRank precompute_direct ns=0 eom_calls=30 eom_ns=121158880 marked_hist=[0,0,0,0,0] tasks_executed=0
+[110] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[110] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[113] PerRank precompute_direct ns=0 eom_calls=29 eom_ns=122456075 marked_hist=[0,0,0,0,0] tasks_executed=0
+[113] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[113] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[400] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=127688413 marked_hist=[0,0,0,0,0] tasks_executed=0
+[400] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[400] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[323] PerRank precompute_direct ns=0 eom_calls=40 eom_ns=188387751 marked_hist=[0,0,0,0,0] tasks_executed=0
+[323] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[323] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[112] PerRank precompute_direct ns=0 eom_calls=29 eom_ns=113131922 marked_hist=[0,0,0,0,0] tasks_executed=0
+[112] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[112] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[115] PerRank precompute_direct ns=0 eom_calls=46 eom_ns=231257652 marked_hist=[0,0,0,0,0] tasks_executed=0
+[115] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[115] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[362] PerRank precompute_direct ns=0 eom_calls=30 eom_ns=113999733 marked_hist=[0,0,0,0,0] tasks_executed=0
+[362] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[362] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[114] PerRank precompute_direct ns=0 eom_calls=31 eom_ns=110501646 marked_hist=[0,0,0,0,0] tasks_executed=0
+[114] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[114] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[322] PerRank precompute_direct ns=0 eom_calls=30 eom_ns=106419616 marked_hist=[0,0,0,0,0] tasks_executed=0
+[322] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[322] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[325] PerRank precompute_direct ns=0 eom_calls=31 eom_ns=151655066 marked_hist=[0,0,0,0,0] tasks_executed=0
+[325] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[325] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[401] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=159780077 marked_hist=[0,0,0,0,0] tasks_executed=0
+[401] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[401] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[116] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=133320111 marked_hist=[0,0,0,0,0] tasks_executed=0
+[116] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[116] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[117] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=133985306 marked_hist=[0,0,0,0,0] tasks_executed=0
+[117] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[117] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[118] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=150489284 marked_hist=[0,0,0,0,0] tasks_executed=0
+[118] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[118] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[360] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=147531060 marked_hist=[0,0,0,0,0] tasks_executed=0
+[360] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[360] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[440] PerRank precompute_direct ns=0 eom_calls=40 eom_ns=158113776 marked_hist=[0,0,0,0,0] tasks_executed=0
+[440] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[440] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[363] PerRank precompute_direct ns=0 eom_calls=26 eom_ns=94196764 marked_hist=[0,0,0,0,0] tasks_executed=0
+[363] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[363] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[119] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=119082420 marked_hist=[0,0,0,0,0] tasks_executed=0
+[119] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[119] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[402] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=124738630 marked_hist=[0,0,0,0,0] tasks_executed=0
+[402] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[402] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[324] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=132555445 marked_hist=[0,0,0,0,0] tasks_executed=0
+[324] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[324] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[404] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=133693301 marked_hist=[0,0,0,0,0] tasks_executed=0
+[404] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[404] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[364] PerRank precompute_direct ns=0 eom_calls=40 eom_ns=166625138 marked_hist=[0,0,0,0,0] tasks_executed=0
+[364] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[364] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[327] PerRank precompute_direct ns=0 eom_calls=52 eom_ns=267638147 marked_hist=[0,0,0,0,0] tasks_executed=0
+[327] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[327] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[441] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=141486366 marked_hist=[0,0,0,0,0] tasks_executed=0
+[441] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[441] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[328] PerRank precompute_direct ns=0 eom_calls=42 eom_ns=168290775 marked_hist=[0,0,0,0,0] tasks_executed=0
+[328] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[328] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[365] PerRank precompute_direct ns=0 eom_calls=27 eom_ns=105361375 marked_hist=[0,0,0,0,0] tasks_executed=0
+[365] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[365] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[366] PerRank precompute_direct ns=0 eom_calls=40 eom_ns=154041008 marked_hist=[0,0,0,0,0] tasks_executed=0
+[366] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[366] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[403] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=129589827 marked_hist=[0,0,0,0,0] tasks_executed=0
+[403] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[403] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[368] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=148794150 marked_hist=[0,0,0,0,0] tasks_executed=0
+[368] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[368] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[326] PerRank precompute_direct ns=0 eom_calls=37 eom_ns=173042558 marked_hist=[0,0,0,0,0] tasks_executed=0
+[326] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[326] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[329] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=116417321 marked_hist=[0,0,0,0,0] tasks_executed=0
+[329] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[329] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[405] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=142719875 marked_hist=[0,0,0,0,0] tasks_executed=0
+[405] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[405] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[407] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=127536277 marked_hist=[0,0,0,0,0] tasks_executed=0
+[407] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[407] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[480] PerRank precompute_direct ns=0 eom_calls=30 eom_ns=124832989 marked_hist=[0,0,0,0,0] tasks_executed=0
+[480] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[480] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[443] PerRank precompute_direct ns=0 eom_calls=37 eom_ns=137069381 marked_hist=[0,0,0,0,0] tasks_executed=0
+[443] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[443] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[442] PerRank precompute_direct ns=0 eom_calls=29 eom_ns=103074857 marked_hist=[0,0,0,0,0] tasks_executed=0
+[442] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[442] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[370] PerRank precompute_direct ns=0 eom_calls=37 eom_ns=142738017 marked_hist=[0,0,0,0,0] tasks_executed=0
+[370] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[370] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[367] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=149913035 marked_hist=[0,0,0,0,0] tasks_executed=0
+[367] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[367] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[408] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=146386431 marked_hist=[0,0,0,0,0] tasks_executed=0
+[408] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[408] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[330] PerRank precompute_direct ns=0 eom_calls=40 eom_ns=149982592 marked_hist=[0,0,0,0,0] tasks_executed=0
+[330] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[330] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[523] PerRank precompute_direct ns=0 eom_calls=43 eom_ns=186665776 marked_hist=[0,0,0,0,0] tasks_executed=0
+[523] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[523] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[369] PerRank precompute_direct ns=0 eom_calls=30 eom_ns=117028295 marked_hist=[0,0,0,0,0] tasks_executed=0
+[369] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[369] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[371] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=135450140 marked_hist=[0,0,0,0,0] tasks_executed=0
+[371] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[371] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[444] PerRank precompute_direct ns=0 eom_calls=42 eom_ns=168116022 marked_hist=[0,0,0,0,0] tasks_executed=0
+[444] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[444] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[331] PerRank precompute_direct ns=0 eom_calls=29 eom_ns=102803698 marked_hist=[0,0,0,0,0] tasks_executed=0
+[331] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[331] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[332] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=132368106 marked_hist=[0,0,0,0,0] tasks_executed=0
+[332] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[332] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[406] PerRank precompute_direct ns=0 eom_calls=43 eom_ns=171817275 marked_hist=[0,0,0,0,0] tasks_executed=0
+[406] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[406] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[410] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=150865646 marked_hist=[0,0,0,0,0] tasks_executed=0
+[410] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[410] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[482] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=163684360 marked_hist=[0,0,0,0,0] tasks_executed=0
+[482] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[482] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[481] PerRank precompute_direct ns=0 eom_calls=44 eom_ns=225095280 marked_hist=[0,0,0,0,0] tasks_executed=0
+[481] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[481] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[520] PerRank precompute_direct ns=0 eom_calls=45 eom_ns=186608095 marked_hist=[0,0,0,0,0] tasks_executed=0
+[520] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[520] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[446] PerRank precompute_direct ns=0 eom_calls=46 eom_ns=269504399 marked_hist=[0,0,0,0,0] tasks_executed=0
+[446] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[446] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[445] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=115504707 marked_hist=[0,0,0,0,0] tasks_executed=0
+[445] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[445] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[374] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=150438557 marked_hist=[0,0,0,0,0] tasks_executed=0
+[374] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[374] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[409] PerRank precompute_direct ns=0 eom_calls=41 eom_ns=200156785 marked_hist=[0,0,0,0,0] tasks_executed=0
+[409] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[409] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[411] PerRank precompute_direct ns=0 eom_calls=31 eom_ns=124023082 marked_hist=[0,0,0,0,0] tasks_executed=0
+[411] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[411] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[333] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=153462629 marked_hist=[0,0,0,0,0] tasks_executed=0
+[333] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[333] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[133] PerRank precompute_direct ns=0 eom_calls=45 eom_ns=193343765 marked_hist=[0,0,0,0,0] tasks_executed=0
+[133] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[133] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[334] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=196440397 marked_hist=[0,0,0,0,0] tasks_executed=0
+[334] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[334] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[134] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=140609043 marked_hist=[0,0,0,0,0] tasks_executed=0
+[134] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[134] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[483] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=149691093 marked_hist=[0,0,0,0,0] tasks_executed=0
+[483] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[483] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[135] PerRank precompute_direct ns=0 eom_calls=37 eom_ns=153145103 marked_hist=[0,0,0,0,0] tasks_executed=0
+[135] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[135] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[136] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=123985236 marked_hist=[0,0,0,0,0] tasks_executed=0
+[136] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[136] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[560] PerRank precompute_direct ns=0 eom_calls=26 eom_ns=111387185 marked_hist=[0,0,0,0,0] tasks_executed=0
+[560] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[560] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[447] PerRank precompute_direct ns=0 eom_calls=40 eom_ns=166077607 marked_hist=[0,0,0,0,0] tasks_executed=0
+[447] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[447] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[522] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=154774102 marked_hist=[0,0,0,0,0] tasks_executed=0
+[522] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[522] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[521] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=144851059 marked_hist=[0,0,0,0,0] tasks_executed=0
+[521] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[521] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[412] PerRank precompute_direct ns=0 eom_calls=42 eom_ns=199762147 marked_hist=[0,0,0,0,0] tasks_executed=0
+[412] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[412] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[138] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=119887064 marked_hist=[0,0,0,0,0] tasks_executed=0
+[138] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[138] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[137] PerRank precompute_direct ns=0 eom_calls=41 eom_ns=166694606 marked_hist=[0,0,0,0,0] tasks_executed=0
+[137] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[137] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[139] PerRank precompute_direct ns=0 eom_calls=42 eom_ns=190964067 marked_hist=[0,0,0,0,0] tasks_executed=0
+[139] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[139] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[484] PerRank precompute_direct ns=0 eom_calls=43 eom_ns=163614466 marked_hist=[0,0,0,0,0] tasks_executed=0
+[484] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[484] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[485] PerRank precompute_direct ns=0 eom_calls=28 eom_ns=104764115 marked_hist=[0,0,0,0,0] tasks_executed=0
+[485] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[485] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[562] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=166082219 marked_hist=[0,0,0,0,0] tasks_executed=0
+[562] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[562] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[448] PerRank precompute_direct ns=0 eom_calls=44 eom_ns=249810755 marked_hist=[0,0,0,0,0] tasks_executed=0
+[448] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[448] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[141] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=167088631 marked_hist=[0,0,0,0,0] tasks_executed=0
+[141] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[141] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[449] PerRank precompute_direct ns=0 eom_calls=29 eom_ns=101731482 marked_hist=[0,0,0,0,0] tasks_executed=0
+[449] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[449] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[140] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=161688635 marked_hist=[0,0,0,0,0] tasks_executed=0
+[140] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[140] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[143] PerRank precompute_direct ns=0 eom_calls=22 eom_ns=89308056 marked_hist=[0,0,0,0,0] tasks_executed=0
+[143] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[143] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[524] PerRank precompute_direct ns=0 eom_calls=28 eom_ns=102264889 marked_hist=[0,0,0,0,0] tasks_executed=0
+[524] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[524] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[486] PerRank precompute_direct ns=0 eom_calls=42 eom_ns=164154163 marked_hist=[0,0,0,0,0] tasks_executed=0
+[486] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[486] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[142] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=184251620 marked_hist=[0,0,0,0,0] tasks_executed=0
+[142] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[142] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[144] PerRank precompute_direct ns=0 eom_calls=28 eom_ns=115400636 marked_hist=[0,0,0,0,0] tasks_executed=0
+[144] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[144] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[145] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=156165279 marked_hist=[0,0,0,0,0] tasks_executed=0
+[145] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[145] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[146] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=151102609 marked_hist=[0,0,0,0,0] tasks_executed=0
+[146] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[146] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[147] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=153334344 marked_hist=[0,0,0,0,0] tasks_executed=0
+[147] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[147] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[148] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=210280008 marked_hist=[0,0,0,0,0] tasks_executed=0
+[148] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[148] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[149] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=147120813 marked_hist=[0,0,0,0,0] tasks_executed=0
+[149] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[149] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[561] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=133258294 marked_hist=[0,0,0,0,0] tasks_executed=0
+[561] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[561] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[450] PerRank precompute_direct ns=0 eom_calls=31 eom_ns=126857174 marked_hist=[0,0,0,0,0] tasks_executed=0
+[450] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[450] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[563] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=148669663 marked_hist=[0,0,0,0,0] tasks_executed=0
+[563] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[563] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[451] PerRank precompute_direct ns=0 eom_calls=46 eom_ns=178693558 marked_hist=[0,0,0,0,0] tasks_executed=0
+[451] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[451] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[525] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=136852156 marked_hist=[0,0,0,0,0] tasks_executed=0
+[525] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[525] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[527] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=140288277 marked_hist=[0,0,0,0,0] tasks_executed=0
+[527] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[527] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[488] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=160777145 marked_hist=[0,0,0,0,0] tasks_executed=0
+[488] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[488] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[487] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=141932411 marked_hist=[0,0,0,0,0] tasks_executed=0
+[487] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[487] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[526] PerRank precompute_direct ns=0 eom_calls=45 eom_ns=170242412 marked_hist=[0,0,0,0,0] tasks_executed=0
+[526] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[526] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[600] PerRank precompute_direct ns=0 eom_calls=25 eom_ns=94305186 marked_hist=[0,0,0,0,0] tasks_executed=0
+[600] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[600] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[452] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=150131453 marked_hist=[0,0,0,0,0] tasks_executed=0
+[452] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[452] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[564] PerRank precompute_direct ns=0 eom_calls=51 eom_ns=190092892 marked_hist=[0,0,0,0,0] tasks_executed=0
+[564] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[564] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[489] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=144004661 marked_hist=[0,0,0,0,0] tasks_executed=0
+[489] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[489] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[151] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=141806467 marked_hist=[0,0,0,0,0] tasks_executed=0
+[151] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[151] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[150] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=114185968 marked_hist=[0,0,0,0,0] tasks_executed=0
+[150] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[150] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[566] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=139278195 marked_hist=[0,0,0,0,0] tasks_executed=0
+[566] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[566] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[602] PerRank precompute_direct ns=0 eom_calls=43 eom_ns=231142124 marked_hist=[0,0,0,0,0] tasks_executed=0
+[602] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[602] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[153] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=163586113 marked_hist=[0,0,0,0,0] tasks_executed=0
+[153] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[153] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[565] PerRank precompute_direct ns=0 eom_calls=44 eom_ns=200594565 marked_hist=[0,0,0,0,0] tasks_executed=0
+[565] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[565] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[528] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=139962900 marked_hist=[0,0,0,0,0] tasks_executed=0
+[528] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[528] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[529] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=144622840 marked_hist=[0,0,0,0,0] tasks_executed=0
+[529] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[529] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[154] PerRank precompute_direct ns=0 eom_calls=29 eom_ns=111179003 marked_hist=[0,0,0,0,0] tasks_executed=0
+[154] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[154] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[152] PerRank precompute_direct ns=0 eom_calls=41 eom_ns=183717379 marked_hist=[0,0,0,0,0] tasks_executed=0
+[152] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[152] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[155] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=157420902 marked_hist=[0,0,0,0,0] tasks_executed=0
+[155] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[155] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[490] PerRank precompute_direct ns=0 eom_calls=44 eom_ns=198099764 marked_hist=[0,0,0,0,0] tasks_executed=0
+[490] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[490] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[492] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=202154191 marked_hist=[0,0,0,0,0] tasks_executed=0
+[492] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[492] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[601] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=137108928 marked_hist=[0,0,0,0,0] tasks_executed=0
+[601] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[601] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[530] PerRank precompute_direct ns=0 eom_calls=42 eom_ns=158800786 marked_hist=[0,0,0,0,0] tasks_executed=0
+[530] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[530] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[532] PerRank precompute_direct ns=0 eom_calls=44 eom_ns=183578030 marked_hist=[0,0,0,0,0] tasks_executed=0
+[532] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[532] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[491] PerRank precompute_direct ns=0 eom_calls=51 eom_ns=298210922 marked_hist=[0,0,0,0,0] tasks_executed=0
+[491] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[491] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[157] PerRank precompute_direct ns=0 eom_calls=43 eom_ns=160915469 marked_hist=[0,0,0,0,0] tasks_executed=0
+[157] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[157] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[156] PerRank precompute_direct ns=0 eom_calls=20 eom_ns=72663487 marked_hist=[0,0,0,0,0] tasks_executed=0
+[156] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[156] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[567] PerRank precompute_direct ns=0 eom_calls=30 eom_ns=107085127 marked_hist=[0,0,0,0,0] tasks_executed=0
+[567] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[567] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[603] PerRank precompute_direct ns=0 eom_calls=28 eom_ns=112423292 marked_hist=[0,0,0,0,0] tasks_executed=0
+[603] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[603] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[158] PerRank precompute_direct ns=0 eom_calls=26 eom_ns=102896861 marked_hist=[0,0,0,0,0] tasks_executed=0
+[158] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[158] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[159] PerRank precompute_direct ns=0 eom_calls=31 eom_ns=165197813 marked_hist=[0,0,0,0,0] tasks_executed=0
+[159] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[159] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[533] PerRank precompute_direct ns=0 eom_calls=37 eom_ns=133357629 marked_hist=[0,0,0,0,0] tasks_executed=0
+[533] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[533] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[568] PerRank precompute_direct ns=0 eom_calls=44 eom_ns=196609373 marked_hist=[0,0,0,0,0] tasks_executed=0
+[568] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[568] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[569] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=139651147 marked_hist=[0,0,0,0,0] tasks_executed=0
+[569] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[569] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[604] PerRank precompute_direct ns=0 eom_calls=31 eom_ns=122648965 marked_hist=[0,0,0,0,0] tasks_executed=0
+[604] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[604] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[570] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=139493076 marked_hist=[0,0,0,0,0] tasks_executed=0
+[570] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[570] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[606] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=169352643 marked_hist=[0,0,0,0,0] tasks_executed=0
+[606] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[606] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[571] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=147527312 marked_hist=[0,0,0,0,0] tasks_executed=0
+[571] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[571] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[605] PerRank precompute_direct ns=0 eom_calls=40 eom_ns=165611737 marked_hist=[0,0,0,0,0] tasks_executed=0
+[605] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[605] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[573] PerRank precompute_direct ns=0 eom_calls=30 eom_ns=102262897 marked_hist=[0,0,0,0,0] tasks_executed=0
+[573] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[573] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[173] PerRank precompute_direct ns=0 eom_calls=43 eom_ns=182052176 marked_hist=[0,0,0,0,0] tasks_executed=0
+[173] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[173] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[174] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=130800152 marked_hist=[0,0,0,0,0] tasks_executed=0
+[174] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[174] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[175] PerRank precompute_direct ns=0 eom_calls=40 eom_ns=167339625 marked_hist=[0,0,0,0,0] tasks_executed=0
+[175] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[175] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[177] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=129536078 marked_hist=[0,0,0,0,0] tasks_executed=0
+[177] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[177] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[607] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=164120830 marked_hist=[0,0,0,0,0] tasks_executed=0
+[607] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[607] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[176] PerRank precompute_direct ns=0 eom_calls=28 eom_ns=105519851 marked_hist=[0,0,0,0,0] tasks_executed=0
+[176] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[176] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[608] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=150749591 marked_hist=[0,0,0,0,0] tasks_executed=0
+[608] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[608] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[178] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=149856671 marked_hist=[0,0,0,0,0] tasks_executed=0
+[178] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[178] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[609] PerRank precompute_direct ns=0 eom_calls=29 eom_ns=119304848 marked_hist=[0,0,0,0,0] tasks_executed=0
+[609] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[609] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[179] PerRank precompute_direct ns=0 eom_calls=27 eom_ns=105231475 marked_hist=[0,0,0,0,0] tasks_executed=0
+[179] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[179] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[610] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=163766607 marked_hist=[0,0,0,0,0] tasks_executed=0
+[610] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[610] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[180] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=152483253 marked_hist=[0,0,0,0,0] tasks_executed=0
+[180] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[180] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[181] PerRank precompute_direct ns=0 eom_calls=28 eom_ns=116525804 marked_hist=[0,0,0,0,0] tasks_executed=0
+[181] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[181] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[183] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=132411347 marked_hist=[0,0,0,0,0] tasks_executed=0
+[183] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[183] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[182] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=147217332 marked_hist=[0,0,0,0,0] tasks_executed=0
+[182] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[182] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[184] PerRank precompute_direct ns=0 eom_calls=31 eom_ns=134096048 marked_hist=[0,0,0,0,0] tasks_executed=0
+[184] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[184] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[185] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=160892159 marked_hist=[0,0,0,0,0] tasks_executed=0
+[185] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[185] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[611] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=172740426 marked_hist=[0,0,0,0,0] tasks_executed=0
+[611] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[611] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[186] PerRank precompute_direct ns=0 eom_calls=31 eom_ns=112047097 marked_hist=[0,0,0,0,0] tasks_executed=0
+[186] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[186] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[187] PerRank precompute_direct ns=0 eom_calls=26 eom_ns=95149872 marked_hist=[0,0,0,0,0] tasks_executed=0
+[187] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[187] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[188] PerRank precompute_direct ns=0 eom_calls=28 eom_ns=110638256 marked_hist=[0,0,0,0,0] tasks_executed=0
+[188] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[188] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[189] PerRank precompute_direct ns=0 eom_calls=45 eom_ns=195797689 marked_hist=[0,0,0,0,0] tasks_executed=0
+[189] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[189] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[612] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=154530660 marked_hist=[0,0,0,0,0] tasks_executed=0
+[612] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[612] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[190] PerRank precompute_direct ns=0 eom_calls=40 eom_ns=199342280 marked_hist=[0,0,0,0,0] tasks_executed=0
+[190] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[190] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[613] PerRank precompute_direct ns=0 eom_calls=26 eom_ns=106863740 marked_hist=[0,0,0,0,0] tasks_executed=0
+[613] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[613] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[191] PerRank precompute_direct ns=0 eom_calls=42 eom_ns=197831232 marked_hist=[0,0,0,0,0] tasks_executed=0
+[191] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[191] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[192] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=153008610 marked_hist=[0,0,0,0,0] tasks_executed=0
+[192] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[192] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[193] PerRank precompute_direct ns=0 eom_calls=2 eom_ns=490291528 marked_hist=[0,0,0,0,0] tasks_executed=0
+[193] PerRank values_match full=2187 equal=2187 unequal=0 fetch_bytes=17933400 ns=0
+[193] PerRank output_match bridge=3279 visible=0 bridge_ns=0 values_taken=2187 values_true=2187 values_false=0
+[194] PerRank precompute_direct ns=0 eom_calls=25 eom_ns=94773804 marked_hist=[0,0,0,0,0] tasks_executed=0
+[194] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[194] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[195] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=140101261 marked_hist=[0,0,0,0,0] tasks_executed=0
+[195] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[195] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[196] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=155357347 marked_hist=[0,0,0,0,0] tasks_executed=0
+[196] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[196] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[214] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=147196412 marked_hist=[0,0,0,0,0] tasks_executed=0
+[214] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[214] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[197] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=138674780 marked_hist=[0,0,0,0,0] tasks_executed=0
+[197] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[197] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[198] PerRank precompute_direct ns=0 eom_calls=27 eom_ns=106632424 marked_hist=[0,0,0,0,0] tasks_executed=0
+[198] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[198] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[216] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=152823206 marked_hist=[0,0,0,0,0] tasks_executed=0
+[216] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[216] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[199] PerRank precompute_direct ns=0 eom_calls=27 eom_ns=116124129 marked_hist=[0,0,0,0,0] tasks_executed=0
+[199] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[199] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[215] PerRank precompute_direct ns=0 eom_calls=47 eom_ns=232884420 marked_hist=[0,0,0,0,0] tasks_executed=0
+[215] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[215] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[217] PerRank precompute_direct ns=0 eom_calls=31 eom_ns=107353464 marked_hist=[0,0,0,0,0] tasks_executed=0
+[217] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[217] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[218] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=132375787 marked_hist=[0,0,0,0,0] tasks_executed=0
+[218] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[218] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[219] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=142480633 marked_hist=[0,0,0,0,0] tasks_executed=0
+[219] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[219] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[220] PerRank precompute_direct ns=0 eom_calls=30 eom_ns=134835288 marked_hist=[0,0,0,0,0] tasks_executed=0
+[220] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[220] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[222] PerRank precompute_direct ns=0 eom_calls=37 eom_ns=155646102 marked_hist=[0,0,0,0,0] tasks_executed=0
+[222] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[222] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[224] PerRank precompute_direct ns=0 eom_calls=28 eom_ns=97315768 marked_hist=[0,0,0,0,0] tasks_executed=0
+[224] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[224] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[223] PerRank precompute_direct ns=0 eom_calls=37 eom_ns=165488785 marked_hist=[0,0,0,0,0] tasks_executed=0
+[223] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[223] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[221] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=157110760 marked_hist=[0,0,0,0,0] tasks_executed=0
+[221] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[221] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[226] PerRank precompute_direct ns=0 eom_calls=29 eom_ns=133735029 marked_hist=[0,0,0,0,0] tasks_executed=0
+[226] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[226] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[225] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=130693301 marked_hist=[0,0,0,0,0] tasks_executed=0
+[225] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[225] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[227] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=136302158 marked_hist=[0,0,0,0,0] tasks_executed=0
+[227] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[227] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[228] PerRank precompute_direct ns=0 eom_calls=29 eom_ns=123643073 marked_hist=[0,0,0,0,0] tasks_executed=0
+[228] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[228] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[229] PerRank precompute_direct ns=0 eom_calls=42 eom_ns=227590091 marked_hist=[0,0,0,0,0] tasks_executed=0
+[229] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[229] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[230] PerRank precompute_direct ns=0 eom_calls=37 eom_ns=162563755 marked_hist=[0,0,0,0,0] tasks_executed=0
+[230] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[230] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[231] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=230320348 marked_hist=[0,0,0,0,0] tasks_executed=0
+[231] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[231] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[232] PerRank precompute_direct ns=0 eom_calls=23 eom_ns=86781708 marked_hist=[0,0,0,0,0] tasks_executed=0
+[232] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[232] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[233] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=140710691 marked_hist=[0,0,0,0,0] tasks_executed=0
+[233] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[233] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[235] PerRank precompute_direct ns=0 eom_calls=30 eom_ns=118332699 marked_hist=[0,0,0,0,0] tasks_executed=0
+[235] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[235] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[234] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=157133332 marked_hist=[0,0,0,0,0] tasks_executed=0
+[234] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[234] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[236] PerRank precompute_direct ns=0 eom_calls=37 eom_ns=157037489 marked_hist=[0,0,0,0,0] tasks_executed=0
+[236] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[236] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[237] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=140824337 marked_hist=[0,0,0,0,0] tasks_executed=0
+[237] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[237] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[238] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=178941639 marked_hist=[0,0,0,0,0] tasks_executed=0
+[238] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[238] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[251] PerRank precompute_direct ns=0 eom_calls=37 eom_ns=159235324 marked_hist=[0,0,0,0,0] tasks_executed=0
+[251] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[251] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[239] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=130805421 marked_hist=[0,0,0,0,0] tasks_executed=0
+[239] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[239] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[252] PerRank precompute_direct ns=0 eom_calls=27 eom_ns=104408490 marked_hist=[0,0,0,0,0] tasks_executed=0
+[252] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[252] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[254] PerRank precompute_direct ns=0 eom_calls=47 eom_ns=189822460 marked_hist=[0,0,0,0,0] tasks_executed=0
+[254] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[254] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[253] PerRank precompute_direct ns=0 eom_calls=40 eom_ns=146259743 marked_hist=[0,0,0,0,0] tasks_executed=0
+[253] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[253] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[255] PerRank precompute_direct ns=0 eom_calls=43 eom_ns=164228729 marked_hist=[0,0,0,0,0] tasks_executed=0
+[255] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[255] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[257] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=166030767 marked_hist=[0,0,0,0,0] tasks_executed=0
+[257] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[257] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[258] PerRank precompute_direct ns=0 eom_calls=47 eom_ns=194974039 marked_hist=[0,0,0,0,0] tasks_executed=0
+[258] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[258] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[256] PerRank precompute_direct ns=0 eom_calls=42 eom_ns=193159029 marked_hist=[0,0,0,0,0] tasks_executed=0
+[256] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[256] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[259] PerRank precompute_direct ns=0 eom_calls=54 eom_ns=236030508 marked_hist=[0,0,0,0,0] tasks_executed=0
+[259] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[259] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[260] PerRank precompute_direct ns=0 eom_calls=22 eom_ns=87379175 marked_hist=[0,0,0,0,0] tasks_executed=0
+[260] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[260] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[262] PerRank precompute_direct ns=0 eom_calls=30 eom_ns=135722818 marked_hist=[0,0,0,0,0] tasks_executed=0
+[262] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[262] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[263] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=135296099 marked_hist=[0,0,0,0,0] tasks_executed=0
+[263] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[263] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[261] PerRank precompute_direct ns=0 eom_calls=27 eom_ns=112281691 marked_hist=[0,0,0,0,0] tasks_executed=0
+[261] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[261] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[292] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=137056182 marked_hist=[0,0,0,0,0] tasks_executed=0
+[292] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[292] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[293] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=163894357 marked_hist=[0,0,0,0,0] tasks_executed=0
+[293] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[293] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[264] PerRank precompute_direct ns=0 eom_calls=29 eom_ns=110725022 marked_hist=[0,0,0,0,0] tasks_executed=0
+[264] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[264] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[266] PerRank precompute_direct ns=0 eom_calls=28 eom_ns=122911792 marked_hist=[0,0,0,0,0] tasks_executed=0
+[266] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[266] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[291] PerRank precompute_direct ns=0 eom_calls=29 eom_ns=112231660 marked_hist=[0,0,0,0,0] tasks_executed=0
+[291] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[291] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[294] PerRank precompute_direct ns=0 eom_calls=52 eom_ns=392382511 marked_hist=[0,0,0,0,0] tasks_executed=0
+[294] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[294] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[265] PerRank precompute_direct ns=0 eom_calls=29 eom_ns=120787791 marked_hist=[0,0,0,0,0] tasks_executed=0
+[265] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[265] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[267] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=138166939 marked_hist=[0,0,0,0,0] tasks_executed=0
+[267] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[267] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[269] PerRank precompute_direct ns=0 eom_calls=28 eom_ns=99422760 marked_hist=[0,0,0,0,0] tasks_executed=0
+[269] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[269] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[268] PerRank precompute_direct ns=0 eom_calls=42 eom_ns=179761337 marked_hist=[0,0,0,0,0] tasks_executed=0
+[268] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[268] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[270] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=184260932 marked_hist=[0,0,0,0,0] tasks_executed=0
+[270] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[270] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[271] PerRank precompute_direct ns=0 eom_calls=29 eom_ns=115512510 marked_hist=[0,0,0,0,0] tasks_executed=0
+[271] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[271] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[273] PerRank precompute_direct ns=0 eom_calls=23 eom_ns=81172341 marked_hist=[0,0,0,0,0] tasks_executed=0
+[273] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[273] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[272] PerRank precompute_direct ns=0 eom_calls=41 eom_ns=184605269 marked_hist=[0,0,0,0,0] tasks_executed=0
+[272] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[272] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[274] PerRank precompute_direct ns=0 eom_calls=22 eom_ns=257831998 marked_hist=[0,0,0,0,0] tasks_executed=0
+[274] PerRank values_match full=770 equal=769 unequal=1 fetch_bytes=6314000 ns=0
+[274] PerRank output_match bridge=1158 visible=0 bridge_ns=0 values_taken=770 values_true=769 values_false=1
+[275] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=169173336 marked_hist=[0,0,0,0,0] tasks_executed=0
+[275] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[275] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[276] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=153177558 marked_hist=[0,0,0,0,0] tasks_executed=0
+[276] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[276] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[278] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=161419001 marked_hist=[0,0,0,0,0] tasks_executed=0
+[278] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[278] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[277] PerRank precompute_direct ns=0 eom_calls=31 eom_ns=134332156 marked_hist=[0,0,0,0,0] tasks_executed=0
+[277] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[277] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[279] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=151708011 marked_hist=[0,0,0,0,0] tasks_executed=0
+[279] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[279] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[295] PerRank precompute_direct ns=0 eom_calls=37 eom_ns=145847087 marked_hist=[0,0,0,0,0] tasks_executed=0
+[295] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[295] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[297] PerRank precompute_direct ns=0 eom_calls=43 eom_ns=181946714 marked_hist=[0,0,0,0,0] tasks_executed=0
+[297] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[297] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[296] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=125425364 marked_hist=[0,0,0,0,0] tasks_executed=0
+[296] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[296] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[298] PerRank precompute_direct ns=0 eom_calls=29 eom_ns=101299067 marked_hist=[0,0,0,0,0] tasks_executed=0
+[298] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[298] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[299] PerRank precompute_direct ns=0 eom_calls=29 eom_ns=107616494 marked_hist=[0,0,0,0,0] tasks_executed=0
+[299] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[299] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[300] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=145294783 marked_hist=[0,0,0,0,0] tasks_executed=0
+[300] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[300] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[302] PerRank precompute_direct ns=0 eom_calls=37 eom_ns=163181528 marked_hist=[0,0,0,0,0] tasks_executed=0
+[302] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[302] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[303] PerRank precompute_direct ns=0 eom_calls=19 eom_ns=232424615 marked_hist=[0,0,0,0,0] tasks_executed=0
+[303] PerRank values_match full=742 equal=741 unequal=1 fetch_bytes=6084400 ns=0
+[303] PerRank output_match bridge=1117 visible=0 bridge_ns=0 values_taken=742 values_true=741 values_false=1
+[301] PerRank precompute_direct ns=0 eom_calls=30 eom_ns=116320813 marked_hist=[0,0,0,0,0] tasks_executed=0
+[301] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[301] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[305] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=150097896 marked_hist=[0,0,0,0,0] tasks_executed=0
+[305] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[305] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[304] PerRank precompute_direct ns=0 eom_calls=42 eom_ns=164310155 marked_hist=[0,0,0,0,0] tasks_executed=0
+[304] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[304] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[306] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=177001707 marked_hist=[0,0,0,0,0] tasks_executed=0
+[306] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[306] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[307] PerRank precompute_direct ns=0 eom_calls=24 eom_ns=90992375 marked_hist=[0,0,0,0,0] tasks_executed=0
+[307] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[307] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[308] PerRank precompute_direct ns=0 eom_calls=28 eom_ns=112597862 marked_hist=[0,0,0,0,0] tasks_executed=0
+[308] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[308] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[309] PerRank precompute_direct ns=0 eom_calls=29 eom_ns=115994796 marked_hist=[0,0,0,0,0] tasks_executed=0
+[309] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[309] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[310] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=134581360 marked_hist=[0,0,0,0,0] tasks_executed=0
+[310] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[310] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[312] PerRank precompute_direct ns=0 eom_calls=28 eom_ns=116739322 marked_hist=[0,0,0,0,0] tasks_executed=0
+[312] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[312] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[311] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=158529877 marked_hist=[0,0,0,0,0] tasks_executed=0
+[311] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[311] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[313] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=147712436 marked_hist=[0,0,0,0,0] tasks_executed=0
+[313] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[313] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[314] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=151503411 marked_hist=[0,0,0,0,0] tasks_executed=0
+[314] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[314] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[315] PerRank precompute_direct ns=0 eom_calls=27 eom_ns=118693133 marked_hist=[0,0,0,0,0] tasks_executed=0
+[315] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[315] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[317] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=138760833 marked_hist=[0,0,0,0,0] tasks_executed=0
+[317] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[317] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[316] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=150709613 marked_hist=[0,0,0,0,0] tasks_executed=0
+[316] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[316] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[318] PerRank precompute_direct ns=0 eom_calls=21 eom_ns=239708663 marked_hist=[0,0,0,0,0] tasks_executed=0
+[318] PerRank values_match full=760 equal=759 unequal=1 fetch_bytes=6232000 ns=0
+[318] PerRank output_match bridge=1144 visible=0 bridge_ns=0 values_taken=760 values_true=759 values_false=1
+[335] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=117304937 marked_hist=[0,0,0,0,0] tasks_executed=0
+[335] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[335] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[319] PerRank precompute_direct ns=0 eom_calls=28 eom_ns=103954222 marked_hist=[0,0,0,0,0] tasks_executed=0
+[319] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[319] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[337] PerRank precompute_direct ns=0 eom_calls=49 eom_ns=220675674 marked_hist=[0,0,0,0,0] tasks_executed=0
+[337] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[337] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[338] PerRank precompute_direct ns=0 eom_calls=45 eom_ns=209783622 marked_hist=[0,0,0,0,0] tasks_executed=0
+[338] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[338] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[336] PerRank precompute_direct ns=0 eom_calls=30 eom_ns=120311228 marked_hist=[0,0,0,0,0] tasks_executed=0
+[336] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[336] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[339] PerRank precompute_direct ns=0 eom_calls=41 eom_ns=167432213 marked_hist=[0,0,0,0,0] tasks_executed=0
+[339] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[339] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[342] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=140330420 marked_hist=[0,0,0,0,0] tasks_executed=0
+[342] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[342] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[373] PerRank precompute_direct ns=0 eom_calls=46 eom_ns=221392198 marked_hist=[0,0,0,0,0] tasks_executed=0
+[373] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[373] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[372] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=161434967 marked_hist=[0,0,0,0,0] tasks_executed=0
+[372] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[372] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[413] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=123780901 marked_hist=[0,0,0,0,0] tasks_executed=0
+[413] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[413] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[414] PerRank precompute_direct ns=0 eom_calls=50 eom_ns=208452278 marked_hist=[0,0,0,0,0] tasks_executed=0
+[414] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[414] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[376] PerRank precompute_direct ns=0 eom_calls=30 eom_ns=125894867 marked_hist=[0,0,0,0,0] tasks_executed=0
+[376] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[376] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[375] PerRank precompute_direct ns=0 eom_calls=41 eom_ns=154479115 marked_hist=[0,0,0,0,0] tasks_executed=0
+[375] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[375] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[415] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=138535271 marked_hist=[0,0,0,0,0] tasks_executed=0
+[415] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[415] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[416] PerRank precompute_direct ns=0 eom_calls=47 eom_ns=212409367 marked_hist=[0,0,0,0,0] tasks_executed=0
+[416] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[416] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[377] PerRank precompute_direct ns=0 eom_calls=22 eom_ns=77151234 marked_hist=[0,0,0,0,0] tasks_executed=0
+[377] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[377] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[340] PerRank precompute_direct ns=0 eom_calls=28 eom_ns=111306882 marked_hist=[0,0,0,0,0] tasks_executed=0
+[340] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[340] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[343] PerRank precompute_direct ns=0 eom_calls=30 eom_ns=124812394 marked_hist=[0,0,0,0,0] tasks_executed=0
+[343] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[343] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[379] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=197370616 marked_hist=[0,0,0,0,0] tasks_executed=0
+[379] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[379] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[378] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=153437498 marked_hist=[0,0,0,0,0] tasks_executed=0
+[378] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[378] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[417] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=152374403 marked_hist=[0,0,0,0,0] tasks_executed=0
+[417] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[417] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[341] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=159168404 marked_hist=[0,0,0,0,0] tasks_executed=0
+[341] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[341] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[418] PerRank precompute_direct ns=0 eom_calls=43 eom_ns=145543820 marked_hist=[0,0,0,0,0] tasks_executed=0
+[418] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[418] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[419] PerRank precompute_direct ns=0 eom_calls=28 eom_ns=116424747 marked_hist=[0,0,0,0,0] tasks_executed=0
+[419] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[419] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[344] PerRank precompute_direct ns=0 eom_calls=41 eom_ns=173869373 marked_hist=[0,0,0,0,0] tasks_executed=0
+[344] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[344] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[345] PerRank precompute_direct ns=0 eom_calls=19 eom_ns=74415044 marked_hist=[0,0,0,0,0] tasks_executed=0
+[345] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[345] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[346] PerRank precompute_direct ns=0 eom_calls=28 eom_ns=104990622 marked_hist=[0,0,0,0,0] tasks_executed=0
+[346] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[346] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[380] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=143282700 marked_hist=[0,0,0,0,0] tasks_executed=0
+[380] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[380] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[347] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=146915513 marked_hist=[0,0,0,0,0] tasks_executed=0
+[347] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[347] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[381] PerRank precompute_direct ns=0 eom_calls=26 eom_ns=89986636 marked_hist=[0,0,0,0,0] tasks_executed=0
+[381] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[381] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[382] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=138985305 marked_hist=[0,0,0,0,0] tasks_executed=0
+[382] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[382] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[453] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=152926527 marked_hist=[0,0,0,0,0] tasks_executed=0
+[453] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[453] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[455] PerRank precompute_direct ns=0 eom_calls=41 eom_ns=157410783 marked_hist=[0,0,0,0,0] tasks_executed=0
+[455] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[455] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[384] PerRank precompute_direct ns=0 eom_calls=26 eom_ns=106588853 marked_hist=[0,0,0,0,0] tasks_executed=0
+[384] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[384] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[383] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=171328761 marked_hist=[0,0,0,0,0] tasks_executed=0
+[383] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[383] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[454] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=167611353 marked_hist=[0,0,0,0,0] tasks_executed=0
+[454] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[454] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[456] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=143598219 marked_hist=[0,0,0,0,0] tasks_executed=0
+[456] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[456] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[385] PerRank precompute_direct ns=0 eom_calls=23 eom_ns=120062487 marked_hist=[0,0,0,0,0] tasks_executed=0
+[385] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[385] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[420] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=138779972 marked_hist=[0,0,0,0,0] tasks_executed=0
+[420] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[420] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[422] PerRank precompute_direct ns=0 eom_calls=9 eom_ns=364444179 marked_hist=[0,0,0,0,0] tasks_executed=0
+[422] PerRank values_match full=1490 equal=1489 unequal=1 fetch_bytes=12218000 ns=0
+[422] PerRank output_match bridge=2238 visible=0 bridge_ns=0 values_taken=1490 values_true=1489 values_false=1
+[421] PerRank precompute_direct ns=0 eom_calls=25 eom_ns=96884699 marked_hist=[0,0,0,0,0] tasks_executed=0
+[421] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[421] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[386] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=156148290 marked_hist=[0,0,0,0,0] tasks_executed=0
+[386] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[386] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[389] PerRank precompute_direct ns=0 eom_calls=28 eom_ns=110755767 marked_hist=[0,0,0,0,0] tasks_executed=0
+[389] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[389] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[423] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=147069337 marked_hist=[0,0,0,0,0] tasks_executed=0
+[423] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[423] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[424] PerRank precompute_direct ns=0 eom_calls=28 eom_ns=104746153 marked_hist=[0,0,0,0,0] tasks_executed=0
+[424] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[424] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[387] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=150004565 marked_hist=[0,0,0,0,0] tasks_executed=0
+[387] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[387] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[388] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=151039187 marked_hist=[0,0,0,0,0] tasks_executed=0
+[388] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[388] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[348] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=150241088 marked_hist=[0,0,0,0,0] tasks_executed=0
+[348] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[348] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[457] PerRank precompute_direct ns=0 eom_calls=37 eom_ns=147378241 marked_hist=[0,0,0,0,0] tasks_executed=0
+[457] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[457] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[425] PerRank precompute_direct ns=0 eom_calls=29 eom_ns=99500449 marked_hist=[0,0,0,0,0] tasks_executed=0
+[425] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[425] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[390] PerRank precompute_direct ns=0 eom_calls=41 eom_ns=185330552 marked_hist=[0,0,0,0,0] tasks_executed=0
+[390] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[390] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[349] PerRank precompute_direct ns=0 eom_calls=29 eom_ns=124021472 marked_hist=[0,0,0,0,0] tasks_executed=0
+[349] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[349] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[350] PerRank precompute_direct ns=0 eom_calls=27 eom_ns=109831634 marked_hist=[0,0,0,0,0] tasks_executed=0
+[350] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[350] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[458] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=128424740 marked_hist=[0,0,0,0,0] tasks_executed=0
+[458] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[458] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[459] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=150398481 marked_hist=[0,0,0,0,0] tasks_executed=0
+[459] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[459] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[391] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=133301480 marked_hist=[0,0,0,0,0] tasks_executed=0
+[391] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[391] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[392] PerRank precompute_direct ns=0 eom_calls=30 eom_ns=134335457 marked_hist=[0,0,0,0,0] tasks_executed=0
+[392] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[392] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[351] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=139614995 marked_hist=[0,0,0,0,0] tasks_executed=0
+[351] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[351] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[426] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=134727413 marked_hist=[0,0,0,0,0] tasks_executed=0
+[426] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[426] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[428] PerRank precompute_direct ns=0 eom_calls=42 eom_ns=176681696 marked_hist=[0,0,0,0,0] tasks_executed=0
+[428] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[428] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[352] PerRank precompute_direct ns=0 eom_calls=45 eom_ns=196994252 marked_hist=[0,0,0,0,0] tasks_executed=0
+[352] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[352] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[354] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=145485738 marked_hist=[0,0,0,0,0] tasks_executed=0
+[354] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[354] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[393] PerRank precompute_direct ns=0 eom_calls=22 eom_ns=88331980 marked_hist=[0,0,0,0,0] tasks_executed=0
+[393] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[393] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[427] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=126556885 marked_hist=[0,0,0,0,0] tasks_executed=0
+[427] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[427] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[429] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=114398346 marked_hist=[0,0,0,0,0] tasks_executed=0
+[429] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[429] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[394] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=146043735 marked_hist=[0,0,0,0,0] tasks_executed=0
+[394] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[394] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[395] PerRank precompute_direct ns=0 eom_calls=42 eom_ns=165230942 marked_hist=[0,0,0,0,0] tasks_executed=0
+[395] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[395] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[431] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=131080898 marked_hist=[0,0,0,0,0] tasks_executed=0
+[431] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[431] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[430] PerRank precompute_direct ns=0 eom_calls=24 eom_ns=98113155 marked_hist=[0,0,0,0,0] tasks_executed=0
+[430] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[430] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[432] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=130119338 marked_hist=[0,0,0,0,0] tasks_executed=0
+[432] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[432] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[460] PerRank precompute_direct ns=0 eom_calls=22 eom_ns=78530968 marked_hist=[0,0,0,0,0] tasks_executed=0
+[460] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[460] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[396] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=170222021 marked_hist=[0,0,0,0,0] tasks_executed=0
+[396] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[396] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[397] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=162670887 marked_hist=[0,0,0,0,0] tasks_executed=0
+[397] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[397] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[461] PerRank precompute_direct ns=0 eom_calls=30 eom_ns=132299696 marked_hist=[0,0,0,0,0] tasks_executed=0
+[461] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[461] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[462] PerRank precompute_direct ns=0 eom_calls=25 eom_ns=102863574 marked_hist=[0,0,0,0,0] tasks_executed=0
+[462] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[462] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[399] PerRank precompute_direct ns=0 eom_calls=29 eom_ns=123916316 marked_hist=[0,0,0,0,0] tasks_executed=0
+[399] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[399] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[463] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=161356596 marked_hist=[0,0,0,0,0] tasks_executed=0
+[463] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[463] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[464] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=126593127 marked_hist=[0,0,0,0,0] tasks_executed=0
+[464] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[464] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[434] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=138512461 marked_hist=[0,0,0,0,0] tasks_executed=0
+[434] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[434] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[465] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=142419372 marked_hist=[0,0,0,0,0] tasks_executed=0
+[465] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[465] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[353] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=150654560 marked_hist=[0,0,0,0,0] tasks_executed=0
+[353] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[353] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[355] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=152093892 marked_hist=[0,0,0,0,0] tasks_executed=0
+[355] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[355] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[531] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=121645394 marked_hist=[0,0,0,0,0] tasks_executed=0
+[531] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[531] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[534] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=126848537 marked_hist=[0,0,0,0,0] tasks_executed=0
+[534] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[534] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[433] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=155836808 marked_hist=[0,0,0,0,0] tasks_executed=0
+[433] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[433] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[435] PerRank precompute_direct ns=0 eom_calls=27 eom_ns=147649537 marked_hist=[0,0,0,0,0] tasks_executed=0
+[435] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[435] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[356] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=191358356 marked_hist=[0,0,0,0,0] tasks_executed=0
+[356] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[356] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[398] PerRank precompute_direct ns=0 eom_calls=25 eom_ns=106124241 marked_hist=[0,0,0,0,0] tasks_executed=0
+[398] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[398] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[535] PerRank precompute_direct ns=0 eom_calls=41 eom_ns=145449337 marked_hist=[0,0,0,0,0] tasks_executed=0
+[535] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[535] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[536] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=150651631 marked_hist=[0,0,0,0,0] tasks_executed=0
+[536] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[536] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[357] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=116393112 marked_hist=[0,0,0,0,0] tasks_executed=0
+[357] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[357] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[359] PerRank precompute_direct ns=0 eom_calls=2 eom_ns=488469341 marked_hist=[0,0,0,0,0] tasks_executed=0
+[359] PerRank values_match full=2187 equal=2187 unequal=0 fetch_bytes=17933400 ns=0
+[359] PerRank output_match bridge=3279 visible=0 bridge_ns=0 values_taken=2187 values_true=2187 values_false=0
+[358] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=150988208 marked_hist=[0,0,0,0,0] tasks_executed=0
+[358] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[358] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[466] PerRank precompute_direct ns=0 eom_calls=31 eom_ns=130315770 marked_hist=[0,0,0,0,0] tasks_executed=0
+[466] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[466] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[467] PerRank precompute_direct ns=0 eom_calls=30 eom_ns=128310085 marked_hist=[0,0,0,0,0] tasks_executed=0
+[467] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[467] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[436] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=137117059 marked_hist=[0,0,0,0,0] tasks_executed=0
+[436] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[436] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[437] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=185178330 marked_hist=[0,0,0,0,0] tasks_executed=0
+[437] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[437] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[468] PerRank precompute_direct ns=0 eom_calls=25 eom_ns=96624892 marked_hist=[0,0,0,0,0] tasks_executed=0
+[468] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[468] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[469] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=161577459 marked_hist=[0,0,0,0,0] tasks_executed=0
+[469] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[469] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[493] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=160099354 marked_hist=[0,0,0,0,0] tasks_executed=0
+[493] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[493] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[494] PerRank precompute_direct ns=0 eom_calls=26 eom_ns=108740649 marked_hist=[0,0,0,0,0] tasks_executed=0
+[494] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[494] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[438] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=132526011 marked_hist=[0,0,0,0,0] tasks_executed=0
+[438] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[438] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[537] PerRank precompute_direct ns=0 eom_calls=46 eom_ns=195242201 marked_hist=[0,0,0,0,0] tasks_executed=0
+[537] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[537] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[495] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=175885962 marked_hist=[0,0,0,0,0] tasks_executed=0
+[495] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[495] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[496] PerRank precompute_direct ns=0 eom_calls=29 eom_ns=116532860 marked_hist=[0,0,0,0,0] tasks_executed=0
+[496] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[496] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[538] PerRank precompute_direct ns=0 eom_calls=44 eom_ns=175652400 marked_hist=[0,0,0,0,0] tasks_executed=0
+[538] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[538] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[539] PerRank precompute_direct ns=0 eom_calls=3 eom_ns=467025462 marked_hist=[0,0,0,0,0] tasks_executed=0
+[539] PerRank values_match full=2187 equal=2187 unequal=0 fetch_bytes=17933400 ns=0
+[539] PerRank output_match bridge=3279 visible=0 bridge_ns=0 values_taken=2187 values_true=2187 values_false=0
+[497] PerRank precompute_direct ns=0 eom_calls=40 eom_ns=153172185 marked_hist=[0,0,0,0,0] tasks_executed=0
+[497] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[497] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[470] PerRank precompute_direct ns=0 eom_calls=28 eom_ns=97590155 marked_hist=[0,0,0,0,0] tasks_executed=0
+[470] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[470] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[498] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=135191801 marked_hist=[0,0,0,0,0] tasks_executed=0
+[498] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[498] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[499] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=119673816 marked_hist=[0,0,0,0,0] tasks_executed=0
+[499] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[499] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[439] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=138516656 marked_hist=[0,0,0,0,0] tasks_executed=0
+[439] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[439] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[471] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=168061164 marked_hist=[0,0,0,0,0] tasks_executed=0
+[471] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[471] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[472] PerRank precompute_direct ns=0 eom_calls=26 eom_ns=97509443 marked_hist=[0,0,0,0,0] tasks_executed=0
+[472] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[472] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[500] PerRank precompute_direct ns=0 eom_calls=31 eom_ns=140538167 marked_hist=[0,0,0,0,0] tasks_executed=0
+[500] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[500] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[502] PerRank precompute_direct ns=0 eom_calls=2 eom_ns=473956998 marked_hist=[0,0,0,0,0] tasks_executed=0
+[502] PerRank values_match full=2187 equal=2187 unequal=0 fetch_bytes=17933400 ns=0
+[502] PerRank output_match bridge=3279 visible=0 bridge_ns=0 values_taken=2187 values_true=2187 values_false=0
+[501] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=215244651 marked_hist=[0,0,0,0,0] tasks_executed=0
+[501] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[501] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[504] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=138722079 marked_hist=[0,0,0,0,0] tasks_executed=0
+[504] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[504] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[503] PerRank precompute_direct ns=0 eom_calls=28 eom_ns=105930649 marked_hist=[0,0,0,0,0] tasks_executed=0
+[503] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[503] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[473] PerRank precompute_direct ns=0 eom_calls=26 eom_ns=113638814 marked_hist=[0,0,0,0,0] tasks_executed=0
+[473] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[473] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[541] PerRank precompute_direct ns=0 eom_calls=29 eom_ns=113090972 marked_hist=[0,0,0,0,0] tasks_executed=0
+[541] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[541] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[505] PerRank precompute_direct ns=0 eom_calls=43 eom_ns=215348361 marked_hist=[0,0,0,0,0] tasks_executed=0
+[505] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[505] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[474] PerRank precompute_direct ns=0 eom_calls=26 eom_ns=100960596 marked_hist=[0,0,0,0,0] tasks_executed=0
+[474] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[474] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[475] PerRank precompute_direct ns=0 eom_calls=37 eom_ns=170509940 marked_hist=[0,0,0,0,0] tasks_executed=0
+[475] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[475] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[540] PerRank precompute_direct ns=0 eom_calls=37 eom_ns=166562846 marked_hist=[0,0,0,0,0] tasks_executed=0
+[540] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[540] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[543] PerRank precompute_direct ns=0 eom_calls=24 eom_ns=98786947 marked_hist=[0,0,0,0,0] tasks_executed=0
+[543] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[543] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[544] PerRank precompute_direct ns=0 eom_calls=28 eom_ns=125671203 marked_hist=[0,0,0,0,0] tasks_executed=0
+[544] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[544] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[542] PerRank precompute_direct ns=0 eom_calls=28 eom_ns=128099544 marked_hist=[0,0,0,0,0] tasks_executed=0
+[542] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[542] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[476] PerRank precompute_direct ns=0 eom_calls=23 eom_ns=85285821 marked_hist=[0,0,0,0,0] tasks_executed=0
+[476] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[476] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[477] PerRank precompute_direct ns=0 eom_calls=37 eom_ns=162805004 marked_hist=[0,0,0,0,0] tasks_executed=0
+[477] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[477] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[545] PerRank precompute_direct ns=0 eom_calls=30 eom_ns=111111426 marked_hist=[0,0,0,0,0] tasks_executed=0
+[545] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[545] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[572] PerRank precompute_direct ns=0 eom_calls=31 eom_ns=117380789 marked_hist=[0,0,0,0,0] tasks_executed=0
+[572] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[572] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[574] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=146405334 marked_hist=[0,0,0,0,0] tasks_executed=0
+[574] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[574] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[575] PerRank precompute_direct ns=0 eom_calls=40 eom_ns=172834769 marked_hist=[0,0,0,0,0] tasks_executed=0
+[575] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[575] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[576] PerRank precompute_direct ns=0 eom_calls=31 eom_ns=126443179 marked_hist=[0,0,0,0,0] tasks_executed=0
+[576] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[576] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[478] PerRank precompute_direct ns=0 eom_calls=40 eom_ns=155111620 marked_hist=[0,0,0,0,0] tasks_executed=0
+[478] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[478] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[577] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=158794954 marked_hist=[0,0,0,0,0] tasks_executed=0
+[577] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[577] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[547] PerRank precompute_direct ns=0 eom_calls=27 eom_ns=115000405 marked_hist=[0,0,0,0,0] tasks_executed=0
+[547] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[547] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[546] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=135700037 marked_hist=[0,0,0,0,0] tasks_executed=0
+[546] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[546] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[578] PerRank precompute_direct ns=0 eom_calls=37 eom_ns=159164358 marked_hist=[0,0,0,0,0] tasks_executed=0
+[578] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[578] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[579] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=125247194 marked_hist=[0,0,0,0,0] tasks_executed=0
+[579] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[579] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[548] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=136132515 marked_hist=[0,0,0,0,0] tasks_executed=0
+[548] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[548] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[549] PerRank precompute_direct ns=0 eom_calls=43 eom_ns=183543675 marked_hist=[0,0,0,0,0] tasks_executed=0
+[549] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[549] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[506] PerRank precompute_direct ns=0 eom_calls=30 eom_ns=119619641 marked_hist=[0,0,0,0,0] tasks_executed=0
+[506] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[506] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[507] PerRank precompute_direct ns=0 eom_calls=42 eom_ns=158678697 marked_hist=[0,0,0,0,0] tasks_executed=0
+[507] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[507] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[508] PerRank precompute_direct ns=0 eom_calls=37 eom_ns=148755672 marked_hist=[0,0,0,0,0] tasks_executed=0
+[508] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[508] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[509] PerRank precompute_direct ns=0 eom_calls=37 eom_ns=163862588 marked_hist=[0,0,0,0,0] tasks_executed=0
+[509] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[509] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[511] PerRank precompute_direct ns=0 eom_calls=6 eom_ns=484012714 marked_hist=[0,0,0,0,0] tasks_executed=0
+[511] PerRank values_match full=2187 equal=2187 unequal=0 fetch_bytes=17933400 ns=0
+[511] PerRank output_match bridge=3279 visible=0 bridge_ns=0 values_taken=2187 values_true=2187 values_false=0
+[510] PerRank precompute_direct ns=0 eom_calls=43 eom_ns=194623464 marked_hist=[0,0,0,0,0] tasks_executed=0
+[510] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[510] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[479] PerRank precompute_direct ns=0 eom_calls=27 eom_ns=115891107 marked_hist=[0,0,0,0,0] tasks_executed=0
+[479] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[479] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[512] PerRank precompute_direct ns=0 eom_calls=27 eom_ns=106884903 marked_hist=[0,0,0,0,0] tasks_executed=0
+[512] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[512] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[580] PerRank precompute_direct ns=0 eom_calls=22 eom_ns=72758801 marked_hist=[0,0,0,0,0] tasks_executed=0
+[580] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[580] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[551] PerRank precompute_direct ns=0 eom_calls=22 eom_ns=96042728 marked_hist=[0,0,0,0,0] tasks_executed=0
+[551] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[551] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[581] PerRank precompute_direct ns=0 eom_calls=36 eom_ns=154906465 marked_hist=[0,0,0,0,0] tasks_executed=0
+[581] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[581] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[582] PerRank precompute_direct ns=0 eom_calls=45 eom_ns=197636859 marked_hist=[0,0,0,0,0] tasks_executed=0
+[582] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[582] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[550] PerRank precompute_direct ns=0 eom_calls=29 eom_ns=119513800 marked_hist=[0,0,0,0,0] tasks_executed=0
+[550] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[550] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[552] PerRank precompute_direct ns=0 eom_calls=30 eom_ns=120427940 marked_hist=[0,0,0,0,0] tasks_executed=0
+[552] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[552] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[584] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=154873750 marked_hist=[0,0,0,0,0] tasks_executed=0
+[584] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[584] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[583] PerRank precompute_direct ns=0 eom_calls=37 eom_ns=145036540 marked_hist=[0,0,0,0,0] tasks_executed=0
+[583] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[583] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[585] PerRank precompute_direct ns=0 eom_calls=24 eom_ns=84560002 marked_hist=[0,0,0,0,0] tasks_executed=0
+[585] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[585] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[553] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=134355357 marked_hist=[0,0,0,0,0] tasks_executed=0
+[553] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[553] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[614] PerRank precompute_direct ns=0 eom_calls=29 eom_ns=116331318 marked_hist=[0,0,0,0,0] tasks_executed=0
+[614] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[614] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[615] PerRank precompute_direct ns=0 eom_calls=31 eom_ns=118047343 marked_hist=[0,0,0,0,0] tasks_executed=0
+[615] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[615] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[513] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=163987124 marked_hist=[0,0,0,0,0] tasks_executed=0
+[513] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[513] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[554] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=156236710 marked_hist=[0,0,0,0,0] tasks_executed=0
+[554] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[554] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[555] PerRank precompute_direct ns=0 eom_calls=15 eom_ns=87771770 marked_hist=[0,0,0,0,0] tasks_executed=0
+[555] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[555] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[617] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=160121973 marked_hist=[0,0,0,0,0] tasks_executed=0
+[617] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[617] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[515] PerRank precompute_direct ns=0 eom_calls=20 eom_ns=231611815 marked_hist=[0,0,0,0,0] tasks_executed=0
+[515] PerRank values_match full=761 equal=760 unequal=1 fetch_bytes=6240200 ns=0
+[515] PerRank output_match bridge=1145 visible=0 bridge_ns=0 values_taken=761 values_true=760 values_false=1
+[514] PerRank precompute_direct ns=0 eom_calls=30 eom_ns=120015942 marked_hist=[0,0,0,0,0] tasks_executed=0
+[514] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[514] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[516] PerRank precompute_direct ns=0 eom_calls=44 eom_ns=195637223 marked_hist=[0,0,0,0,0] tasks_executed=0
+[516] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[516] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[517] PerRank precompute_direct ns=0 eom_calls=37 eom_ns=199092365 marked_hist=[0,0,0,0,0] tasks_executed=0
+[517] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[517] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[518] PerRank precompute_direct ns=0 eom_calls=42 eom_ns=205466879 marked_hist=[0,0,0,0,0] tasks_executed=0
+[518] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[518] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[616] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=158792874 marked_hist=[0,0,0,0,0] tasks_executed=0
+[616] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[616] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[618] PerRank precompute_direct ns=0 eom_calls=29 eom_ns=116222833 marked_hist=[0,0,0,0,0] tasks_executed=0
+[618] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[618] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[586] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=126780528 marked_hist=[0,0,0,0,0] tasks_executed=0
+[586] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[586] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[587] PerRank precompute_direct ns=0 eom_calls=28 eom_ns=111713241 marked_hist=[0,0,0,0,0] tasks_executed=0
+[587] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[587] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[619] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=163512386 marked_hist=[0,0,0,0,0] tasks_executed=0
+[619] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[619] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[556] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=133381253 marked_hist=[0,0,0,0,0] tasks_executed=0
+[556] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[556] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[557] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=140579784 marked_hist=[0,0,0,0,0] tasks_executed=0
+[557] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[557] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[588] PerRank precompute_direct ns=0 eom_calls=48 eom_ns=227270274 marked_hist=[0,0,0,0,0] tasks_executed=0
+[588] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[588] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[589] PerRank precompute_direct ns=0 eom_calls=44 eom_ns=166742315 marked_hist=[0,0,0,0,0] tasks_executed=0
+[589] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[589] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[558] PerRank precompute_direct ns=0 eom_calls=34 eom_ns=161806158 marked_hist=[0,0,0,0,0] tasks_executed=0
+[558] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[558] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[590] PerRank precompute_direct ns=0 eom_calls=43 eom_ns=178633549 marked_hist=[0,0,0,0,0] tasks_executed=0
+[590] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[590] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[591] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=166549592 marked_hist=[0,0,0,0,0] tasks_executed=0
+[591] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[591] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[592] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=174532342 marked_hist=[0,0,0,0,0] tasks_executed=0
+[592] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[592] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[620] PerRank precompute_direct ns=0 eom_calls=24 eom_ns=101737444 marked_hist=[0,0,0,0,0] tasks_executed=0
+[620] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[620] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[622] PerRank precompute_direct ns=0 eom_calls=48 eom_ns=290610840 marked_hist=[0,0,0,0,0] tasks_executed=0
+[622] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[622] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[559] PerRank precompute_direct ns=0 eom_calls=48 eom_ns=218311769 marked_hist=[0,0,0,0,0] tasks_executed=0
+[559] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[559] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[519] PerRank precompute_direct ns=0 eom_calls=37 eom_ns=135988322 marked_hist=[0,0,0,0,0] tasks_executed=0
+[519] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[519] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[621] PerRank precompute_direct ns=0 eom_calls=28 eom_ns=121889869 marked_hist=[0,0,0,0,0] tasks_executed=0
+[621] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[621] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[623] PerRank precompute_direct ns=0 eom_calls=28 eom_ns=117237859 marked_hist=[0,0,0,0,0] tasks_executed=0
+[623] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[623] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[624] PerRank precompute_direct ns=0 eom_calls=37 eom_ns=153369717 marked_hist=[0,0,0,0,0] tasks_executed=0
+[624] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[624] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[593] PerRank precompute_direct ns=0 eom_calls=27 eom_ns=114452598 marked_hist=[0,0,0,0,0] tasks_executed=0
+[593] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[593] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[594] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=136337318 marked_hist=[0,0,0,0,0] tasks_executed=0
+[594] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[594] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[595] PerRank precompute_direct ns=0 eom_calls=38 eom_ns=140498556 marked_hist=[0,0,0,0,0] tasks_executed=0
+[595] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[595] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[625] PerRank precompute_direct ns=0 eom_calls=31 eom_ns=125411221 marked_hist=[0,0,0,0,0] tasks_executed=0
+[625] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[625] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[596] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=132505136 marked_hist=[0,0,0,0,0] tasks_executed=0
+[596] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[596] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[626] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=174232199 marked_hist=[0,0,0,0,0] tasks_executed=0
+[626] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[626] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[598] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=164602889 marked_hist=[0,0,0,0,0] tasks_executed=0
+[598] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[598] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[597] PerRank precompute_direct ns=0 eom_calls=30 eom_ns=123700223 marked_hist=[0,0,0,0,0] tasks_executed=0
+[597] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[597] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[627] PerRank precompute_direct ns=0 eom_calls=23 eom_ns=90365652 marked_hist=[0,0,0,0,0] tasks_executed=0
+[627] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[627] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[628] PerRank precompute_direct ns=0 eom_calls=35 eom_ns=158116319 marked_hist=[0,0,0,0,0] tasks_executed=0
+[628] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[628] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[599] PerRank precompute_direct ns=0 eom_calls=39 eom_ns=167673521 marked_hist=[0,0,0,0,0] tasks_executed=0
+[599] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[599] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[629] PerRank precompute_direct ns=0 eom_calls=31 eom_ns=178081167 marked_hist=[0,0,0,0,0] tasks_executed=0
+[629] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[629] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[630] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=143677082 marked_hist=[0,0,0,0,0] tasks_executed=0
+[630] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[630] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[631] PerRank precompute_direct ns=0 eom_calls=31 eom_ns=185586582 marked_hist=[0,0,0,0,0] tasks_executed=0
+[631] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[631] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[632] PerRank precompute_direct ns=0 eom_calls=28 eom_ns=109719103 marked_hist=[0,0,0,0,0] tasks_executed=0
+[632] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[632] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[633] PerRank precompute_direct ns=0 eom_calls=30 eom_ns=129288321 marked_hist=[0,0,0,0,0] tasks_executed=0
+[633] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[633] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[634] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=138954449 marked_hist=[0,0,0,0,0] tasks_executed=0
+[634] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[634] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[635] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=165831869 marked_hist=[0,0,0,0,0] tasks_executed=0
+[635] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[635] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[636] PerRank precompute_direct ns=0 eom_calls=33 eom_ns=131763540 marked_hist=[0,0,0,0,0] tasks_executed=0
+[636] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[636] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[637] PerRank precompute_direct ns=0 eom_calls=31 eom_ns=149813842 marked_hist=[0,0,0,0,0] tasks_executed=0
+[637] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[637] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0
+[638] PerRank precompute_direct ns=0 eom_calls=32 eom_ns=119220409 marked_hist=[0,0,0,0,0] tasks_executed=0
+[638] PerRank values_match full=1 equal=0 unequal=1 fetch_bytes=8200 ns=0
+[638] PerRank output_match bridge=7 visible=0 bridge_ns=0 values_taken=1 values_true=0 values_false=1
+[639] PerRank precompute_direct ns=0 eom_calls=25 eom_ns=90655399 marked_hist=[0,0,0,0,0] tasks_executed=0
+[639] PerRank values_match full=0 equal=0 unequal=0 fetch_bytes=0 ns=0
+[639] PerRank output_match bridge=0 visible=0 bridge_ns=0 values_taken=0 values_true=0 values_false=0

@@ -1,0 +1,86 @@
+openjdk version "19.0.2" 2023-01-17
+OpenJDK Runtime Environment (build 19.0.2+7-44)
+OpenJDK 64-Bit Server VM (build 19.0.2+7-44, mixed mode, sharing)
+JVM of Place 0 started
+[APGAS] host node48-025 is reachable with network interface name:ib0 (ib0)
+[APGAS] host node48-025 is reachable with network interface name:eno1 (eno1)
+[APGAS] host node48-025 is reachable with network interface name:lo (lo)
+[APGAS] found ip: 10.149.48.25
+[APGAS] sets network interface to 10.149.*.*
+Sep 13, 2023 12:53:36 PM com.hazelcast.instance.HazelcastInstanceFactory
+WARNING: Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+hazelcast started
+Hostmanager: getNextHost found host: node56-016
+HostManager:
+ hostName=node48-025, attachedPlaces=[place(0)], maxPlacesPerHost=1
+ hostName=node56-016, attachedPlaces=[place(1)], maxPlacesPerHost=1
+ hostName=node57-012, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node57-013, attachedPlaces=[], maxPlacesPerHost=1
+ placeIDGenerator=3
+[APGAS] Spawning new place: srun -N 1 -n 1 -w node56-016 java -Dglb.multiworker.benchmarkrepetitions=1 -Dglb.multiworker.workerperplace=40 -Dglb.multiworker.n=1 -Dglb.multiworker.lifelinestrategy=nfjglbswft.multiworker.lifeline.MyHypercubeStrategy -Dglb.multiworker.localopt=0 -Dglb.multiworker.faulttolerance.cpinterval=10 -Dglb.multiworker.faulttolerance.crashcase=0 -Dglb.multiworker.faulttolerance.crashseed=0 -Dglb.multiworker.faulttolerance.crashnumber=0 -Dglb.multiworker.faulttolerance.crashbegin=0 -Dglb.multiworker.faulttolerance.crashend=0 -Duser.dir=/home/apgas/reitz/workspaceNFJGLB/bin -cp /home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../build/libs/workspaceNFJGLB-1.0-SNAPSHOT-all.jar -Dapgas.verbose.launcher=true -Dapgas.immediate.threads=8 -Dapgas.launcher=apgas.launcher.SrunLauncher -Dapgas.hostfile=/home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../bin/hostfile2-1104212 -Dapgas.threads=512 -Dapgas.resilient=true -Dapgas.max.threads=1024 -Dapgas.backupcount=1 -Dapgas.consoleprinter=false -Dapgas.java=java -Dapgas.hostmanager.strategy=1 -Dapgas.places=4 -Dapgas.network.interface=10.149.*.* -Dapgas.master=10.149.48.25:5701 -Dapgas.place.id=1 apgas.GlobalRuntime
+Hostmanager: getNextHost found host: node57-012
+HostManager:
+ hostName=node48-025, attachedPlaces=[place(0)], maxPlacesPerHost=1
+ hostName=node56-016, attachedPlaces=[place(1)], maxPlacesPerHost=1
+ hostName=node57-012, attachedPlaces=[place(2)], maxPlacesPerHost=1
+ hostName=node57-013, attachedPlaces=[], maxPlacesPerHost=1
+ placeIDGenerator=3
+[APGAS] Spawning new place: srun -N 1 -n 1 -w node57-012 java -Dglb.multiworker.benchmarkrepetitions=1 -Dglb.multiworker.workerperplace=40 -Dglb.multiworker.n=1 -Dglb.multiworker.lifelinestrategy=nfjglbswft.multiworker.lifeline.MyHypercubeStrategy -Dglb.multiworker.localopt=0 -Dglb.multiworker.faulttolerance.cpinterval=10 -Dglb.multiworker.faulttolerance.crashcase=0 -Dglb.multiworker.faulttolerance.crashseed=0 -Dglb.multiworker.faulttolerance.crashnumber=0 -Dglb.multiworker.faulttolerance.crashbegin=0 -Dglb.multiworker.faulttolerance.crashend=0 -Duser.dir=/home/apgas/reitz/workspaceNFJGLB/bin -cp /home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../build/libs/workspaceNFJGLB-1.0-SNAPSHOT-all.jar -Dapgas.verbose.launcher=true -Dapgas.immediate.threads=8 -Dapgas.launcher=apgas.launcher.SrunLauncher -Dapgas.hostfile=/home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../bin/hostfile2-1104212 -Dapgas.threads=512 -Dapgas.resilient=true -Dapgas.max.threads=1024 -Dapgas.backupcount=1 -Dapgas.consoleprinter=false -Dapgas.java=java -Dapgas.hostmanager.strategy=1 -Dapgas.places=4 -Dapgas.network.interface=10.149.*.* -Dapgas.master=10.149.48.25:5701 -Dapgas.place.id=2 apgas.GlobalRuntime
+Hostmanager: getNextHost found host: node57-013
+HostManager:
+ hostName=node48-025, attachedPlaces=[place(0)], maxPlacesPerHost=1
+ hostName=node56-016, attachedPlaces=[place(1)], maxPlacesPerHost=1
+ hostName=node57-012, attachedPlaces=[place(2)], maxPlacesPerHost=1
+ hostName=node57-013, attachedPlaces=[place(3)], maxPlacesPerHost=1
+ placeIDGenerator=3
+[APGAS] Spawning new place: srun -N 1 -n 1 -w node57-013 java -Dglb.multiworker.benchmarkrepetitions=1 -Dglb.multiworker.workerperplace=40 -Dglb.multiworker.n=1 -Dglb.multiworker.lifelinestrategy=nfjglbswft.multiworker.lifeline.MyHypercubeStrategy -Dglb.multiworker.localopt=0 -Dglb.multiworker.faulttolerance.cpinterval=10 -Dglb.multiworker.faulttolerance.crashcase=0 -Dglb.multiworker.faulttolerance.crashseed=0 -Dglb.multiworker.faulttolerance.crashnumber=0 -Dglb.multiworker.faulttolerance.crashbegin=0 -Dglb.multiworker.faulttolerance.crashend=0 -Duser.dir=/home/apgas/reitz/workspaceNFJGLB/bin -cp /home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../build/libs/workspaceNFJGLB-1.0-SNAPSHOT-all.jar -Dapgas.verbose.launcher=true -Dapgas.immediate.threads=8 -Dapgas.launcher=apgas.launcher.SrunLauncher -Dapgas.hostfile=/home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../bin/hostfile2-1104212 -Dapgas.threads=512 -Dapgas.resilient=true -Dapgas.max.threads=1024 -Dapgas.backupcount=1 -Dapgas.consoleprinter=false -Dapgas.java=java -Dapgas.hostmanager.strategy=1 -Dapgas.places=4 -Dapgas.network.interface=10.149.*.* -Dapgas.master=10.149.48.25:5701 -Dapgas.place.id=3 apgas.GlobalRuntime
+JVM of Place 3 started
+JVM of Place 2 started
+JVM of Place 1 started
+[APGAS] host 10.149.48.25:5701 is not reachable with networkinterface name:ib0 (ib0)
+[APGAS] host 10.149.48.25:5701 is not reachable with networkinterface name:ib0 (ib0)
+[APGAS] host 10.149.48.25:5701 is not reachable with networkinterface name:ib0 (ib0)
+[APGAS] host 10.149.48.25:5701 is reachable with network interface name:eno1 (eno1)
+[APGAS] host 10.149.48.25:5701 is reachable with network interface name:eno1 (eno1)
+[APGAS] host 10.149.48.25:5701 is reachable with network interface name:eno1 (eno1)
+[APGAS] host 10.149.48.25:5701 is reachable with network interface name:lo (lo)
+[APGAS] found ip: null
+[APGAS] host 10.149.48.25:5701 is reachable with network interface name:lo (lo)
+[APGAS] found ip: null
+[APGAS] host 10.149.48.25:5701 is reachable with network interface name:lo (lo)
+[APGAS] found ip: null
+[APGAS] sets network interface to 10.149.*.*
+[APGAS] sets network interface to 10.149.*.*
+[APGAS] sets network interface to 10.149.*.*
+Sep 13, 2023 12:53:37 PM com.hazelcast.instance.HazelcastInstanceFactory
+WARNING: Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+Sep 13, 2023 12:53:37 PM com.hazelcast.instance.HazelcastInstanceFactory
+WARNING: Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+Sep 13, 2023 12:53:37 PM com.hazelcast.instance.HazelcastInstanceFactory
+WARNING: Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+260365@node48-025.cm.cluster all hazelcast members are connected
+[APGAS] New place was started at 10.149.48.25:5701
+[APGAS] 260365@node48-025.cm.cluster, place(0): all places are started, places.size()= 4, initialPlaces=4
+[APGAS] 0 not all constructors are ready, waiting....3
+hazelcast started
+257832@node57-012.cm.cluster all hazelcast members are connected
+[APGAS] New place was started at 10.149.57.12:5701
+hazelcast started
+[APGAS] 257832@node57-012.cm.cluster, place(2): all places are started, places.size()= 4, initialPlaces=4
+[APGAS] 2 sends ready to place 0
+hazelcast started
+147079@node56-016.cm.cluster all hazelcast members are connected
+202465@node57-013.cm.cluster all hazelcast members are connected
+[APGAS] New place was started at 10.149.56.16:5701
+[APGAS] New place was started at 10.149.57.13:5701
+[APGAS] 147079@node56-016.cm.cluster, place(1): all places are started, places.size()= 4, initialPlaces=4
+[APGAS] 1 sends ready to place 0
+[APGAS] 202465@node57-013.cm.cluster, place(3): all places are started, places.size()= 4, initialPlaces=4
+[APGAS] 3 sends ready to place 0
+[APGAS] 1 on place 0 decremented ready counter, is now 2
+[APGAS] 3 on place 0 decremented ready counter, is now 0
+[APGAS] 2 on place 0 decremented ready counter, is now 1

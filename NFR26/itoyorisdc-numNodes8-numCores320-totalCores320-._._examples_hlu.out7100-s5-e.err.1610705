@@ -1,0 +1,62 @@
+[node20-019:752706] *** Process received signal ***
+[node20-019:752706] Signal: Aborted (6)
+[node20-019:752706] Signal code:  (-6)
+[node20-019:752706] [ 0] /lib64/libc.so.6(+0x3fc30)[0x155554a3fc30]
+[node20-019:752706] [ 1] /lib64/libc.so.6(+0x8d02c)[0x155554a8d02c]
+[node20-019:752706] [ 2] /lib64/libc.so.6(raise+0x16)[0x155554a3fb86]
+[node20-019:752706] [ 3] /lib64/libc.so.6(abort+0xd3)[0x155554a29873]
+[node20-019:752706] [ 4] /lib64/libstdc++.so.6(+0xc8b88)[0x155554ec8b88]
+[node20-019:752706] [ 5] /lib64/libstdc++.so.6(+0x18806f)[0x155554f8806f]
+[node20-019:752706] [ 6] ././examples/hlu.out[0x409b23]
+[node20-019:752706] [ 7] ././examples/hlu.out[0x4060c3]
+[node20-019:752706] [ 8] [0x155541f292e0]
+[node20-019:752706] *** End of error message ***
+[node20-020:1337872:0:1337872] ib_mlx5_log.c:179  Remote access error on mlx5_0:1/IB (synd 0x13 vend 0x88 hw_synd 0/0)
+[node20-020:1337872:0:1337872] ib_mlx5_log.c:179  DCI QP 0x1f6a3 wqe[135]: MASKED_FETCH_ADD s-- [rqpn 0x18e94 rlid 1760] [rva 0x150b40000318 rkey 0x1ae200] [32bit add 1/0x0] [va 0x15554205fef8 len 4 lkey 0x14eedd] 
+==== backtrace (tid:1337872) ====
+ 0  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_handle_error+0x294) [0x1555549c4f04]
+ 1  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_fatal_error_message+0xb2) [0x1555549c20f2]
+ 2  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_log_default_handler+0xee9) [0x1555549c6b29]
+ 3  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_log_dispatch+0xd4) [0x1555549c6e74]
+ 4  /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(uct_ib_mlx5_completion_with_err+0x5f0) [0x155554110ae0]
+ 5  /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(uct_dc_mlx5_ep_handle_failure+0xb6) [0x155554144816]
+ 6  /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(uct_ib_mlx5_check_completion+0x35) [0x155554111b85]
+ 7  /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(+0x4893f) [0x15555414693f]
+ 8  /cluster/ucx/1.19.1/lib/libucp.so.0(ucp_worker_progress+0x2a) [0x155554c5fbaa]
+ 9  /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_common_ucx_winfo_flush+0xe6) [0x155554d9c336]
+10  /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_common_ucx_ctx_flush+0x92) [0x155554d9c742]
+11  /cluster/mpi/openmpi/5.0.5/lib/libmpi.so.40(MPI_Win_flush+0x57) [0x155555262397]
+12  ././examples/hlu.out() [0x409e2c]
+13  ././examples/hlu.out() [0x4c6aef]
+14  ././examples/hlu.out() [0x4c8a58]
+15  ././examples/hlu.out() [0x419a67]
+16  ././examples/hlu.out() [0x48546e]
+=================================
+[node20-020:1337872] *** Process received signal ***
+[node20-020:1337872] Signal: Aborted (6)
+[node20-020:1337872] Signal code:  (-6)
+[node20-020:1337872] [ 0] /lib64/libc.so.6(+0x3fc30)[0x155554a3fc30]
+[node20-020:1337872] [ 1] /lib64/libc.so.6(+0x8d02c)[0x155554a8d02c]
+[node20-020:1337872] [ 2] /lib64/libc.so.6(raise+0x16)[0x155554a3fb86]
+[node20-020:1337872] [ 3] /lib64/libc.so.6(abort+0xd3)[0x155554a29873]
+[node20-020:1337872] [ 4] /cluster/ucx/1.19.1/lib/libucs.so.0(+0x310f7)[0x1555549c20f7]
+[node20-020:1337872] [ 5] /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_log_default_handler+0xee9)[0x1555549c6b29]
+[node20-020:1337872] [ 6] /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_log_dispatch+0xd4)[0x1555549c6e74]
+[node20-020:1337872] [ 7] /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(uct_ib_mlx5_completion_with_err+0x5f0)[0x155554110ae0]
+[node20-020:1337872] [ 8] /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(uct_dc_mlx5_ep_handle_failure+0xb6)[0x155554144816]
+[node20-020:1337872] [ 9] /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(uct_ib_mlx5_check_completion+0x35)[0x155554111b85]
+[node20-020:1337872] [10] /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(+0x4893f)[0x15555414693f]
+[node20-020:1337872] [11] /cluster/ucx/1.19.1/lib/libucp.so.0(ucp_worker_progress+0x2a)[0x155554c5fbaa]
+[node20-020:1337872] [12] /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_common_ucx_winfo_flush+0xe6)[0x155554d9c336]
+[node20-020:1337872] [13] /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_common_ucx_ctx_flush+0x92)[0x155554d9c742]
+[node20-020:1337872] [14] /cluster/mpi/openmpi/5.0.5/lib/libmpi.so.40(MPI_Win_flush+0x57)[0x155555262397]
+[node20-020:1337872] [15] ././examples/hlu.out[0x409e2c]
+[node20-020:1337872] [16] ././examples/hlu.out[0x4c6aef]
+[node20-020:1337872] [17] ././examples/hlu.out[0x4c8a58]
+[node20-020:1337872] [18] ././examples/hlu.out[0x419a67]
+[node20-020:1337872] [19] ././examples/hlu.out[0x48546e]
+[node20-020:1337872] *** End of error message ***
+--------------------------------------------------------------------------
+prterun noticed that process rank 9 with PID 752706 on node node20-019 exited on
+signal 6 (Aborted).
+--------------------------------------------------------------------------

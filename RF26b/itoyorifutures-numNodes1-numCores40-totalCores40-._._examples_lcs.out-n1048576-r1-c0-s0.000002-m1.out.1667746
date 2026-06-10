@@ -1,0 +1,91 @@
+JobId=1667746 JobName=itoyorifutures-numNodes1-numCores40-totalCores40-._._examples_lcs.out-n1048576-r1-c0-s0.000002-m1
+   UserId=reitz(59092) GroupId=apgas(58116) MCS_label=N/A
+   Priority=1021867 Nice=0 Account=apgas QOS=normal
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   DerivedExitCode=0:0
+   RunTime=00:00:01 TimeLimit=00:20:00 TimeMin=N/A
+   SubmitTime=2026-04-26T19:09:04 EligibleTime=2026-04-26T19:09:04
+   AccrueTime=2026-04-26T19:09:04
+   StartTime=2026-04-26T19:09:04 EndTime=2026-04-26T19:29:04 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-04-26T19:09:04 Scheduler=Main
+   Partition=general1 AllocNode:Sid=login01:521574
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=node20-013
+   BatchHost=node20-013
+   NumNodes=1 NumCPUs=80 NumTasks=40 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=40,mem=80G,node=1,billing=40
+   AllocTRES=cpu=80,mem=160G,node=1,billing=80
+   Socks/Node=* NtasksPerN:B:S:C=40:0:*:* CoreSpec=*
+   JOB_GRES=(null)
+     Nodes=node20-013 CPU_IDs=0-79 Mem=163840 GRES=
+   MinCPUsNode=40 MinMemoryCPU=2G MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null)
+   Command=/tmp/tmp.hgvKb7IrNc
+   WorkDir=/home/apgas/reitz/itoyorift/scripts
+   StdErr=/home/apgas/reitz/out/itoyorifutures-numNodes1-numCores40-totalCores40-._._examples_lcs.out-n1048576-r1-c0-s0.000002-m1.err.1667746
+   StdIn=/dev/null
+   StdOut=/home/apgas/reitz/out/itoyorifutures-numNodes1-numCores40-totalCores40-._._examples_lcs.out-n1048576-r1-c0-s0.000002-m1.out.1667746
+   Power=
+   
+
+=============================================================
+[Longest Common Subsequence (LCS)]
+# of processes:               40
+N (Input size):               1048576
+# of repeats:                 1
+Check enabled:                0
+Max injected SDCs:            1
+Cutoff:                       512
+-------------------------------------------------------------
+[Compile Options]
+ITYR_MAX_VERBOSE_LEVEL=0
+ITYR_PROFILER_MODE=disabled
+ITYR_RMA_IMPL=mpi
+ITYR_ALLOCATOR_USE_BOOST=0
+ITYR_ALLOCATOR_USE_DYNAMIC_WIN=false
+ITYR_ITO_SCHEDULER=randws
+-------------------------------------------------------------
+[Runtime Options]
+ITYR_ENABLE_SHARED_MEMORY=1
+ITYR_GLOBAL_CLOCK_SYNC_ROUND_TRIPS=100
+ITYR_PROF_OUTPUT_PER_RANK=1
+ITYR_RMA_USE_MPI_WIN_ALLOCATE=0
+ITYR_ALLOCATOR_BLOCK_SIZE=2097152
+ITYR_ALLOCATOR_MAX_UNFLUSHED_FREE_OBJS=10
+ITYR_ITO_STACK_SIZE=2097152
+ITYR_ITO_WSQUEUE_CAPACITY=1024
+ITYR_ITO_THREAD_STATE_ALLOCATOR_SIZE=2097152
+ITYR_ITO_SUSPENDED_THREAD_ALLOCATOR_SIZE=134217728
+ITYR_ITO_CHECKPOINT_ALLOCATOR_SIZE=268435456
+ITYR_ITO_FUTURE_POOL_SIZE=2147483648
+ITYR_ITO_REGULAR_CHECKPOINT_INTERVAL=10000
+ITYR_ITO_SCHED_LOOP_MAKE_MPI_PROGRESS=1
+ITYR_REPLAY_RECURSIVE_SYNTH_BUDGET=128
+ITYR_REPLAY_RECURSIVE_SYNTH_NODE_LIMIT=2048
+ITYR_REPLAY_TRAVERSAL_WORK_QUEUE=1
+ITYR_REPLAY_TRAVERSAL_WORK_QUEUE_MIN_RANKS=64
+ITYR_REPLAY_TRAVERSAL_WORK_QUEUE_OWNER_YIELD_POLLS=64
+ITYR_REPLAY_TRAVERSAL_WORK_QUEUE_ROOT_SPLIT_BUDGET=3
+=============================================================
+
+injecting SDC at tile=(1507,569) field=down target=1013
+[0] First tree duration 47,687,302,221 ns = 47.687302 s
+[0] Twin tree duration 48,123,796,595 ns = 48.123797 s
+[0] Traversal duration 907,040,256 ns = 0.907040 s
+[0] Replay source-skip patch lcs_slot0_internal=1 value_mismatch_detail=1
+[0] Precompute_direct instrumentation tasks_executed=0 eom_calls=4 eom_ns=906272364 marked_hist=[0,0,0,0,0]
+[0] Traversal phase breakdown root_exec_once=26617 clear_analysis=241 seed_needed=387 propagate_needed=328 precompute_direct=906311122 materialize_marked=23509
+[0] Traversal materialize_marked detail alloc_init=10590 cache_publish=1228 entries=5 cache_writes=24 leaf_scans=0
+[0] Traversal materialize_marked split self=289 child=22823
+[0] Traversal materialize_marked child split marked=0 direct=22823 source=0
+[0] Traversal materialize_marked direct branch parent=7664 callee=15159
+[0] Traversal materialize_marked direct branch cache=1083
+[0] Traversal materialize_marked direct branch output_match=0
+[0] Traversal materialize_direct detail self=516 child_direct=0 child_source=0 output_match=8681
+[0] Traversal materialize_direct self split lookup_second=0 child_shape=0
+[0] Traversal profile run_root=4220 pre_cache=0 analyze_marked=0 build_analysis=0 resolve_deps=0 mark_needed=0 finalize=0 materialize=0 lookup_second_calls=1 lookup_second=286 output_match_calls=0 output_match=0 marked_visible_calls=0 marked_visible=0 values_match=595677908 value_ptr_scan=0
+[0] Exact-proof values_match local(output=147782 leaf=0 generic=0) size_mismatch=0 full=147782 equal=147780 unequal=2 fetch_bytes=1211812400 avg_fetch=8200 buckets(le64=0 le512=0 gt512=147782) ns=595677908
+[0] Output-match paths recursive(bridge=221683 visible=0) callers(dep_nonleaf=0 dep_leaf=0 between_runs=0 unknown_fallback=0 materialize_root=0 materialize_child=4 replay_child=0) path(visible_taken=0 true=0 false=0 values_taken=147782 true=147780 false=2)
+[0] Output-match bridge detail cache(hit_true=0 hit_false=0) dep_shortcut(hit=0 miss=221683 nonleaf_calls=0 nonleaf_ns=0) bridge_ns=2962350259

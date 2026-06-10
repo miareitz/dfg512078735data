@@ -1,0 +1,128 @@
+JobId=1368904 JobName=itoyorifutures-numNodes8-numCores320-totalCores320-._._examples_nqueens.out-n16-r1-c6
+   UserId=reitz(59092) GroupId=apgas(58116) MCS_label=N/A
+   Priority=1067152 Nice=0 Account=apgas QOS=normal
+   JobState=RUNNING Reason=Prolog Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   DerivedExitCode=0:0
+   RunTime=00:00:00 TimeLimit=00:03:00 TimeMin=N/A
+   SubmitTime=2024-12-16T06:55:04 EligibleTime=2024-12-16T06:55:04
+   AccrueTime=2024-12-16T06:55:04
+   StartTime=2024-12-16T06:55:24 EndTime=2024-12-16T06:58:24 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2024-12-16T06:55:24 Scheduler=Backfill
+   Partition=general1 AllocNode:Sid=login02:3813011
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=node48-[019,032],node50-[002-003],node52-[017-018,029-030]
+   BatchHost=node48-019
+   NumNodes=8 NumCPUs=640 NumTasks=320 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=320,mem=640G,node=8,billing=320
+   AllocTRES=cpu=640,mem=1280G,node=8,billing=640
+   Socks/Node=* NtasksPerN:B:S:C=40:0:*:* CoreSpec=*
+   JOB_GRES=(null)
+     Nodes=node48-[019,032],node50-[002-003],node52-[017-018,029-030] CPU_IDs=0-79 Mem=163840 GRES=
+   MinCPUsNode=40 MinMemoryCPU=2G MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null)
+   Command=/tmp/tmp.YGScd0QrbV
+   WorkDir=/home/apgas/reitz/itoyorifuture/scripts
+   StdErr=/home/apgas/reitz/out/itoyorifutures-numNodes8-numCores320-totalCores320-._._examples_nqueens.out-n16-r1-c6.err.1368904
+   StdIn=/dev/null
+   StdOut=/home/apgas/reitz/out/itoyorifutures-numNodes8-numCores320-totalCores320-._._examples_nqueens.out-n16-r1-c6.out.1368904
+   Power=
+   
+
+=============================================================
+[NQueens]
+# of processes:               320
+N:                            16
+Cutoff:                       1
+# of repeats:                 1
+Verify result:                0
+-------------------------------------------------------------
+[Compile Options]
+ITYR_MAX_VERBOSE_LEVEL=0
+ITYR_PROFILER_MODE=disabled
+ITYR_RMA_IMPL=mpi
+ITYR_ALLOCATOR_USE_BOOST=0
+ITYR_ALLOCATOR_USE_DYNAMIC_WIN=false
+ITYR_ITO_SCHEDULER=randws
+ITYR_ITO_DAG_PROF=disabled
+ITYR_ORI_CORE=default
+ITYR_ORI_BLOCK_SIZE=65536
+ITYR_ORI_DEFAULT_MEM_MAPPER=cyclic
+ITYR_ORI_ENABLE_WRITE_THROUGH=false
+ITYR_ORI_ENABLE_LAZY_RELEASE=true
+ITYR_ORI_ENABLE_VM_MAP=true
+ITYR_ORI_FORCE_GETPUT=false
+ITYR_ORI_CACHE_PROF=disabled
+ITYR_ORI_CACHE_TLB_SIZE=3
+ITYR_ORI_HOME_TLB_SIZE=3
+-------------------------------------------------------------
+[Runtime Options]
+ITYR_ENABLE_SHARED_MEMORY=1
+ITYR_GLOBAL_CLOCK_SYNC_ROUND_TRIPS=100
+ITYR_PROF_OUTPUT_PER_RANK=0
+ITYR_RMA_USE_MPI_WIN_ALLOCATE=0
+ITYR_ALLOCATOR_BLOCK_SIZE=2097152
+ITYR_ALLOCATOR_MAX_UNFLUSHED_FREE_OBJS=10
+ITYR_ITO_STACK_SIZE=2097152
+ITYR_ITO_WSQUEUE_CAPACITY=1024
+ITYR_ITO_THREAD_STATE_ALLOCATOR_SIZE=2097152
+ITYR_ITO_SUSPENDED_THREAD_ALLOCATOR_SIZE=2097152
+ITYR_ITO_CHECKPOINT_ALLOCATOR_SIZE=268435456
+ITYR_ITO_REGULAR_CHECKPOINT_INTERVAL=10000
+ITYR_ITO_SCHED_LOOP_MAKE_MPI_PROGRESS=1
+ITYR_ITO_ADWS_ENABLE_STEAL=1
+ITYR_ITO_ADWS_WSQUEUE_CAPACITY=256
+ITYR_ITO_ADWS_MAX_DEPTH=20
+ITYR_ITO_ADWS_MAX_DTREE_REUSE=10
+ITYR_ITO_ADWS_MIN_DRANGE_SIZE=0.01
+ITYR_ORI_CACHE_SIZE=16777216
+ITYR_ORI_SUB_BLOCK_SIZE=4096
+ITYR_ORI_MAX_DIRTY_CACHE_SIZE=8388608
+ITYR_ORI_NONCOLL_ALLOCATOR_SIZE=4194304
+ITYR_ORI_LAZY_RELEASE_CHECK_INTERVAL=10
+ITYR_ORI_LAZY_RELEASE_MAKE_MPI_PROGRESS=1
+=============================================================
+
+[1734328541.801208] [node48-032:171650:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/171627/fd/58 flags=0x0) failed: Permission denied
+[1734328541.801238] [node48-032:171650:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e80029e6b: Shared memory error
+[1734328541.869031] [node48-019:3129067:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/3129054/fd/58 flags=0x0) failed: Permission denied
+[1734328541.869047] [node48-019:3129067:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e802fbede: Shared memory error
+[1734328541.804219] [node48-032:171626:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/171627/fd/58 flags=0x0) failed: Permission denied
+[1734328541.804247] [node48-032:171626:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e80029e6b: Shared memory error
+[1734328541.804543] [node48-032:171661:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/171627/fd/58 flags=0x0) failed: Permission denied
+[1734328541.804586] [node48-032:171661:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e80029e6b: Shared memory error
+[1734328541.808568] [node48-032:171643:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/171627/fd/58 flags=0x0) failed: Permission denied
+[1734328541.808601] [node48-032:171643:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e80029e6b: Shared memory error
+[1734328541.808945] [node48-032:171663:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/171627/fd/58 flags=0x0) failed: Permission denied
+[1734328541.808968] [node48-032:171663:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e80029e6b: Shared memory error
+[1734328541.810310] [node48-032:171649:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/171626/fd/58 flags=0x0) failed: Permission denied
+[1734328541.810331] [node48-032:171649:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e80029e6a: Shared memory error
+[1734328541.810320] [node48-032:171652:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/171627/fd/58 flags=0x0) failed: Permission denied
+[1734328541.810339] [node48-032:171652:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e80029e6b: Shared memory error
+[1734328541.812409] [node48-032:171662:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/171652/fd/58 flags=0x0) failed: Permission denied
+[1734328541.812430] [node48-032:171662:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e80029e84: Shared memory error
+[1734328541.813436] [node48-032:171666:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/171649/fd/58 flags=0x0) failed: Permission denied
+[1734328541.813453] [node48-032:171666:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e80029e81: Shared memory error
+[1734328541.814261] [node48-032:171644:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/171643/fd/58 flags=0x0) failed: Permission denied
+[1734328541.814282] [node48-032:171644:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e80029e7b: Shared memory error
+[1734328541.816304] [node48-032:171655:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/171644/fd/58 flags=0x0) failed: Permission denied
+[1734328541.816324] [node48-032:171655:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e80029e7c: Shared memory error
+[1734328541.816877] [node48-032:171660:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/171650/fd/58 flags=0x0) failed: Permission denied
+[1734328541.816894] [node48-032:171660:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e80029e82: Shared memory error
+[1734328541.818047] [node48-032:171664:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/171643/fd/58 flags=0x0) failed: Permission denied
+[1734328541.818062] [node48-032:171664:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e80029e7b: Shared memory error
+[1734328541.819457] [node48-032:171642:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/171627/fd/58 flags=0x0) failed: Permission denied
+[1734328541.819480] [node48-032:171642:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e80029e6b: Shared memory error
+[1734328541.820557] [node48-032:171646:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/171643/fd/58 flags=0x0) failed: Permission denied
+[1734328541.820575] [node48-032:171646:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e80029e7b: Shared memory error
+[1734328541.820868] [node48-032:171669:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/171662/fd/58 flags=0x0) failed: Permission denied
+[1734328541.820884] [node48-032:171669:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e80029e8e: Shared memory error
+[1734328541.821152] [node48-032:171665:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/171650/fd/58 flags=0x0) failed: Permission denied
+[1734328541.821168] [node48-032:171665:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e80029e82: Shared memory error
+[1734328541.822699] [node48-032:171647:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/171643/fd/58 flags=0x0) failed: Permission denied
+[1734328541.822713] [node48-032:171647:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e80029e7b: Shared memory error
+[1734328541.822988] [node48-032:171671:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/171627/fd/58 flags=0x0) failed: Permission denied
+[1734328541.823004] [node48-032:171671:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e80029e6b: Shared memory error
+[1734328541.856931] [node52-030:104433:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/104407/fd/58 flags=0x0) failed: Permission denied
+[1734328541.856946] [node52-030:104433:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e800197d7: Shared memory error

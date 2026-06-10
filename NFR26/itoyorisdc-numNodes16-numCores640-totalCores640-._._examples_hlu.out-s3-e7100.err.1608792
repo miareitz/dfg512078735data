@@ -1,0 +1,19 @@
+[node17-024:902659:0:902659] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+==== backtrace (tid: 902659) ====
+ 0  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_handle_error+0x294) [0x1555549c4f04]
+ 1  /cluster/ucx/1.19.1/lib/libucs.so.0(+0x340c5) [0x1555549c50c5]
+ 2  /cluster/ucx/1.19.1/lib/libucs.so.0(+0x34396) [0x1555549c5396]
+ 3  /lib64/libc.so.6(+0x3fc30) [0x155554a3fc30]
+ 4  ././examples/hlu.out() [0x42c32b]
+ 5  ././examples/hlu.out() [0x42df90]
+ 6  ././examples/hlu.out() [0x4302ea]
+ 7  ././examples/hlu.out() [0x4304ed]
+ 8  ././examples/hlu.out() [0x44a15f]
+ 9  [0x19276a8]
+=================================
+[node20-016:635059:0:635059] ib_mlx5_log.c:179  Remote access error on mlx5_0:1/IB (synd 0x13 vend 0x88 hw_synd 0/0)
+[node20-016:635059:0:635059] ib_mlx5_log.c:179  DCI QP 0x27224 wqe[1719]: MASKED_FETCH_ADD s-- [rqpn 0x1c090 rlid 384] [rva 0x14bd40000368 rkey 0x18f600] [32bit add 4294967295/0x0] [va 0x15554221cef8 len 4 lkey 0xfdaca] 
+--------------------------------------------------------------------------
+prterun noticed that process rank 8 with PID 902659 on node node17-024 exited on
+signal 11 (Segmentation fault).
+--------------------------------------------------------------------------

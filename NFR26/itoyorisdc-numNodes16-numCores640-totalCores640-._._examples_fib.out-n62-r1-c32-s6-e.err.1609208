@@ -1,0 +1,71 @@
+[node18-034:1952908] *** Process received signal ***
+[node18-034:1952908] Signal: Aborted (6)
+[node18-034:1952908] Signal code:  (-6)
+[node18-034:1952908] [ 0] /lib64/libc.so.6(+0x3fc30)[0x155554a3fc30]
+[node18-034:1952908] [ 1] /lib64/libc.so.6(+0x8d02c)[0x155554a8d02c]
+[node18-034:1952908] [ 2] /lib64/libc.so.6(raise+0x16)[0x155554a3fb86]
+[node18-034:1952908] [ 3] /lib64/libc.so.6(abort+0xd3)[0x155554a29873]
+[node18-034:1952908] [ 4] /lib64/libstdc++.so.6(+0xc8b88)[0x155554ec8b88]
+[node18-034:1952908] [ 5] /lib64/libstdc++.so.6(+0x187a81)[0x155554f87a81]
+[node18-034:1952908] [ 6] ././examples/fib.out[0x419b51]
+[node18-034:1952908] [ 7] ././examples/fib.out[0x40c05e]
+[node18-034:1952908] [ 8] ././examples/fib.out[0x4094c4]
+[node18-034:1952908] [ 9] [0x184e7e8]
+[node18-034:1952908] *** End of error message ***
+[node17-016:3672305:0:3672305] ib_mlx5_log.c:179  Remote access error on mlx5_0:1/IB (synd 0x13 vend 0x88 hw_synd 0/0)
+[node17-016:3672305:0:3672305] ib_mlx5_log.c:179  DCI QP 0x2d184 wqe[15322]: RDMA_READ s-- [rqpn 0x2789d rlid 2956] [rva 0x541450 rkey 0x15fdb3] [va 0x15553f3fd600 len 8 lkey 0x177a69] 
+==== backtrace (tid:3672305) ====
+ 0  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_handle_error+0x294) [0x1555549c4f04]
+ 1  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_fatal_error_message+0xb2) [0x1555549c20f2]
+ 2  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_log_default_handler+0xee9) [0x1555549c6b29]
+ 3  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_log_dispatch+0xd4) [0x1555549c6e74]
+ 4  /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(uct_ib_mlx5_completion_with_err+0x5f0) [0x155554110ae0]
+ 5  /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(uct_dc_mlx5_ep_handle_failure+0xb6) [0x155554144816]
+ 6  /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(uct_ib_mlx5_check_completion+0x35) [0x155554111b85]
+ 7  /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(+0x4893f) [0x15555414693f]
+ 8  /cluster/ucx/1.19.1/lib/libucp.so.0(ucp_worker_progress+0x2a) [0x155554c5fbaa]
+ 9  /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_common_ucx_wpool_progress+0x8f) [0x155554d9b42f]
+10  /cluster/mpi/openmpi/5.0.5/lib/libmpi.so.40(+0x20949c) [0x15555539449c]
+11  /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_progress+0x34) [0x155554d1e904]
+12  /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_common_ucx_winfo_flush+0x13a) [0x155554d9c38a]
+13  /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_common_ucx_ctx_flush+0x92) [0x155554d9c742]
+14  /cluster/mpi/openmpi/5.0.5/lib/libmpi.so.40(MPI_Win_flush+0x57) [0x155555262397]
+15  ././examples/fib.out() [0x405e05]
+16  ././examples/fib.out() [0x407bfa]
+17  ././examples/fib.out() [0x404cf5]
+18  /lib64/libc.so.6(+0x2a610) [0x155554a2a610]
+19  /lib64/libc.so.6(__libc_start_main+0x80) [0x155554a2a6c0]
+20  ././examples/fib.out() [0x404fa5]
+=================================
+[node17-016:3672305] *** Process received signal ***
+[node17-016:3672305] Signal: Aborted (6)
+[node17-016:3672305] Signal code:  (-6)
+[node17-016:3672305] [ 0] /lib64/libc.so.6(+0x3fc30)[0x155554a3fc30]
+[node17-016:3672305] [ 1] /lib64/libc.so.6(+0x8d02c)[0x155554a8d02c]
+[node17-016:3672305] [ 2] /lib64/libc.so.6(raise+0x16)[0x155554a3fb86]
+[node17-016:3672305] [ 3] /lib64/libc.so.6(abort+0xd3)[0x155554a29873]
+[node17-016:3672305] [ 4] /cluster/ucx/1.19.1/lib/libucs.so.0(+0x310f7)[0x1555549c20f7]
+[node17-016:3672305] [ 5] /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_log_default_handler+0xee9)[0x1555549c6b29]
+[node17-016:3672305] [ 6] /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_log_dispatch+0xd4)[0x1555549c6e74]
+[node17-016:3672305] [ 7] /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(uct_ib_mlx5_completion_with_err+0x5f0)[0x155554110ae0]
+[node17-016:3672305] [ 8] /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(uct_dc_mlx5_ep_handle_failure+0xb6)[0x155554144816]
+[node17-016:3672305] [ 9] /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(uct_ib_mlx5_check_completion+0x35)[0x155554111b85]
+[node17-016:3672305] [10] /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(+0x4893f)[0x15555414693f]
+[node17-016:3672305] [11] /cluster/ucx/1.19.1/lib/libucp.so.0(ucp_worker_progress+0x2a)[0x155554c5fbaa]
+[node17-016:3672305] [12] /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_common_ucx_wpool_progress+0x8f)[0x155554d9b42f]
+[node17-016:3672305] [13] /cluster/mpi/openmpi/5.0.5/lib/libmpi.so.40(+0x20949c)[0x15555539449c]
+[node17-016:3672305] [14] /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_progress+0x34)[0x155554d1e904]
+[node17-016:3672305] [15] /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_common_ucx_winfo_flush+0x13a)[0x155554d9c38a]
+[node17-016:3672305] [16] /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_common_ucx_ctx_flush+0x92)[0x155554d9c742]
+[node17-016:3672305] [17] /cluster/mpi/openmpi/5.0.5/lib/libmpi.so.40(MPI_Win_flush+0x57)[0x155555262397]
+[node17-016:3672305] [18] ././examples/fib.out[0x405e05]
+[node17-016:3672305] [19] ././examples/fib.out[0x407bfa]
+[node17-016:3672305] [20] ././examples/fib.out[0x404cf5]
+[node17-016:3672305] [21] /lib64/libc.so.6(+0x2a610)[0x155554a2a610]
+[node17-016:3672305] [22] /lib64/libc.so.6(__libc_start_main+0x80)[0x155554a2a6c0]
+[node17-016:3672305] [23] ././examples/fib.out[0x404fa5]
+[node17-016:3672305] *** End of error message ***
+--------------------------------------------------------------------------
+prterun noticed that process rank 380 with PID 1952908 on node node18-034 exited on
+signal 6 (Aborted).
+--------------------------------------------------------------------------

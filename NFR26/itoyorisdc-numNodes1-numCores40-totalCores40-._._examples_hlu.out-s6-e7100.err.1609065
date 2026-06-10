@@ -1,0 +1,83 @@
+[node20-015:1587875:0:1587875] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x1c)
+==== backtrace (tid:1587875) ====
+ 0  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_handle_error+0x294) [0x1555549c4f04]
+ 1  /cluster/ucx/1.19.1/lib/libucs.so.0(+0x340c5) [0x1555549c50c5]
+ 2  /cluster/ucx/1.19.1/lib/libucs.so.0(+0x34396) [0x1555549c5396]
+ 3  /lib64/libc.so.6(+0x3fc30) [0x155554a3fc30]
+ 4  ././examples/hlu.out() [0x420da0]
+ 5  ././examples/hlu.out() [0x422d7a]
+ 6  ././examples/hlu.out() [0x4231ff]
+ 7  ././examples/hlu.out() [0x431f20]
+ 8  ././examples/hlu.out() [0x4168b7]
+ 9  ././examples/hlu.out() [0x4ab6fc]
+10  ././examples/hlu.out() [0x4ab4b2]
+11  ././examples/hlu.out() [0x4acf80]
+12  ././examples/hlu.out() [0x4ad41f]
+13  ././examples/hlu.out() [0x4cb514]
+14  ././examples/hlu.out() [0x4cd078]
+15  ././examples/hlu.out() [0x4100b3]
+16  ././examples/hlu.out() [0x465935]
+17  ././examples/hlu.out() [0x465712]
+18  ././examples/hlu.out() [0x4671c0]
+19  ././examples/hlu.out() [0x46763b]
+20  ././examples/hlu.out() [0x4c319b]
+21  ././examples/hlu.out() [0x4c43d4]
+22  ././examples/hlu.out() [0x413083]
+23  ././examples/hlu.out() [0x47d615]
+24  [0x1a20120]
+=================================
+[node20-015:1587894:0:1587894] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[node20-015:1587874:0:1587874]      cma_ep.c:85   process_vm_readv(pid=1587875 {0x7fffffffcad0,8}-->{0x608140,8}) returned -1: No such process
+==== backtrace (tid:1587874) ====
+ 0  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_handle_error+0x294) [0x1555549c4f04]
+ 1  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_fatal_error_message+0xb2) [0x1555549c20f2]
+ 2  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_log_default_handler+0xee9) [0x1555549c6b29]
+ 3  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_log_dispatch+0xd4) [0x1555549c6e74]
+ 4  /cluster/ucx/1.19.1/lib/ucx/libuct_cma.so.0(+0x38cd) [0x155554c0c8cd]
+ 5  /cluster/ucx/1.19.1/lib/ucx/libuct_cma.so.0(uct_cma_ep_tx+0x186) [0x155554c0cc26]
+ 6  /cluster/ucx/1.19.1/lib/libuct.so.0(uct_scopy_ep_progress_tx+0x55) [0x155554970a55]
+ 7  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_arbiter_dispatch_nonempty+0xa6) [0x1555549b6836]
+ 8  /cluster/ucx/1.19.1/lib/libuct.so.0(uct_scopy_iface_progress+0x59) [0x155554970599]
+ 9  /cluster/ucx/1.19.1/lib/libucs.so.0(+0x260e1) [0x1555549b70e1]
+10  /cluster/ucx/1.19.1/lib/libucp.so.0(ucp_worker_progress+0x2a) [0x155554c5fbaa]
+11  /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_common_ucx_winfo_flush+0xe6) [0x155554d9c336]
+12  /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_common_ucx_ctx_flush+0x92) [0x155554d9c742]
+13  /cluster/mpi/openmpi/5.0.5/lib/libmpi.so.40(MPI_Win_flush+0x57) [0x155555262397]
+14  ././examples/hlu.out() [0x407cf8]
+15  ././examples/hlu.out() [0x408130]
+16  ././examples/hlu.out() [0x405185]
+17  /lib64/libc.so.6(+0x2a610) [0x155554a2a610]
+18  /lib64/libc.so.6(__libc_start_main+0x80) [0x155554a2a6c0]
+19  ././examples/hlu.out() [0x405695]
+=================================
+[node20-015:1587874] *** Process received signal ***
+[node20-015:1587874] Signal: Aborted (6)
+[node20-015:1587874] Signal code:  (-6)
+[node20-015:1587874] [ 0] /lib64/libc.so.6(+0x3fc30)[0x155554a3fc30]
+[node20-015:1587874] [ 1] /lib64/libc.so.6(+0x8d02c)[0x155554a8d02c]
+[node20-015:1587874] [ 2] /lib64/libc.so.6(raise+0x16)[0x155554a3fb86]
+[node20-015:1587874] [ 3] /lib64/libc.so.6(abort+0xd3)[0x155554a29873]
+[node20-015:1587874] [ 4] /cluster/ucx/1.19.1/lib/libucs.so.0(+0x310f7)[0x1555549c20f7]
+[node20-015:1587874] [ 5] /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_log_default_handler+0xee9)[0x1555549c6b29]
+[node20-015:1587874] [ 6] /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_log_dispatch+0xd4)[0x1555549c6e74]
+[node20-015:1587874] [ 7] /cluster/ucx/1.19.1/lib/ucx/libuct_cma.so.0(+0x38cd)[0x155554c0c8cd]
+[node20-015:1587874] [ 8] /cluster/ucx/1.19.1/lib/ucx/libuct_cma.so.0(uct_cma_ep_tx+0x186)[0x155554c0cc26]
+[node20-015:1587874] [ 9] /cluster/ucx/1.19.1/lib/libuct.so.0(uct_scopy_ep_progress_tx+0x55)[0x155554970a55]
+[node20-015:1587874] [10] /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_arbiter_dispatch_nonempty+0xa6)[0x1555549b6836]
+[node20-015:1587874] [11] /cluster/ucx/1.19.1/lib/libuct.so.0(uct_scopy_iface_progress+0x59)[0x155554970599]
+[node20-015:1587874] [12] /cluster/ucx/1.19.1/lib/libucs.so.0(+0x260e1)[0x1555549b70e1]
+[node20-015:1587874] [13] /cluster/ucx/1.19.1/lib/libucp.so.0(ucp_worker_progress+0x2a)[0x155554c5fbaa]
+[node20-015:1587874] [14] /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_common_ucx_winfo_flush+0xe6)[0x155554d9c336]
+[node20-015:1587874] [15] /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_common_ucx_ctx_flush+0x92)[0x155554d9c742]
+[node20-015:1587874] [16] /cluster/mpi/openmpi/5.0.5/lib/libmpi.so.40(MPI_Win_flush+0x57)[0x155555262397]
+[node20-015:1587874] [17] ././examples/hlu.out[0x407cf8]
+[node20-015:1587874] [18] ././examples/hlu.out[0x408130]
+[node20-015:1587874] [19] ././examples/hlu.out[0x405185]
+[node20-015:1587874] [20] /lib64/libc.so.6(+0x2a610)[0x155554a2a610]
+[node20-015:1587874] [21] /lib64/libc.so.6(__libc_start_main+0x80)[0x155554a2a6c0]
+[node20-015:1587874] [22] ././examples/hlu.out[0x405695]
+[node20-015:1587874] *** End of error message ***
+--------------------------------------------------------------------------
+prterun noticed that process rank 2 with PID 1587875 on node node20-015 exited on
+signal 11 (Segmentation fault).
+--------------------------------------------------------------------------

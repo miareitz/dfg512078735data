@@ -1,0 +1,1101 @@
+openjdk version "19.0.2" 2023-01-17
+OpenJDK Runtime Environment (build 19.0.2+7-44)
+OpenJDK 64-Bit Server VM (build 19.0.2+7-44, mixed mode, sharing)
+JVM of Place 0 started
+[APGAS] host node54-039 is reachable with network interface name:ib0 (ib0)
+[APGAS] host node54-039 is reachable with network interface name:eno1 (eno1)
+[APGAS] host node54-039 is reachable with network interface name:lo (lo)
+[APGAS] found ip: 10.149.54.39
+[APGAS] sets network interface to 10.149.*.*
+Mar 09, 2023 11:31:20 AM com.hazelcast.instance.HazelcastInstanceFactory
+WARNING: Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+hazelcast started
+Hostmanager: getNextHost found host: node54-040
+HostManager:
+ hostName=node54-039, attachedPlaces=[place(0)], maxPlacesPerHost=1
+ hostName=node54-040, attachedPlaces=[place(1)], maxPlacesPerHost=1
+ hostName=node55-001, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-002, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-003, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-004, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-005, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-006, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-007, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-008, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-009, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-010, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-011, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-012, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-013, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-014, attachedPlaces=[], maxPlacesPerHost=1
+ placeIDGenerator=15
+[APGAS] Spawning new place: srun -N 1 -n 1 -w node54-040 java -Dglb.multiworker.benchmarkrepetitions=1 -Dglb.multiworker.workerperplace=40 -Dglb.multiworker.n=10 -Dglb.multiworker.lifelinestrategy=nfjglbswft.multiworker.lifeline.MyHypercubeStrategy -Dglb.multiworker.localopt=0 -Dglb.multiworker.faulttolerance.cpinterval=10 -Dglb.multiworker.faulttolerance.crashcase=0 -Dglb.multiworker.faulttolerance.crashseed=123 -Dglb.multiworker.faulttolerance.crashnumber=2 -Dglb.multiworker.faulttolerance.crashbegin=117 -Dglb.multiworker.faulttolerance.crashend=127 -Duser.dir=/home/apgas/reitz/workspaceNFJGLB/bin -cp /home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../build/libs/workspaceNFJGLB-1.0-SNAPSHOT-all.jar -Dapgas.verbose.launcher=true -Dapgas.immediate.threads=8 -Dapgas.launcher=apgas.launcher.SrunLauncher -Dapgas.hostfile=/home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../bin/hostfile2-977017 -Dapgas.threads=128 -Dapgas.resilient=true -Dapgas.max.threads=256 -Dapgas.backupcount=2 -Dapgas.consoleprinter=false -Dapgas.java=java -Dapgas.hostmanager.strategy=1 -Dapgas.places=16 -Dapgas.network.interface=10.149.*.* -Dapgas.master=10.149.54.39:5701 -Dapgas.place.id=1 apgas.GlobalRuntime
+Hostmanager: getNextHost found host: node55-001
+HostManager:
+ hostName=node54-039, attachedPlaces=[place(0)], maxPlacesPerHost=1
+ hostName=node54-040, attachedPlaces=[place(1)], maxPlacesPerHost=1
+ hostName=node55-001, attachedPlaces=[place(2)], maxPlacesPerHost=1
+ hostName=node55-002, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-003, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-004, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-005, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-006, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-007, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-008, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-009, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-010, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-011, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-012, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-013, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-014, attachedPlaces=[], maxPlacesPerHost=1
+ placeIDGenerator=15
+[APGAS] Spawning new place: srun -N 1 -n 1 -w node55-001 java -Dglb.multiworker.benchmarkrepetitions=1 -Dglb.multiworker.workerperplace=40 -Dglb.multiworker.n=10 -Dglb.multiworker.lifelinestrategy=nfjglbswft.multiworker.lifeline.MyHypercubeStrategy -Dglb.multiworker.localopt=0 -Dglb.multiworker.faulttolerance.cpinterval=10 -Dglb.multiworker.faulttolerance.crashcase=0 -Dglb.multiworker.faulttolerance.crashseed=123 -Dglb.multiworker.faulttolerance.crashnumber=2 -Dglb.multiworker.faulttolerance.crashbegin=117 -Dglb.multiworker.faulttolerance.crashend=127 -Duser.dir=/home/apgas/reitz/workspaceNFJGLB/bin -cp /home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../build/libs/workspaceNFJGLB-1.0-SNAPSHOT-all.jar -Dapgas.verbose.launcher=true -Dapgas.immediate.threads=8 -Dapgas.launcher=apgas.launcher.SrunLauncher -Dapgas.hostfile=/home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../bin/hostfile2-977017 -Dapgas.threads=128 -Dapgas.resilient=true -Dapgas.max.threads=256 -Dapgas.backupcount=2 -Dapgas.consoleprinter=false -Dapgas.java=java -Dapgas.hostmanager.strategy=1 -Dapgas.places=16 -Dapgas.network.interface=10.149.*.* -Dapgas.master=10.149.54.39:5701 -Dapgas.place.id=2 apgas.GlobalRuntime
+Hostmanager: getNextHost found host: node55-002
+HostManager:
+ hostName=node54-039, attachedPlaces=[place(0)], maxPlacesPerHost=1
+ hostName=node54-040, attachedPlaces=[place(1)], maxPlacesPerHost=1
+ hostName=node55-001, attachedPlaces=[place(2)], maxPlacesPerHost=1
+ hostName=node55-002, attachedPlaces=[place(3)], maxPlacesPerHost=1
+ hostName=node55-003, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-004, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-005, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-006, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-007, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-008, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-009, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-010, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-011, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-012, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-013, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-014, attachedPlaces=[], maxPlacesPerHost=1
+ placeIDGenerator=15
+[APGAS] Spawning new place: srun -N 1 -n 1 -w node55-002 java -Dglb.multiworker.benchmarkrepetitions=1 -Dglb.multiworker.workerperplace=40 -Dglb.multiworker.n=10 -Dglb.multiworker.lifelinestrategy=nfjglbswft.multiworker.lifeline.MyHypercubeStrategy -Dglb.multiworker.localopt=0 -Dglb.multiworker.faulttolerance.cpinterval=10 -Dglb.multiworker.faulttolerance.crashcase=0 -Dglb.multiworker.faulttolerance.crashseed=123 -Dglb.multiworker.faulttolerance.crashnumber=2 -Dglb.multiworker.faulttolerance.crashbegin=117 -Dglb.multiworker.faulttolerance.crashend=127 -Duser.dir=/home/apgas/reitz/workspaceNFJGLB/bin -cp /home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../build/libs/workspaceNFJGLB-1.0-SNAPSHOT-all.jar -Dapgas.verbose.launcher=true -Dapgas.immediate.threads=8 -Dapgas.launcher=apgas.launcher.SrunLauncher -Dapgas.hostfile=/home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../bin/hostfile2-977017 -Dapgas.threads=128 -Dapgas.resilient=true -Dapgas.max.threads=256 -Dapgas.backupcount=2 -Dapgas.consoleprinter=false -Dapgas.java=java -Dapgas.hostmanager.strategy=1 -Dapgas.places=16 -Dapgas.network.interface=10.149.*.* -Dapgas.master=10.149.54.39:5701 -Dapgas.place.id=3 apgas.GlobalRuntime
+Hostmanager: getNextHost found host: node55-003
+HostManager:
+ hostName=node54-039, attachedPlaces=[place(0)], maxPlacesPerHost=1
+ hostName=node54-040, attachedPlaces=[place(1)], maxPlacesPerHost=1
+ hostName=node55-001, attachedPlaces=[place(2)], maxPlacesPerHost=1
+ hostName=node55-002, attachedPlaces=[place(3)], maxPlacesPerHost=1
+ hostName=node55-003, attachedPlaces=[place(4)], maxPlacesPerHost=1
+ hostName=node55-004, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-005, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-006, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-007, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-008, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-009, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-010, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-011, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-012, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-013, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-014, attachedPlaces=[], maxPlacesPerHost=1
+ placeIDGenerator=15
+[APGAS] Spawning new place: srun -N 1 -n 1 -w node55-003 java -Dglb.multiworker.benchmarkrepetitions=1 -Dglb.multiworker.workerperplace=40 -Dglb.multiworker.n=10 -Dglb.multiworker.lifelinestrategy=nfjglbswft.multiworker.lifeline.MyHypercubeStrategy -Dglb.multiworker.localopt=0 -Dglb.multiworker.faulttolerance.cpinterval=10 -Dglb.multiworker.faulttolerance.crashcase=0 -Dglb.multiworker.faulttolerance.crashseed=123 -Dglb.multiworker.faulttolerance.crashnumber=2 -Dglb.multiworker.faulttolerance.crashbegin=117 -Dglb.multiworker.faulttolerance.crashend=127 -Duser.dir=/home/apgas/reitz/workspaceNFJGLB/bin -cp /home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../build/libs/workspaceNFJGLB-1.0-SNAPSHOT-all.jar -Dapgas.verbose.launcher=true -Dapgas.immediate.threads=8 -Dapgas.launcher=apgas.launcher.SrunLauncher -Dapgas.hostfile=/home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../bin/hostfile2-977017 -Dapgas.threads=128 -Dapgas.resilient=true -Dapgas.max.threads=256 -Dapgas.backupcount=2 -Dapgas.consoleprinter=false -Dapgas.java=java -Dapgas.hostmanager.strategy=1 -Dapgas.places=16 -Dapgas.network.interface=10.149.*.* -Dapgas.master=10.149.54.39:5701 -Dapgas.place.id=4 apgas.GlobalRuntime
+Hostmanager: getNextHost found host: node55-004
+HostManager:
+ hostName=node54-039, attachedPlaces=[place(0)], maxPlacesPerHost=1
+ hostName=node54-040, attachedPlaces=[place(1)], maxPlacesPerHost=1
+ hostName=node55-001, attachedPlaces=[place(2)], maxPlacesPerHost=1
+ hostName=node55-002, attachedPlaces=[place(3)], maxPlacesPerHost=1
+ hostName=node55-003, attachedPlaces=[place(4)], maxPlacesPerHost=1
+ hostName=node55-004, attachedPlaces=[place(5)], maxPlacesPerHost=1
+ hostName=node55-005, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-006, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-007, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-008, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-009, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-010, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-011, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-012, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-013, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-014, attachedPlaces=[], maxPlacesPerHost=1
+ placeIDGenerator=15
+[APGAS] Spawning new place: srun -N 1 -n 1 -w node55-004 java -Dglb.multiworker.benchmarkrepetitions=1 -Dglb.multiworker.workerperplace=40 -Dglb.multiworker.n=10 -Dglb.multiworker.lifelinestrategy=nfjglbswft.multiworker.lifeline.MyHypercubeStrategy -Dglb.multiworker.localopt=0 -Dglb.multiworker.faulttolerance.cpinterval=10 -Dglb.multiworker.faulttolerance.crashcase=0 -Dglb.multiworker.faulttolerance.crashseed=123 -Dglb.multiworker.faulttolerance.crashnumber=2 -Dglb.multiworker.faulttolerance.crashbegin=117 -Dglb.multiworker.faulttolerance.crashend=127 -Duser.dir=/home/apgas/reitz/workspaceNFJGLB/bin -cp /home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../build/libs/workspaceNFJGLB-1.0-SNAPSHOT-all.jar -Dapgas.verbose.launcher=true -Dapgas.immediate.threads=8 -Dapgas.launcher=apgas.launcher.SrunLauncher -Dapgas.hostfile=/home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../bin/hostfile2-977017 -Dapgas.threads=128 -Dapgas.resilient=true -Dapgas.max.threads=256 -Dapgas.backupcount=2 -Dapgas.consoleprinter=false -Dapgas.java=java -Dapgas.hostmanager.strategy=1 -Dapgas.places=16 -Dapgas.network.interface=10.149.*.* -Dapgas.master=10.149.54.39:5701 -Dapgas.place.id=5 apgas.GlobalRuntime
+Hostmanager: getNextHost found host: node55-005
+HostManager:
+ hostName=node54-039, attachedPlaces=[place(0)], maxPlacesPerHost=1
+ hostName=node54-040, attachedPlaces=[place(1)], maxPlacesPerHost=1
+ hostName=node55-001, attachedPlaces=[place(2)], maxPlacesPerHost=1
+ hostName=node55-002, attachedPlaces=[place(3)], maxPlacesPerHost=1
+ hostName=node55-003, attachedPlaces=[place(4)], maxPlacesPerHost=1
+ hostName=node55-004, attachedPlaces=[place(5)], maxPlacesPerHost=1
+ hostName=node55-005, attachedPlaces=[place(6)], maxPlacesPerHost=1
+ hostName=node55-006, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-007, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-008, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-009, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-010, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-011, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-012, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-013, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-014, attachedPlaces=[], maxPlacesPerHost=1
+ placeIDGenerator=15
+[APGAS] Spawning new place: srun -N 1 -n 1 -w node55-005 java -Dglb.multiworker.benchmarkrepetitions=1 -Dglb.multiworker.workerperplace=40 -Dglb.multiworker.n=10 -Dglb.multiworker.lifelinestrategy=nfjglbswft.multiworker.lifeline.MyHypercubeStrategy -Dglb.multiworker.localopt=0 -Dglb.multiworker.faulttolerance.cpinterval=10 -Dglb.multiworker.faulttolerance.crashcase=0 -Dglb.multiworker.faulttolerance.crashseed=123 -Dglb.multiworker.faulttolerance.crashnumber=2 -Dglb.multiworker.faulttolerance.crashbegin=117 -Dglb.multiworker.faulttolerance.crashend=127 -Duser.dir=/home/apgas/reitz/workspaceNFJGLB/bin -cp /home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../build/libs/workspaceNFJGLB-1.0-SNAPSHOT-all.jar -Dapgas.verbose.launcher=true -Dapgas.immediate.threads=8 -Dapgas.launcher=apgas.launcher.SrunLauncher -Dapgas.hostfile=/home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../bin/hostfile2-977017 -Dapgas.threads=128 -Dapgas.resilient=true -Dapgas.max.threads=256 -Dapgas.backupcount=2 -Dapgas.consoleprinter=false -Dapgas.java=java -Dapgas.hostmanager.strategy=1 -Dapgas.places=16 -Dapgas.network.interface=10.149.*.* -Dapgas.master=10.149.54.39:5701 -Dapgas.place.id=6 apgas.GlobalRuntime
+Hostmanager: getNextHost found host: node55-006
+HostManager:
+ hostName=node54-039, attachedPlaces=[place(0)], maxPlacesPerHost=1
+ hostName=node54-040, attachedPlaces=[place(1)], maxPlacesPerHost=1
+ hostName=node55-001, attachedPlaces=[place(2)], maxPlacesPerHost=1
+ hostName=node55-002, attachedPlaces=[place(3)], maxPlacesPerHost=1
+ hostName=node55-003, attachedPlaces=[place(4)], maxPlacesPerHost=1
+ hostName=node55-004, attachedPlaces=[place(5)], maxPlacesPerHost=1
+ hostName=node55-005, attachedPlaces=[place(6)], maxPlacesPerHost=1
+ hostName=node55-006, attachedPlaces=[place(7)], maxPlacesPerHost=1
+ hostName=node55-007, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-008, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-009, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-010, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-011, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-012, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-013, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-014, attachedPlaces=[], maxPlacesPerHost=1
+ placeIDGenerator=15
+[APGAS] Spawning new place: srun -N 1 -n 1 -w node55-006 java -Dglb.multiworker.benchmarkrepetitions=1 -Dglb.multiworker.workerperplace=40 -Dglb.multiworker.n=10 -Dglb.multiworker.lifelinestrategy=nfjglbswft.multiworker.lifeline.MyHypercubeStrategy -Dglb.multiworker.localopt=0 -Dglb.multiworker.faulttolerance.cpinterval=10 -Dglb.multiworker.faulttolerance.crashcase=0 -Dglb.multiworker.faulttolerance.crashseed=123 -Dglb.multiworker.faulttolerance.crashnumber=2 -Dglb.multiworker.faulttolerance.crashbegin=117 -Dglb.multiworker.faulttolerance.crashend=127 -Duser.dir=/home/apgas/reitz/workspaceNFJGLB/bin -cp /home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../build/libs/workspaceNFJGLB-1.0-SNAPSHOT-all.jar -Dapgas.verbose.launcher=true -Dapgas.immediate.threads=8 -Dapgas.launcher=apgas.launcher.SrunLauncher -Dapgas.hostfile=/home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../bin/hostfile2-977017 -Dapgas.threads=128 -Dapgas.resilient=true -Dapgas.max.threads=256 -Dapgas.backupcount=2 -Dapgas.consoleprinter=false -Dapgas.java=java -Dapgas.hostmanager.strategy=1 -Dapgas.places=16 -Dapgas.network.interface=10.149.*.* -Dapgas.master=10.149.54.39:5701 -Dapgas.place.id=7 apgas.GlobalRuntime
+Hostmanager: getNextHost found host: node55-007
+HostManager:
+ hostName=node54-039, attachedPlaces=[place(0)], maxPlacesPerHost=1
+ hostName=node54-040, attachedPlaces=[place(1)], maxPlacesPerHost=1
+ hostName=node55-001, attachedPlaces=[place(2)], maxPlacesPerHost=1
+ hostName=node55-002, attachedPlaces=[place(3)], maxPlacesPerHost=1
+ hostName=node55-003, attachedPlaces=[place(4)], maxPlacesPerHost=1
+ hostName=node55-004, attachedPlaces=[place(5)], maxPlacesPerHost=1
+ hostName=node55-005, attachedPlaces=[place(6)], maxPlacesPerHost=1
+ hostName=node55-006, attachedPlaces=[place(7)], maxPlacesPerHost=1
+ hostName=node55-007, attachedPlaces=[place(8)], maxPlacesPerHost=1
+ hostName=node55-008, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-009, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-010, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-011, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-012, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-013, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-014, attachedPlaces=[], maxPlacesPerHost=1
+ placeIDGenerator=15
+[APGAS] Spawning new place: srun -N 1 -n 1 -w node55-007 java -Dglb.multiworker.benchmarkrepetitions=1 -Dglb.multiworker.workerperplace=40 -Dglb.multiworker.n=10 -Dglb.multiworker.lifelinestrategy=nfjglbswft.multiworker.lifeline.MyHypercubeStrategy -Dglb.multiworker.localopt=0 -Dglb.multiworker.faulttolerance.cpinterval=10 -Dglb.multiworker.faulttolerance.crashcase=0 -Dglb.multiworker.faulttolerance.crashseed=123 -Dglb.multiworker.faulttolerance.crashnumber=2 -Dglb.multiworker.faulttolerance.crashbegin=117 -Dglb.multiworker.faulttolerance.crashend=127 -Duser.dir=/home/apgas/reitz/workspaceNFJGLB/bin -cp /home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../build/libs/workspaceNFJGLB-1.0-SNAPSHOT-all.jar -Dapgas.verbose.launcher=true -Dapgas.immediate.threads=8 -Dapgas.launcher=apgas.launcher.SrunLauncher -Dapgas.hostfile=/home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../bin/hostfile2-977017 -Dapgas.threads=128 -Dapgas.resilient=true -Dapgas.max.threads=256 -Dapgas.backupcount=2 -Dapgas.consoleprinter=false -Dapgas.java=java -Dapgas.hostmanager.strategy=1 -Dapgas.places=16 -Dapgas.network.interface=10.149.*.* -Dapgas.master=10.149.54.39:5701 -Dapgas.place.id=8 apgas.GlobalRuntime
+Hostmanager: getNextHost found host: node55-008
+HostManager:
+ hostName=node54-039, attachedPlaces=[place(0)], maxPlacesPerHost=1
+ hostName=node54-040, attachedPlaces=[place(1)], maxPlacesPerHost=1
+ hostName=node55-001, attachedPlaces=[place(2)], maxPlacesPerHost=1
+ hostName=node55-002, attachedPlaces=[place(3)], maxPlacesPerHost=1
+ hostName=node55-003, attachedPlaces=[place(4)], maxPlacesPerHost=1
+ hostName=node55-004, attachedPlaces=[place(5)], maxPlacesPerHost=1
+ hostName=node55-005, attachedPlaces=[place(6)], maxPlacesPerHost=1
+ hostName=node55-006, attachedPlaces=[place(7)], maxPlacesPerHost=1
+ hostName=node55-007, attachedPlaces=[place(8)], maxPlacesPerHost=1
+ hostName=node55-008, attachedPlaces=[place(9)], maxPlacesPerHost=1
+ hostName=node55-009, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-010, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-011, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-012, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-013, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-014, attachedPlaces=[], maxPlacesPerHost=1
+ placeIDGenerator=15
+[APGAS] Spawning new place: srun -N 1 -n 1 -w node55-008 java -Dglb.multiworker.benchmarkrepetitions=1 -Dglb.multiworker.workerperplace=40 -Dglb.multiworker.n=10 -Dglb.multiworker.lifelinestrategy=nfjglbswft.multiworker.lifeline.MyHypercubeStrategy -Dglb.multiworker.localopt=0 -Dglb.multiworker.faulttolerance.cpinterval=10 -Dglb.multiworker.faulttolerance.crashcase=0 -Dglb.multiworker.faulttolerance.crashseed=123 -Dglb.multiworker.faulttolerance.crashnumber=2 -Dglb.multiworker.faulttolerance.crashbegin=117 -Dglb.multiworker.faulttolerance.crashend=127 -Duser.dir=/home/apgas/reitz/workspaceNFJGLB/bin -cp /home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../build/libs/workspaceNFJGLB-1.0-SNAPSHOT-all.jar -Dapgas.verbose.launcher=true -Dapgas.immediate.threads=8 -Dapgas.launcher=apgas.launcher.SrunLauncher -Dapgas.hostfile=/home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../bin/hostfile2-977017 -Dapgas.threads=128 -Dapgas.resilient=true -Dapgas.max.threads=256 -Dapgas.backupcount=2 -Dapgas.consoleprinter=false -Dapgas.java=java -Dapgas.hostmanager.strategy=1 -Dapgas.places=16 -Dapgas.network.interface=10.149.*.* -Dapgas.master=10.149.54.39:5701 -Dapgas.place.id=9 apgas.GlobalRuntime
+Hostmanager: getNextHost found host: node55-009
+HostManager:
+ hostName=node54-039, attachedPlaces=[place(0)], maxPlacesPerHost=1
+ hostName=node54-040, attachedPlaces=[place(1)], maxPlacesPerHost=1
+ hostName=node55-001, attachedPlaces=[place(2)], maxPlacesPerHost=1
+ hostName=node55-002, attachedPlaces=[place(3)], maxPlacesPerHost=1
+ hostName=node55-003, attachedPlaces=[place(4)], maxPlacesPerHost=1
+ hostName=node55-004, attachedPlaces=[place(5)], maxPlacesPerHost=1
+ hostName=node55-005, attachedPlaces=[place(6)], maxPlacesPerHost=1
+ hostName=node55-006, attachedPlaces=[place(7)], maxPlacesPerHost=1
+ hostName=node55-007, attachedPlaces=[place(8)], maxPlacesPerHost=1
+ hostName=node55-008, attachedPlaces=[place(9)], maxPlacesPerHost=1
+ hostName=node55-009, attachedPlaces=[place(10)], maxPlacesPerHost=1
+ hostName=node55-010, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-011, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-012, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-013, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-014, attachedPlaces=[], maxPlacesPerHost=1
+ placeIDGenerator=15
+[APGAS] Spawning new place: srun -N 1 -n 1 -w node55-009 java -Dglb.multiworker.benchmarkrepetitions=1 -Dglb.multiworker.workerperplace=40 -Dglb.multiworker.n=10 -Dglb.multiworker.lifelinestrategy=nfjglbswft.multiworker.lifeline.MyHypercubeStrategy -Dglb.multiworker.localopt=0 -Dglb.multiworker.faulttolerance.cpinterval=10 -Dglb.multiworker.faulttolerance.crashcase=0 -Dglb.multiworker.faulttolerance.crashseed=123 -Dglb.multiworker.faulttolerance.crashnumber=2 -Dglb.multiworker.faulttolerance.crashbegin=117 -Dglb.multiworker.faulttolerance.crashend=127 -Duser.dir=/home/apgas/reitz/workspaceNFJGLB/bin -cp /home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../build/libs/workspaceNFJGLB-1.0-SNAPSHOT-all.jar -Dapgas.verbose.launcher=true -Dapgas.immediate.threads=8 -Dapgas.launcher=apgas.launcher.SrunLauncher -Dapgas.hostfile=/home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../bin/hostfile2-977017 -Dapgas.threads=128 -Dapgas.resilient=true -Dapgas.max.threads=256 -Dapgas.backupcount=2 -Dapgas.consoleprinter=false -Dapgas.java=java -Dapgas.hostmanager.strategy=1 -Dapgas.places=16 -Dapgas.network.interface=10.149.*.* -Dapgas.master=10.149.54.39:5701 -Dapgas.place.id=10 apgas.GlobalRuntime
+Hostmanager: getNextHost found host: node55-010
+HostManager:
+ hostName=node54-039, attachedPlaces=[place(0)], maxPlacesPerHost=1
+ hostName=node54-040, attachedPlaces=[place(1)], maxPlacesPerHost=1
+ hostName=node55-001, attachedPlaces=[place(2)], maxPlacesPerHost=1
+ hostName=node55-002, attachedPlaces=[place(3)], maxPlacesPerHost=1
+ hostName=node55-003, attachedPlaces=[place(4)], maxPlacesPerHost=1
+ hostName=node55-004, attachedPlaces=[place(5)], maxPlacesPerHost=1
+ hostName=node55-005, attachedPlaces=[place(6)], maxPlacesPerHost=1
+ hostName=node55-006, attachedPlaces=[place(7)], maxPlacesPerHost=1
+ hostName=node55-007, attachedPlaces=[place(8)], maxPlacesPerHost=1
+ hostName=node55-008, attachedPlaces=[place(9)], maxPlacesPerHost=1
+ hostName=node55-009, attachedPlaces=[place(10)], maxPlacesPerHost=1
+ hostName=node55-010, attachedPlaces=[place(11)], maxPlacesPerHost=1
+ hostName=node55-011, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-012, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-013, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-014, attachedPlaces=[], maxPlacesPerHost=1
+ placeIDGenerator=15
+[APGAS] Spawning new place: srun -N 1 -n 1 -w node55-010 java -Dglb.multiworker.benchmarkrepetitions=1 -Dglb.multiworker.workerperplace=40 -Dglb.multiworker.n=10 -Dglb.multiworker.lifelinestrategy=nfjglbswft.multiworker.lifeline.MyHypercubeStrategy -Dglb.multiworker.localopt=0 -Dglb.multiworker.faulttolerance.cpinterval=10 -Dglb.multiworker.faulttolerance.crashcase=0 -Dglb.multiworker.faulttolerance.crashseed=123 -Dglb.multiworker.faulttolerance.crashnumber=2 -Dglb.multiworker.faulttolerance.crashbegin=117 -Dglb.multiworker.faulttolerance.crashend=127 -Duser.dir=/home/apgas/reitz/workspaceNFJGLB/bin -cp /home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../build/libs/workspaceNFJGLB-1.0-SNAPSHOT-all.jar -Dapgas.verbose.launcher=true -Dapgas.immediate.threads=8 -Dapgas.launcher=apgas.launcher.SrunLauncher -Dapgas.hostfile=/home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../bin/hostfile2-977017 -Dapgas.threads=128 -Dapgas.resilient=true -Dapgas.max.threads=256 -Dapgas.backupcount=2 -Dapgas.consoleprinter=false -Dapgas.java=java -Dapgas.hostmanager.strategy=1 -Dapgas.places=16 -Dapgas.network.interface=10.149.*.* -Dapgas.master=10.149.54.39:5701 -Dapgas.place.id=11 apgas.GlobalRuntime
+Hostmanager: getNextHost found host: node55-011
+HostManager:
+ hostName=node54-039, attachedPlaces=[place(0)], maxPlacesPerHost=1
+ hostName=node54-040, attachedPlaces=[place(1)], maxPlacesPerHost=1
+ hostName=node55-001, attachedPlaces=[place(2)], maxPlacesPerHost=1
+ hostName=node55-002, attachedPlaces=[place(3)], maxPlacesPerHost=1
+ hostName=node55-003, attachedPlaces=[place(4)], maxPlacesPerHost=1
+ hostName=node55-004, attachedPlaces=[place(5)], maxPlacesPerHost=1
+ hostName=node55-005, attachedPlaces=[place(6)], maxPlacesPerHost=1
+ hostName=node55-006, attachedPlaces=[place(7)], maxPlacesPerHost=1
+ hostName=node55-007, attachedPlaces=[place(8)], maxPlacesPerHost=1
+ hostName=node55-008, attachedPlaces=[place(9)], maxPlacesPerHost=1
+ hostName=node55-009, attachedPlaces=[place(10)], maxPlacesPerHost=1
+ hostName=node55-010, attachedPlaces=[place(11)], maxPlacesPerHost=1
+ hostName=node55-011, attachedPlaces=[place(12)], maxPlacesPerHost=1
+ hostName=node55-012, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-013, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-014, attachedPlaces=[], maxPlacesPerHost=1
+ placeIDGenerator=15
+[APGAS] Spawning new place: srun -N 1 -n 1 -w node55-011 java -Dglb.multiworker.benchmarkrepetitions=1 -Dglb.multiworker.workerperplace=40 -Dglb.multiworker.n=10 -Dglb.multiworker.lifelinestrategy=nfjglbswft.multiworker.lifeline.MyHypercubeStrategy -Dglb.multiworker.localopt=0 -Dglb.multiworker.faulttolerance.cpinterval=10 -Dglb.multiworker.faulttolerance.crashcase=0 -Dglb.multiworker.faulttolerance.crashseed=123 -Dglb.multiworker.faulttolerance.crashnumber=2 -Dglb.multiworker.faulttolerance.crashbegin=117 -Dglb.multiworker.faulttolerance.crashend=127 -Duser.dir=/home/apgas/reitz/workspaceNFJGLB/bin -cp /home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../build/libs/workspaceNFJGLB-1.0-SNAPSHOT-all.jar -Dapgas.verbose.launcher=true -Dapgas.immediate.threads=8 -Dapgas.launcher=apgas.launcher.SrunLauncher -Dapgas.hostfile=/home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../bin/hostfile2-977017 -Dapgas.threads=128 -Dapgas.resilient=true -Dapgas.max.threads=256 -Dapgas.backupcount=2 -Dapgas.consoleprinter=false -Dapgas.java=java -Dapgas.hostmanager.strategy=1 -Dapgas.places=16 -Dapgas.network.interface=10.149.*.* -Dapgas.master=10.149.54.39:5701 -Dapgas.place.id=12 apgas.GlobalRuntime
+Hostmanager: getNextHost found host: node55-012
+HostManager:
+ hostName=node54-039, attachedPlaces=[place(0)], maxPlacesPerHost=1
+ hostName=node54-040, attachedPlaces=[place(1)], maxPlacesPerHost=1
+ hostName=node55-001, attachedPlaces=[place(2)], maxPlacesPerHost=1
+ hostName=node55-002, attachedPlaces=[place(3)], maxPlacesPerHost=1
+ hostName=node55-003, attachedPlaces=[place(4)], maxPlacesPerHost=1
+ hostName=node55-004, attachedPlaces=[place(5)], maxPlacesPerHost=1
+ hostName=node55-005, attachedPlaces=[place(6)], maxPlacesPerHost=1
+ hostName=node55-006, attachedPlaces=[place(7)], maxPlacesPerHost=1
+ hostName=node55-007, attachedPlaces=[place(8)], maxPlacesPerHost=1
+ hostName=node55-008, attachedPlaces=[place(9)], maxPlacesPerHost=1
+ hostName=node55-009, attachedPlaces=[place(10)], maxPlacesPerHost=1
+ hostName=node55-010, attachedPlaces=[place(11)], maxPlacesPerHost=1
+ hostName=node55-011, attachedPlaces=[place(12)], maxPlacesPerHost=1
+ hostName=node55-012, attachedPlaces=[place(13)], maxPlacesPerHost=1
+ hostName=node55-013, attachedPlaces=[], maxPlacesPerHost=1
+ hostName=node55-014, attachedPlaces=[], maxPlacesPerHost=1
+ placeIDGenerator=15
+[APGAS] Spawning new place: srun -N 1 -n 1 -w node55-012 java -Dglb.multiworker.benchmarkrepetitions=1 -Dglb.multiworker.workerperplace=40 -Dglb.multiworker.n=10 -Dglb.multiworker.lifelinestrategy=nfjglbswft.multiworker.lifeline.MyHypercubeStrategy -Dglb.multiworker.localopt=0 -Dglb.multiworker.faulttolerance.cpinterval=10 -Dglb.multiworker.faulttolerance.crashcase=0 -Dglb.multiworker.faulttolerance.crashseed=123 -Dglb.multiworker.faulttolerance.crashnumber=2 -Dglb.multiworker.faulttolerance.crashbegin=117 -Dglb.multiworker.faulttolerance.crashend=127 -Duser.dir=/home/apgas/reitz/workspaceNFJGLB/bin -cp /home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../build/libs/workspaceNFJGLB-1.0-SNAPSHOT-all.jar -Dapgas.verbose.launcher=true -Dapgas.immediate.threads=8 -Dapgas.launcher=apgas.launcher.SrunLauncher -Dapgas.hostfile=/home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../bin/hostfile2-977017 -Dapgas.threads=128 -Dapgas.resilient=true -Dapgas.max.threads=256 -Dapgas.backupcount=2 -Dapgas.consoleprinter=false -Dapgas.java=java -Dapgas.hostmanager.strategy=1 -Dapgas.places=16 -Dapgas.network.interface=10.149.*.* -Dapgas.master=10.149.54.39:5701 -Dapgas.place.id=13 apgas.GlobalRuntime
+Hostmanager: getNextHost found host: node55-013
+HostManager:
+ hostName=node54-039, attachedPlaces=[place(0)], maxPlacesPerHost=1
+ hostName=node54-040, attachedPlaces=[place(1)], maxPlacesPerHost=1
+ hostName=node55-001, attachedPlaces=[place(2)], maxPlacesPerHost=1
+ hostName=node55-002, attachedPlaces=[place(3)], maxPlacesPerHost=1
+ hostName=node55-003, attachedPlaces=[place(4)], maxPlacesPerHost=1
+ hostName=node55-004, attachedPlaces=[place(5)], maxPlacesPerHost=1
+ hostName=node55-005, attachedPlaces=[place(6)], maxPlacesPerHost=1
+ hostName=node55-006, attachedPlaces=[place(7)], maxPlacesPerHost=1
+ hostName=node55-007, attachedPlaces=[place(8)], maxPlacesPerHost=1
+ hostName=node55-008, attachedPlaces=[place(9)], maxPlacesPerHost=1
+ hostName=node55-009, attachedPlaces=[place(10)], maxPlacesPerHost=1
+ hostName=node55-010, attachedPlaces=[place(11)], maxPlacesPerHost=1
+ hostName=node55-011, attachedPlaces=[place(12)], maxPlacesPerHost=1
+ hostName=node55-012, attachedPlaces=[place(13)], maxPlacesPerHost=1
+ hostName=node55-013, attachedPlaces=[place(14)], maxPlacesPerHost=1
+ hostName=node55-014, attachedPlaces=[], maxPlacesPerHost=1
+ placeIDGenerator=15
+[APGAS] Spawning new place: srun -N 1 -n 1 -w node55-013 java -Dglb.multiworker.benchmarkrepetitions=1 -Dglb.multiworker.workerperplace=40 -Dglb.multiworker.n=10 -Dglb.multiworker.lifelinestrategy=nfjglbswft.multiworker.lifeline.MyHypercubeStrategy -Dglb.multiworker.localopt=0 -Dglb.multiworker.faulttolerance.cpinterval=10 -Dglb.multiworker.faulttolerance.crashcase=0 -Dglb.multiworker.faulttolerance.crashseed=123 -Dglb.multiworker.faulttolerance.crashnumber=2 -Dglb.multiworker.faulttolerance.crashbegin=117 -Dglb.multiworker.faulttolerance.crashend=127 -Duser.dir=/home/apgas/reitz/workspaceNFJGLB/bin -cp /home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../build/libs/workspaceNFJGLB-1.0-SNAPSHOT-all.jar -Dapgas.verbose.launcher=true -Dapgas.immediate.threads=8 -Dapgas.launcher=apgas.launcher.SrunLauncher -Dapgas.hostfile=/home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../bin/hostfile2-977017 -Dapgas.threads=128 -Dapgas.resilient=true -Dapgas.max.threads=256 -Dapgas.backupcount=2 -Dapgas.consoleprinter=false -Dapgas.java=java -Dapgas.hostmanager.strategy=1 -Dapgas.places=16 -Dapgas.network.interface=10.149.*.* -Dapgas.master=10.149.54.39:5701 -Dapgas.place.id=14 apgas.GlobalRuntime
+Hostmanager: getNextHost found host: node55-014
+HostManager:
+ hostName=node54-039, attachedPlaces=[place(0)], maxPlacesPerHost=1
+ hostName=node54-040, attachedPlaces=[place(1)], maxPlacesPerHost=1
+ hostName=node55-001, attachedPlaces=[place(2)], maxPlacesPerHost=1
+ hostName=node55-002, attachedPlaces=[place(3)], maxPlacesPerHost=1
+ hostName=node55-003, attachedPlaces=[place(4)], maxPlacesPerHost=1
+ hostName=node55-004, attachedPlaces=[place(5)], maxPlacesPerHost=1
+ hostName=node55-005, attachedPlaces=[place(6)], maxPlacesPerHost=1
+ hostName=node55-006, attachedPlaces=[place(7)], maxPlacesPerHost=1
+ hostName=node55-007, attachedPlaces=[place(8)], maxPlacesPerHost=1
+ hostName=node55-008, attachedPlaces=[place(9)], maxPlacesPerHost=1
+ hostName=node55-009, attachedPlaces=[place(10)], maxPlacesPerHost=1
+ hostName=node55-010, attachedPlaces=[place(11)], maxPlacesPerHost=1
+ hostName=node55-011, attachedPlaces=[place(12)], maxPlacesPerHost=1
+ hostName=node55-012, attachedPlaces=[place(13)], maxPlacesPerHost=1
+ hostName=node55-013, attachedPlaces=[place(14)], maxPlacesPerHost=1
+ hostName=node55-014, attachedPlaces=[place(15)], maxPlacesPerHost=1
+ placeIDGenerator=15
+[APGAS] Spawning new place: srun -N 1 -n 1 -w node55-014 java -Dglb.multiworker.benchmarkrepetitions=1 -Dglb.multiworker.workerperplace=40 -Dglb.multiworker.n=10 -Dglb.multiworker.lifelinestrategy=nfjglbswft.multiworker.lifeline.MyHypercubeStrategy -Dglb.multiworker.localopt=0 -Dglb.multiworker.faulttolerance.cpinterval=10 -Dglb.multiworker.faulttolerance.crashcase=0 -Dglb.multiworker.faulttolerance.crashseed=123 -Dglb.multiworker.faulttolerance.crashnumber=2 -Dglb.multiworker.faulttolerance.crashbegin=117 -Dglb.multiworker.faulttolerance.crashend=127 -Duser.dir=/home/apgas/reitz/workspaceNFJGLB/bin -cp /home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../build/libs/workspaceNFJGLB-1.0-SNAPSHOT-all.jar -Dapgas.verbose.launcher=true -Dapgas.immediate.threads=8 -Dapgas.launcher=apgas.launcher.SrunLauncher -Dapgas.hostfile=/home/apgas/reitz/workspaceNFJGLB/scripts/slurmGoethe/../../bin/hostfile2-977017 -Dapgas.threads=128 -Dapgas.resilient=true -Dapgas.max.threads=256 -Dapgas.backupcount=2 -Dapgas.consoleprinter=false -Dapgas.java=java -Dapgas.hostmanager.strategy=1 -Dapgas.places=16 -Dapgas.network.interface=10.149.*.* -Dapgas.master=10.149.54.39:5701 -Dapgas.place.id=15 apgas.GlobalRuntime
+JVM of Place 2 started
+JVM of Place 4 started
+JVM of Place 6 started
+[APGAS] host 10.149.54.39:5701 is not reachable with networkinterface name:ib0 (ib0)
+[APGAS] host 10.149.54.39:5701 is not reachable with networkinterface name:ib0 (ib0)
+JVM of Place 7 started
+JVM of Place 10 started
+JVM of Place 11 started
+JVM of Place 8 started
+JVM of Place 12 started
+[APGAS] host 10.149.54.39:5701 is not reachable with networkinterface name:ib0 (ib0)
+[APGAS] host 10.149.54.39:5701 is not reachable with networkinterface name:ib0 (ib0)
+JVM of Place 9 started
+JVM of Place 13 started
+[APGAS] host 10.149.54.39:5701 is not reachable with networkinterface name:ib0 (ib0)
+JVM of Place 5 started
+[APGAS] host 10.149.54.39:5701 is not reachable with networkinterface name:ib0 (ib0)
+JVM of Place 3 started
+[APGAS] host 10.149.54.39:5701 is not reachable with networkinterface name:ib0 (ib0)
+[APGAS] host 10.149.54.39:5701 is not reachable with networkinterface name:ib0 (ib0)
+JVM of Place 15 started
+JVM of Place 14 started
+[APGAS] host 10.149.54.39:5701 is not reachable with networkinterface name:ib0 (ib0)
+[APGAS] host 10.149.54.39:5701 is not reachable with networkinterface name:ib0 (ib0)
+[APGAS] host 10.149.54.39:5701 is not reachable with networkinterface name:ib0 (ib0)
+[APGAS] host 10.149.54.39:5701 is not reachable with networkinterface name:ib0 (ib0)
+[APGAS] host 10.149.54.39:5701 is not reachable with networkinterface name:ib0 (ib0)
+[APGAS] host 10.149.54.39:5701 is not reachable with networkinterface name:ib0 (ib0)
+[APGAS] host 10.149.54.39:5701 is reachable with network interface name:eno1 (eno1)
+[APGAS] host 10.149.54.39:5701 is reachable with network interface name:lo (lo)
+[APGAS] found ip: null
+[APGAS] host 10.149.54.39:5701 is reachable with network interface name:eno1 (eno1)
+[APGAS] host 10.149.54.39:5701 is reachable with network interface name:lo (lo)
+[APGAS] found ip: null
+[APGAS] host 10.149.54.39:5701 is reachable with network interface name:eno1 (eno1)
+[APGAS] host 10.149.54.39:5701 is reachable with network interface name:eno1 (eno1)
+[APGAS] host 10.149.54.39:5701 is reachable with network interface name:lo (lo)
+[APGAS] host 10.149.54.39:5701 is reachable with network interface name:lo (lo)
+[APGAS] found ip: null
+[APGAS] found ip: null
+[APGAS] host 10.149.54.39:5701 is reachable with network interface name:eno1 (eno1)
+[APGAS] host 10.149.54.39:5701 is reachable with network interface name:eno1 (eno1)
+[APGAS] host 10.149.54.39:5701 is reachable with network interface name:eno1 (eno1)
+[APGAS] host 10.149.54.39:5701 is reachable with network interface name:lo (lo)
+[APGAS] host 10.149.54.39:5701 is reachable with network interface name:lo (lo)
+[APGAS] found ip: null
+[APGAS] host 10.149.54.39:5701 is reachable with network interface name:eno1 (eno1)
+[APGAS] found ip: null
+[APGAS] host 10.149.54.39:5701 is reachable with network interface name:lo (lo)
+[APGAS] found ip: null
+[APGAS] host 10.149.54.39:5701 is reachable with network interface name:lo (lo)
+[APGAS] found ip: null
+[APGAS] sets network interface to 10.149.*.*
+[APGAS] host 10.149.54.39:5701 is reachable with network interface name:eno1 (eno1)
+[APGAS] host 10.149.54.39:5701 is reachable with network interface name:eno1 (eno1)
+[APGAS] host 10.149.54.39:5701 is reachable with network interface name:eno1 (eno1)
+[APGAS] host 10.149.54.39:5701 is reachable with network interface name:lo (lo)
+[APGAS] found ip: null
+[APGAS] sets network interface to 10.149.*.*
+[APGAS] host 10.149.54.39:5701 is reachable with network interface name:lo (lo)
+[APGAS] found ip: null
+[APGAS] host 10.149.54.39:5701 is reachable with network interface name:lo (lo)
+[APGAS] found ip: null
+[APGAS] sets network interface to 10.149.*.*
+[APGAS] host 10.149.54.39:5701 is reachable with network interface name:eno1 (eno1)
+[APGAS] host 10.149.54.39:5701 is reachable with network interface name:eno1 (eno1)
+[APGAS] sets network interface to 10.149.*.*
+[APGAS] host 10.149.54.39:5701 is reachable with network interface name:lo (lo)
+[APGAS] found ip: null
+[APGAS] host 10.149.54.39:5701 is reachable with network interface name:lo (lo)
+[APGAS] host 10.149.54.39:5701 is reachable with network interface name:eno1 (eno1)
+[APGAS] found ip: null
+[APGAS] host 10.149.54.39:5701 is reachable with network interface name:lo (lo)
+Mar 09, 2023 11:31:22 AM com.hazelcast.instance.HazelcastInstanceFactory
+WARNING: Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+[APGAS] found ip: null
+[APGAS] sets network interface to 10.149.*.*
+[APGAS] sets network interface to 10.149.*.*
+[APGAS] sets network interface to 10.149.*.*
+[APGAS] sets network interface to 10.149.*.*
+Mar 09, 2023 11:31:22 AM com.hazelcast.instance.HazelcastInstanceFactory
+WARNING: Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+Mar 09, 2023 11:31:22 AM com.hazelcast.instance.HazelcastInstanceFactory
+WARNING: Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+[APGAS] sets network interface to 10.149.*.*
+Mar 09, 2023 11:31:22 AM com.hazelcast.instance.HazelcastInstanceFactory
+WARNING: Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+[APGAS] sets network interface to 10.149.*.*
+[APGAS] sets network interface to 10.149.*.*
+Mar 09, 2023 11:31:22 AM com.hazelcast.instance.HazelcastInstanceFactory
+WARNING: Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+Mar 09, 2023 11:31:22 AM com.hazelcast.instance.HazelcastInstanceFactory
+WARNING: Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+[APGAS] sets network interface to 10.149.*.*
+Mar 09, 2023 11:31:22 AM com.hazelcast.instance.HazelcastInstanceFactory
+WARNING: Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+[APGAS] sets network interface to 10.149.*.*
+Mar 09, 2023 11:31:22 AM com.hazelcast.instance.HazelcastInstanceFactory
+WARNING: Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+[APGAS] sets network interface to 10.149.*.*
+Mar 09, 2023 11:31:22 AM com.hazelcast.instance.HazelcastInstanceFactory
+WARNING: Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+Mar 09, 2023 11:31:22 AM com.hazelcast.instance.HazelcastInstanceFactory
+WARNING: Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+Mar 09, 2023 11:31:22 AM com.hazelcast.instance.HazelcastInstanceFactory
+WARNING: Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+Mar 09, 2023 11:31:22 AM com.hazelcast.instance.HazelcastInstanceFactory
+WARNING: Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+Mar 09, 2023 11:31:22 AM com.hazelcast.instance.HazelcastInstanceFactory
+WARNING: Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+Mar 09, 2023 11:31:22 AM com.hazelcast.instance.HazelcastInstanceFactory
+WARNING: Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+JVM of Place 1 started
+[APGAS] host 10.149.54.39:5701 is not reachable with networkinterface name:ib0 (ib0)
+[APGAS] host 10.149.54.39:5701 is reachable with network interface name:eno1 (eno1)
+[APGAS] host 10.149.54.39:5701 is reachable with network interface name:lo (lo)
+[APGAS] found ip: null
+[APGAS] sets network interface to 10.149.*.*
+Mar 09, 2023 11:31:23 AM com.hazelcast.instance.HazelcastInstanceFactory
+WARNING: Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+hazelcast started
+hazelcast started
+hazelcast started
+hazelcast started
+hazelcast started
+hazelcast started
+hazelcast started
+hazelcast started
+44239@node55-001.cm.cluster all hazelcast members are connected
+112511@node55-006.cm.cluster all hazelcast members are connected
+54673@node55-013.cm.cluster all hazelcast members are connected
+[APGAS] New place was started at 10.149.55.1:5701
+165943@node55-003.cm.cluster all hazelcast members are connected
+203231@node55-005.cm.cluster all hazelcast members are connected
+[APGAS] 44239@node55-001.cm.cluster, place(2): all places are started, places.size()= 16, initialPlaces=16
+[APGAS] 2 sends ready to place 0
+233360@node54-039.cm.cluster all hazelcast members are connected
+[APGAS] New place was started at 10.149.55.6:5701
+[APGAS] 112511@node55-006.cm.cluster, place(7): all places are started, places.size()= 16, initialPlaces=16
+[APGAS] 7 sends ready to place 0
+276831@node55-010.cm.cluster all hazelcast members are connected
+208117@node55-009.cm.cluster all hazelcast members are connected
+[APGAS] New place was started at 10.149.55.13:5701
+[APGAS] New place was started at 10.149.54.39:5701
+[APGAS] 54673@node55-013.cm.cluster, place(14): all places are started, places.size()= 16, initialPlaces=16
+[APGAS] 14 sends ready to place 0
+[APGAS] New place was started at 10.149.55.10:5701
+[APGAS] New place was started at 10.149.55.9:5701
+[APGAS] New place was started at 10.149.55.3:5701
+[APGAS] New place was started at 10.149.55.5:5701
+[APGAS] 276831@node55-010.cm.cluster, place(11): all places are started, places.size()= 16, initialPlaces=16
+[APGAS] 11 sends ready to place 0
+[APGAS] 208117@node55-009.cm.cluster, place(10): all places are started, places.size()= 16, initialPlaces=16
+[APGAS] 10 sends ready to place 0
+[APGAS] 233360@node54-039.cm.cluster, place(0): all places are started, places.size()= 16, initialPlaces=16
+52446@node55-007.cm.cluster all hazelcast members are connected
+[APGAS] 165943@node55-003.cm.cluster, place(4): all places are started, places.size()= 16, initialPlaces=16
+[APGAS] 4 sends ready to place 0
+[APGAS] 0 not all constructors are ready, waiting....15
+[APGAS] 203231@node55-005.cm.cluster, place(6): all places are started, places.size()= 16, initialPlaces=16
+[APGAS] 6 sends ready to place 0
+[APGAS] New place was started at 10.149.55.7:5701
+[APGAS] 52446@node55-007.cm.cluster, place(8): all places are started, places.size()= 16, initialPlaces=16
+[APGAS] 8 sends ready to place 0
+[APGAS] 14 on place 0 decremented ready counter, is now 14
+[APGAS] 7 on place 0 decremented ready counter, is now 13
+[APGAS] 11 on place 0 decremented ready counter, is now 12
+[APGAS] 2 on place 0 decremented ready counter, is now 11
+[APGAS] 10 on place 0 decremented ready counter, is now 10
+[APGAS] 6 on place 0 decremented ready counter, is now 9
+[APGAS] 4 on place 0 decremented ready counter, is now 8
+[APGAS] 8 on place 0 decremented ready counter, is now 7
+hazelcast started
+194924@node55-011.cm.cluster all hazelcast members are connected
+[APGAS] New place was started at 10.149.55.11:5701
+[APGAS] 194924@node55-011.cm.cluster, place(12): all places are started, places.size()= 16, initialPlaces=16
+[APGAS] 12 sends ready to place 0
+hazelcast started
+hazelcast started
+232758@node55-004.cm.cluster all hazelcast members are connected
+[APGAS] New place was started at 10.149.55.4:5701
+218182@node55-008.cm.cluster all hazelcast members are connected
+hazelcast started
+[APGAS] New place was started at 10.149.55.8:5701
+[APGAS] 232758@node55-004.cm.cluster, place(5): all places are started, places.size()= 16, initialPlaces=16
+[APGAS] 5 sends ready to place 0
+[APGAS] 12 on place 0 decremented ready counter, is now 6
+188111@node55-012.cm.cluster all hazelcast members are connected
+[APGAS] 218182@node55-008.cm.cluster, place(9): all places are started, places.size()= 16, initialPlaces=16
+[APGAS] 9 sends ready to place 0
+[APGAS] New place was started at 10.149.55.12:5701
+hazelcast started
+hazelcast started
+[APGAS] 188111@node55-012.cm.cluster, place(13): all places are started, places.size()= 16, initialPlaces=16
+[APGAS] 13 sends ready to place 0
+96098@node55-014.cm.cluster all hazelcast members are connected
+[APGAS] New place was started at 10.149.55.14:5701
+14053@node55-002.cm.cluster all hazelcast members are connected
+[APGAS] 5 on place 0 decremented ready counter, is now 5
+[APGAS] New place was started at 10.149.55.2:5701
+[APGAS] 96098@node55-014.cm.cluster, place(15): all places are started, places.size()= 16, initialPlaces=16
+[APGAS] 15 sends ready to place 0
+[APGAS] 9 on place 0 decremented ready counter, is now 4
+[APGAS] 14053@node55-002.cm.cluster, place(3): all places are started, places.size()= 16, initialPlaces=16
+[APGAS] 3 sends ready to place 0
+[APGAS] 13 on place 0 decremented ready counter, is now 3
+[APGAS] 15 on place 0 decremented ready counter, is now 2
+[APGAS] 3 on place 0 decremented ready counter, is now 1
+hazelcast started
+281616@node54-040.cm.cluster all hazelcast members are connected
+[APGAS] New place was started at 10.149.54.40:5701
+[APGAS] 281616@node54-040.cm.cluster, place(1): all places are started, places.size()= 16, initialPlaces=16
+[APGAS] 1 sends ready to place 0
+[APGAS] 1 on place 0 decremented ready counter, is now 0
+apgas.DeadPlaceException
+	at apgas.impl.Transport.send(Transport.java:215)
+	at apgas.impl.UncountedTask.uncountedAsyncAt(UncountedTask.java:70)
+	at apgas.impl.GlobalRuntimeImpl.uncountedAsyncAt(GlobalRuntimeImpl.java:498)
+	at apgas.Constructs.uncountedAsyncAt(Constructs.java:96)
+	at nfjglbswft.multiworker.GLBcomputer.uncountedAsyncAt(GLBcomputer.java:91)
+	at nfjglbswft.multiworker.GLBWorker.doRandomSteals(GLBWorker.java:1108)
+	at nfjglbswft.multiworker.GLBWorker.workerProcess(GLBWorker.java:1630)
+	at nfjglbswft.multiworker.GLBWorker.run(GLBWorker.java:1087)
+	at nfjglbswft.multiworker.GLBWorker.lambda$deal$d663733d$1(GLBWorker.java:937)
+	at apgas.impl.Task.compute(Task.java:90)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+apgas.DeadPlaceException
+	at apgas.impl.Transport.send(Transport.java:215)
+	at apgas.impl.UncountedTask.uncountedAsyncAt(UncountedTask.java:70)
+	at apgas.impl.GlobalRuntimeImpl.uncountedAsyncAt(GlobalRuntimeImpl.java:498)
+	at apgas.Constructs.uncountedAsyncAt(Constructs.java:96)
+	at nfjglbswft.multiworker.GLBcomputer.uncountedAsyncAt(GLBcomputer.java:91)
+	at nfjglbswft.multiworker.GLBWorker.doRandomSteals(GLBWorker.java:1108)
+	at nfjglbswft.multiworker.GLBWorker.workerProcess(GLBWorker.java:1630)
+	at nfjglbswft.multiworker.GLBWorker.run(GLBWorker.java:1087)
+	at nfjglbswft.multiworker.GLBWorker.lambda$deal$d663733d$1(GLBWorker.java:937)
+	at apgas.impl.Task.compute(Task.java:90)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+apgas.DeadPlaceException
+	at apgas.impl.Transport.send(Transport.java:215)
+	at apgas.impl.UncountedTask.uncountedAsyncAt(UncountedTask.java:70)
+	at apgas.impl.GlobalRuntimeImpl.uncountedAsyncAt(GlobalRuntimeImpl.java:498)
+	at apgas.Constructs.uncountedAsyncAt(Constructs.java:96)
+	at nfjglbswft.multiworker.GLBcomputer.uncountedAsyncAt(GLBcomputer.java:91)
+	at nfjglbswft.multiworker.GLBWorker.doRandomSteals(GLBWorker.java:1108)
+	at nfjglbswft.multiworker.GLBWorker.workerProcess(GLBWorker.java:1630)
+	at nfjglbswft.multiworker.GLBWorker.run(GLBWorker.java:1087)
+	at nfjglbswft.multiworker.GLBWorker.lambda$deal$d663733d$1(GLBWorker.java:937)
+	at apgas.impl.Task.compute(Task.java:90)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+apgas.DeadPlaceException
+	at apgas.impl.Transport.send(Transport.java:215)
+	at apgas.impl.UncountedTask.uncountedAsyncAt(UncountedTask.java:70)
+	at apgas.impl.GlobalRuntimeImpl.uncountedAsyncAt(GlobalRuntimeImpl.java:498)
+	at apgas.Constructs.uncountedAsyncAt(Constructs.java:96)
+	at nfjglbswft.multiworker.GLBcomputer.uncountedAsyncAt(GLBcomputer.java:91)
+	at nfjglbswft.multiworker.GLBWorker.doRandomSteals(GLBWorker.java:1108)
+	at nfjglbswft.multiworker.GLBWorker.workerProcess(GLBWorker.java:1630)
+	at nfjglbswft.multiworker.GLBWorker.run(GLBWorker.java:1087)
+	at nfjglbswft.multiworker.GLBWorker.lambda$deal$d663733d$1(GLBWorker.java:937)
+	at apgas.impl.Task.compute(Task.java:90)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+apgas.DeadPlaceException
+	at apgas.impl.Transport.send(Transport.java:215)
+	at apgas.impl.UncountedTask.uncountedAsyncAt(UncountedTask.java:70)
+	at apgas.impl.GlobalRuntimeImpl.uncountedAsyncAt(GlobalRuntimeImpl.java:498)
+	at apgas.Constructs.uncountedAsyncAt(Constructs.java:96)
+	at nfjglbswft.multiworker.GLBcomputer.uncountedAsyncAt(GLBcomputer.java:91)
+	at nfjglbswft.multiworker.GLBWorker.doRandomSteals(GLBWorker.java:1108)
+	at nfjglbswft.multiworker.GLBWorker.workerProcess(GLBWorker.java:1630)
+	at nfjglbswft.multiworker.GLBWorker.run(GLBWorker.java:1087)
+	at nfjglbswft.multiworker.GLBWorker.lambda$deal$d663733d$1(GLBWorker.java:937)
+	at apgas.impl.Task.compute(Task.java:90)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+apgas.DeadPlaceException
+	at apgas.impl.Transport.send(Transport.java:215)
+	at apgas.impl.UncountedTask.uncountedAsyncAt(UncountedTask.java:70)
+	at apgas.impl.GlobalRuntimeImpl.uncountedAsyncAt(GlobalRuntimeImpl.java:498)
+	at apgas.Constructs.uncountedAsyncAt(Constructs.java:96)
+	at nfjglbswft.multiworker.GLBcomputer.uncountedAsyncAt(GLBcomputer.java:91)
+	at nfjglbswft.multiworker.GLBWorker.doRandomSteals(GLBWorker.java:1108)
+	at nfjglbswft.multiworker.GLBWorker.workerProcess(GLBWorker.java:1630)
+	at nfjglbswft.multiworker.GLBWorker.run(GLBWorker.java:1087)
+	at nfjglbswft.multiworker.GLBWorker.lambda$deal$d663733d$1(GLBWorker.java:937)
+	at apgas.impl.Task.compute(Task.java:90)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+apgas.DeadPlaceException
+	at apgas.impl.Transport.send(Transport.java:215)
+	at apgas.impl.UncountedTask.uncountedAsyncAt(UncountedTask.java:70)
+	at apgas.impl.GlobalRuntimeImpl.uncountedAsyncAt(GlobalRuntimeImpl.java:498)
+	at apgas.Constructs.uncountedAsyncAt(Constructs.java:96)
+	at nfjglbswft.multiworker.GLBcomputer.uncountedAsyncAt(GLBcomputer.java:91)
+	at nfjglbswft.multiworker.GLBWorker.doRandomSteals(GLBWorker.java:1108)
+	at nfjglbswft.multiworker.GLBWorker.workerProcess(GLBWorker.java:1630)
+	at nfjglbswft.multiworker.GLBWorker.run(GLBWorker.java:1087)
+	at nfjglbswft.multiworker.GLBWorker.lambda$deal$d663733d$1(GLBWorker.java:937)
+	at apgas.impl.Task.compute(Task.java:90)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+apgas.DeadPlaceException
+	at apgas.impl.Transport.send(Transport.java:215)
+	at apgas.impl.UncountedTask.uncountedAsyncAt(UncountedTask.java:70)
+	at apgas.impl.GlobalRuntimeImpl.uncountedAsyncAt(GlobalRuntimeImpl.java:498)
+	at apgas.Constructs.uncountedAsyncAt(Constructs.java:96)
+	at nfjglbswft.multiworker.GLBcomputer.uncountedAsyncAt(GLBcomputer.java:91)
+	at nfjglbswft.multiworker.GLBWorker.doRandomSteals(GLBWorker.java:1108)
+	at nfjglbswft.multiworker.GLBWorker.workerProcess(GLBWorker.java:1630)
+	at nfjglbswft.multiworker.GLBWorker.run(GLBWorker.java:1087)
+	at nfjglbswft.multiworker.GLBWorker.lambda$deal$d663733d$1(GLBWorker.java:937)
+	at apgas.impl.Task.compute(Task.java:90)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+apgas.DeadPlaceException
+	at apgas.impl.Transport.send(Transport.java:215)
+	at apgas.impl.UncountedTask.uncountedAsyncAt(UncountedTask.java:70)
+	at apgas.impl.GlobalRuntimeImpl.uncountedAsyncAt(GlobalRuntimeImpl.java:498)
+	at apgas.Constructs.uncountedAsyncAt(Constructs.java:96)
+	at nfjglbswft.multiworker.GLBcomputer.uncountedAsyncAt(GLBcomputer.java:91)
+	at nfjglbswft.multiworker.GLBWorker.doRandomSteals(GLBWorker.java:1108)
+	at nfjglbswft.multiworker.GLBWorker.workerProcess(GLBWorker.java:1630)
+	at nfjglbswft.multiworker.GLBWorker.run(GLBWorker.java:1087)
+	at nfjglbswft.multiworker.GLBWorker.lambda$deal$d663733d$1(GLBWorker.java:937)
+	at apgas.impl.Task.compute(Task.java:90)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+apgas.DeadPlaceException
+	at apgas.impl.Transport.send(Transport.java:215)
+	at apgas.impl.UncountedTask.uncountedAsyncAt(UncountedTask.java:70)
+	at apgas.impl.GlobalRuntimeImpl.uncountedAsyncAt(GlobalRuntimeImpl.java:498)
+	at apgas.Constructs.uncountedAsyncAt(Constructs.java:96)
+	at nfjglbswft.multiworker.GLBcomputer.uncountedAsyncAt(GLBcomputer.java:91)
+	at nfjglbswft.multiworker.GLBWorker.doRandomSteals(GLBWorker.java:1108)
+	at nfjglbswft.multiworker.GLBWorker.workerProcess(GLBWorker.java:1630)
+	at nfjglbswft.multiworker.GLBWorker.run(GLBWorker.java:1087)
+	at nfjglbswft.multiworker.GLBWorker.lambda$deal$d663733d$1(GLBWorker.java:937)
+	at apgas.impl.Task.compute(Task.java:90)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+java.util.concurrent.RejectedExecutionException
+	at com.hazelcast.executor.impl.ExecutorServiceProxy.throwNotActiveException(ExecutorServiceProxy.java:554)
+	at com.hazelcast.spi.AbstractDistributedObject.lifecycleCheck(AbstractDistributedObject.java:100)
+	at com.hazelcast.spi.AbstractDistributedObject.getNodeEngine(AbstractDistributedObject.java:94)
+	at com.hazelcast.executor.impl.ExecutorServiceProxy.submitToMember(ExecutorServiceProxy.java:307)
+	at com.hazelcast.executor.impl.ExecutorServiceProxy.executeOnMember(ExecutorServiceProxy.java:186)
+	at apgas.impl.Transport.send(Transport.java:217)
+	at apgas.impl.UncountedTask.uncountedAsyncAt(UncountedTask.java:70)
+	at apgas.impl.GlobalRuntimeImpl.uncountedAsyncAt(GlobalRuntimeImpl.java:498)
+	at apgas.Constructs.uncountedAsyncAt(Constructs.java:96)
+	at nfjglbswft.multiworker.GLBcomputer.uncountedAsyncAt(GLBcomputer.java:91)
+	at nfjglbswft.multiworker.GLBWorker.joinRemoteActivity(GLBWorker.java:1386)
+	at nfjglbswft.multiworker.GLBWorker.joinRemoteActivity(GLBWorker.java:1352)
+	at nfjglbswft.multiworker.GLBWorker.lambda$joinRemote$73a76618$1(GLBWorker.java:1342)
+	at nfjglbswft.multiworker.GLBcomputer.lambda$uncountedAsyncAt$e1c01cb$1(GLBcomputer.java:94)
+	at apgas.impl.UncountedTask.compute(UncountedTask.java:51)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+java.util.concurrent.RejectedExecutionException
+	at com.hazelcast.executor.impl.ExecutorServiceProxy.throwNotActiveException(ExecutorServiceProxy.java:554)
+	at com.hazelcast.spi.AbstractDistributedObject.lifecycleCheck(AbstractDistributedObject.java:100)
+	at com.hazelcast.spi.AbstractDistributedObject.getNodeEngine(AbstractDistributedObject.java:94)
+	at com.hazelcast.executor.impl.ExecutorServiceProxy.submitToMember(ExecutorServiceProxy.java:307)
+	at com.hazelcast.executor.impl.ExecutorServiceProxy.executeOnMember(ExecutorServiceProxy.java:186)
+	at apgas.impl.Transport.send(Transport.java:217)
+	at apgas.impl.UncountedTask.uncountedAsyncAt(UncountedTask.java:70)
+	at apgas.impl.GlobalRuntimeImpl.uncountedAsyncAt(GlobalRuntimeImpl.java:498)
+	at apgas.Constructs.uncountedAsyncAt(Constructs.java:96)
+	at nfjglbswft.multiworker.GLBcomputer.uncountedAsyncAt(GLBcomputer.java:91)
+	at nfjglbswft.multiworker.GLBWorker.joinRemoteActivity(GLBWorker.java:1386)
+	at nfjglbswft.multiworker.GLBWorker.joinRemoteActivity(GLBWorker.java:1352)
+	at nfjglbswft.multiworker.GLBWorker.lambda$joinRemote$73a76618$1(GLBWorker.java:1342)
+	at nfjglbswft.multiworker.GLBcomputer.lambda$uncountedAsyncAt$e1c01cb$1(GLBcomputer.java:94)
+	at apgas.impl.UncountedTask.compute(UncountedTask.java:51)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+com.hazelcast.core.HazelcastInstanceNotActiveException: Hazelcast instance is not active!
+	at com.hazelcast.instance.HazelcastInstanceProxy.getOriginal(HazelcastInstanceProxy.java:321)
+	at com.hazelcast.instance.HazelcastInstanceProxy.executeTransaction(HazelcastInstanceProxy.java:164)
+	at nfjglbswft.multiworker.GLBWorker.placeFailureHandler(GLBWorker.java:715)
+	at nfjglbswft.multiworker.GLBcomputer.lambda$placeFailureHandler$5c7f6af9$1(GLBcomputer.java:106)
+	at apgas.impl.Task.compute(Task.java:90)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+apgas.DeadPlaceException
+	at apgas.impl.Transport.send(Transport.java:215)
+	at apgas.impl.UncountedTask.uncountedAsyncAt(UncountedTask.java:70)
+	at apgas.impl.GlobalRuntimeImpl.uncountedAsyncAt(GlobalRuntimeImpl.java:498)
+	at apgas.Constructs.uncountedAsyncAt(Constructs.java:96)
+	at nfjglbswft.multiworker.GLBcomputer.uncountedAsyncAt(GLBcomputer.java:91)
+	at nfjglbswft.multiworker.GLBWorker.doRandomSteals(GLBWorker.java:1108)
+	at nfjglbswft.multiworker.GLBWorker.workerProcess(GLBWorker.java:1630)
+	at nfjglbswft.multiworker.GLBWorker.run(GLBWorker.java:1087)
+	at nfjglbswft.multiworker.GLBWorker.lambda$deal$d663733d$1(GLBWorker.java:937)
+	at apgas.impl.Task.compute(Task.java:90)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+apgas.DeadPlaceException
+	at apgas.impl.Transport.send(Transport.java:215)
+	at apgas.impl.UncountedTask.uncountedAsyncAt(UncountedTask.java:70)
+	at apgas.impl.GlobalRuntimeImpl.uncountedAsyncAt(GlobalRuntimeImpl.java:498)
+	at apgas.Constructs.uncountedAsyncAt(Constructs.java:96)
+	at nfjglbswft.multiworker.GLBcomputer.uncountedAsyncAt(GLBcomputer.java:91)
+	at nfjglbswft.multiworker.GLBWorker.doRandomSteals(GLBWorker.java:1108)
+	at nfjglbswft.multiworker.GLBWorker.workerProcess(GLBWorker.java:1630)
+	at nfjglbswft.multiworker.GLBWorker.run(GLBWorker.java:1087)
+	at nfjglbswft.multiworker.GLBWorker.lambda$deal$d663733d$1(GLBWorker.java:937)
+	at apgas.impl.Task.compute(Task.java:90)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+apgas.DeadPlaceException
+	at apgas.impl.Transport.send(Transport.java:215)
+	at apgas.impl.UncountedTask.uncountedAsyncAt(UncountedTask.java:70)
+	at apgas.impl.GlobalRuntimeImpl.uncountedAsyncAt(GlobalRuntimeImpl.java:498)
+	at apgas.Constructs.uncountedAsyncAt(Constructs.java:96)
+	at nfjglbswft.multiworker.GLBcomputer.uncountedAsyncAt(GLBcomputer.java:91)
+	at nfjglbswft.multiworker.GLBWorker.doRandomSteals(GLBWorker.java:1108)
+	at nfjglbswft.multiworker.GLBWorker.workerProcess(GLBWorker.java:1630)
+	at nfjglbswft.multiworker.GLBWorker.run(GLBWorker.java:1087)
+	at nfjglbswft.multiworker.GLBWorker.lambda$deal$d663733d$1(GLBWorker.java:937)
+	at apgas.impl.Task.compute(Task.java:90)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+apgas.DeadPlaceException
+	at apgas.impl.Transport.send(Transport.java:215)
+	at apgas.impl.UncountedTask.uncountedAsyncAt(UncountedTask.java:70)
+	at apgas.impl.GlobalRuntimeImpl.uncountedAsyncAt(GlobalRuntimeImpl.java:498)
+	at apgas.Constructs.uncountedAsyncAt(Constructs.java:96)
+	at nfjglbswft.multiworker.GLBcomputer.uncountedAsyncAt(GLBcomputer.java:91)
+	at nfjglbswft.multiworker.GLBWorker.doRandomSteals(GLBWorker.java:1108)
+	at nfjglbswft.multiworker.GLBWorker.workerProcess(GLBWorker.java:1630)
+	at nfjglbswft.multiworker.GLBWorker.run(GLBWorker.java:1087)
+	at nfjglbswft.multiworker.GLBWorker.lambda$deal$d663733d$1(GLBWorker.java:937)
+	at apgas.impl.Task.compute(Task.java:90)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+apgas.DeadPlaceException
+	at apgas.impl.Transport.send(Transport.java:215)
+	at apgas.impl.UncountedTask.uncountedAsyncAt(UncountedTask.java:70)
+	at apgas.impl.GlobalRuntimeImpl.uncountedAsyncAt(GlobalRuntimeImpl.java:498)
+	at apgas.Constructs.uncountedAsyncAt(Constructs.java:96)
+	at nfjglbswft.multiworker.GLBcomputer.uncountedAsyncAt(GLBcomputer.java:91)
+	at nfjglbswft.multiworker.GLBWorker.doRandomSteals(GLBWorker.java:1108)
+	at nfjglbswft.multiworker.GLBWorker.workerProcess(GLBWorker.java:1630)
+	at nfjglbswft.multiworker.GLBWorker.run(GLBWorker.java:1087)
+	at nfjglbswft.multiworker.GLBWorker.lambda$deal$d663733d$1(GLBWorker.java:937)
+	at apgas.impl.Task.compute(Task.java:90)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+apgas.DeadPlaceException
+	at apgas.impl.Transport.send(Transport.java:215)
+	at apgas.impl.UncountedTask.uncountedAsyncAt(UncountedTask.java:70)
+	at apgas.impl.GlobalRuntimeImpl.uncountedAsyncAt(GlobalRuntimeImpl.java:498)
+	at apgas.Constructs.uncountedAsyncAt(Constructs.java:96)
+	at nfjglbswft.multiworker.GLBcomputer.uncountedAsyncAt(GLBcomputer.java:91)
+	at nfjglbswft.multiworker.GLBWorker.doRandomSteals(GLBWorker.java:1108)
+	at nfjglbswft.multiworker.GLBWorker.workerProcess(GLBWorker.java:1630)
+	at nfjglbswft.multiworker.GLBWorker.run(GLBWorker.java:1087)
+	at nfjglbswft.multiworker.GLBWorker.lambda$deal$d663733d$1(GLBWorker.java:937)
+	at apgas.impl.Task.compute(Task.java:90)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+apgas.DeadPlaceException
+	at apgas.impl.Transport.send(Transport.java:215)
+	at apgas.impl.UncountedTask.uncountedAsyncAt(UncountedTask.java:70)
+	at apgas.impl.GlobalRuntimeImpl.uncountedAsyncAt(GlobalRuntimeImpl.java:498)
+	at apgas.Constructs.uncountedAsyncAt(Constructs.java:96)
+	at nfjglbswft.multiworker.GLBcomputer.uncountedAsyncAt(GLBcomputer.java:91)
+	at nfjglbswft.multiworker.GLBWorker.doRandomSteals(GLBWorker.java:1108)
+	at nfjglbswft.multiworker.GLBWorker.workerProcess(GLBWorker.java:1630)
+	at nfjglbswft.multiworker.GLBWorker.run(GLBWorker.java:1087)
+	at nfjglbswft.multiworker.GLBWorker.lambda$deal$d663733d$1(GLBWorker.java:937)
+	at apgas.impl.Task.compute(Task.java:90)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+apgas.DeadPlaceException
+	at apgas.impl.Transport.send(Transport.java:215)
+	at apgas.impl.UncountedTask.uncountedAsyncAt(UncountedTask.java:70)
+	at apgas.impl.GlobalRuntimeImpl.uncountedAsyncAt(GlobalRuntimeImpl.java:498)
+	at apgas.Constructs.uncountedAsyncAt(Constructs.java:96)
+	at nfjglbswft.multiworker.GLBcomputer.uncountedAsyncAt(GLBcomputer.java:91)
+	at nfjglbswft.multiworker.GLBWorker.doRandomSteals(GLBWorker.java:1108)
+	at nfjglbswft.multiworker.GLBWorker.workerProcess(GLBWorker.java:1630)
+	at nfjglbswft.multiworker.GLBWorker.run(GLBWorker.java:1087)
+	at nfjglbswft.multiworker.GLBWorker.lambda$deal$d663733d$1(GLBWorker.java:937)
+	at apgas.impl.Task.compute(Task.java:90)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+apgas.DeadPlaceException
+	at apgas.impl.Transport.send(Transport.java:215)
+	at apgas.impl.UncountedTask.uncountedAsyncAt(UncountedTask.java:70)
+	at apgas.impl.GlobalRuntimeImpl.uncountedAsyncAt(GlobalRuntimeImpl.java:498)
+	at apgas.Constructs.uncountedAsyncAt(Constructs.java:96)
+	at nfjglbswft.multiworker.GLBcomputer.uncountedAsyncAt(GLBcomputer.java:91)
+	at nfjglbswft.multiworker.GLBWorker.doRandomSteals(GLBWorker.java:1108)
+	at nfjglbswft.multiworker.GLBWorker.workerProcess(GLBWorker.java:1630)
+	at nfjglbswft.multiworker.GLBWorker.run(GLBWorker.java:1087)
+	at nfjglbswft.multiworker.GLBWorker.lambda$deal$d663733d$1(GLBWorker.java:937)
+	at apgas.impl.Task.compute(Task.java:90)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+apgas.DeadPlaceException
+	at apgas.impl.Transport.send(Transport.java:215)
+	at apgas.impl.UncountedTask.uncountedAsyncAt(UncountedTask.java:70)
+	at apgas.impl.GlobalRuntimeImpl.uncountedAsyncAt(GlobalRuntimeImpl.java:498)
+	at apgas.Constructs.uncountedAsyncAt(Constructs.java:96)
+	at nfjglbswft.multiworker.GLBcomputer.uncountedAsyncAt(GLBcomputer.java:91)
+	at nfjglbswft.multiworker.GLBWorker.doRandomSteals(GLBWorker.java:1108)
+	at nfjglbswft.multiworker.GLBWorker.workerProcess(GLBWorker.java:1630)
+	at nfjglbswft.multiworker.GLBWorker.run(GLBWorker.java:1087)
+	at nfjglbswft.multiworker.GLBWorker.lambda$deal$d663733d$1(GLBWorker.java:937)
+	at apgas.impl.Task.compute(Task.java:90)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+apgas.DeadPlaceException
+	at apgas.impl.Transport.send(Transport.java:215)
+	at apgas.impl.UncountedTask.uncountedAsyncAt(UncountedTask.java:70)
+	at apgas.impl.GlobalRuntimeImpl.uncountedAsyncAt(GlobalRuntimeImpl.java:498)
+	at apgas.Constructs.uncountedAsyncAt(Constructs.java:96)
+	at nfjglbswft.multiworker.GLBcomputer.uncountedAsyncAt(GLBcomputer.java:91)
+	at nfjglbswft.multiworker.GLBWorker.doRandomSteals(GLBWorker.java:1108)
+	at nfjglbswft.multiworker.GLBWorker.workerProcess(GLBWorker.java:1630)
+	at nfjglbswft.multiworker.GLBWorker.run(GLBWorker.java:1087)
+	at nfjglbswft.multiworker.GLBWorker.lambda$deal$d663733d$1(GLBWorker.java:937)
+	at apgas.impl.Task.compute(Task.java:90)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+apgas.DeadPlaceException
+	at apgas.impl.Transport.send(Transport.java:215)
+	at apgas.impl.UncountedTask.uncountedAsyncAt(UncountedTask.java:70)
+	at apgas.impl.GlobalRuntimeImpl.uncountedAsyncAt(GlobalRuntimeImpl.java:498)
+	at apgas.Constructs.uncountedAsyncAt(Constructs.java:96)
+	at nfjglbswft.multiworker.GLBcomputer.uncountedAsyncAt(GLBcomputer.java:91)
+	at nfjglbswft.multiworker.GLBWorker.doRandomSteals(GLBWorker.java:1108)
+	at nfjglbswft.multiworker.GLBWorker.workerProcess(GLBWorker.java:1630)
+	at nfjglbswft.multiworker.GLBWorker.run(GLBWorker.java:1087)
+	at nfjglbswft.multiworker.GLBWorker.lambda$deal$d663733d$1(GLBWorker.java:937)
+	at apgas.impl.Task.compute(Task.java:90)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+apgas.DeadPlaceException
+	at apgas.impl.Transport.send(Transport.java:215)
+	at apgas.impl.UncountedTask.uncountedAsyncAt(UncountedTask.java:70)
+	at apgas.impl.GlobalRuntimeImpl.uncountedAsyncAt(GlobalRuntimeImpl.java:498)
+	at apgas.Constructs.uncountedAsyncAt(Constructs.java:96)
+	at nfjglbswft.multiworker.GLBcomputer.uncountedAsyncAt(GLBcomputer.java:91)
+	at nfjglbswft.multiworker.GLBWorker.doRandomSteals(GLBWorker.java:1108)
+	at nfjglbswft.multiworker.GLBWorker.workerProcess(GLBWorker.java:1630)
+	at nfjglbswft.multiworker.GLBWorker.run(GLBWorker.java:1087)
+	at nfjglbswft.multiworker.GLBWorker.lambda$deal$d663733d$1(GLBWorker.java:937)
+	at apgas.impl.Task.compute(Task.java:90)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+apgas.DeadPlaceException
+	at apgas.impl.Transport.send(Transport.java:215)
+	at apgas.impl.UncountedTask.uncountedAsyncAt(UncountedTask.java:70)
+	at apgas.impl.GlobalRuntimeImpl.uncountedAsyncAt(GlobalRuntimeImpl.java:498)
+	at apgas.Constructs.uncountedAsyncAt(Constructs.java:96)
+	at nfjglbswft.multiworker.GLBcomputer.uncountedAsyncAt(GLBcomputer.java:91)
+	at nfjglbswft.multiworker.GLBWorker.doRandomSteals(GLBWorker.java:1108)
+	at nfjglbswft.multiworker.GLBWorker.workerProcess(GLBWorker.java:1630)
+	at nfjglbswft.multiworker.GLBWorker.run(GLBWorker.java:1087)
+	at nfjglbswft.multiworker.GLBWorker.lambda$deal$d663733d$1(GLBWorker.java:937)
+	at apgas.impl.Task.compute(Task.java:90)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+apgas.DeadPlaceException
+	at apgas.impl.Transport.send(Transport.java:215)
+	at apgas.impl.UncountedTask.uncountedAsyncAt(UncountedTask.java:70)
+	at apgas.impl.GlobalRuntimeImpl.uncountedAsyncAt(GlobalRuntimeImpl.java:498)
+	at apgas.Constructs.uncountedAsyncAt(Constructs.java:96)
+	at nfjglbswft.multiworker.GLBcomputer.uncountedAsyncAt(GLBcomputer.java:91)
+	at nfjglbswft.multiworker.GLBWorker.doRandomSteals(GLBWorker.java:1108)
+	at nfjglbswft.multiworker.GLBWorker.workerProcess(GLBWorker.java:1630)
+	at nfjglbswft.multiworker.GLBWorker.run(GLBWorker.java:1087)
+	at nfjglbswft.multiworker.GLBWorker.lambda$deal$d663733d$1(GLBWorker.java:937)
+	at apgas.impl.Task.compute(Task.java:90)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+apgas.DeadPlaceException
+	at apgas.impl.Transport.send(Transport.java:215)
+	at apgas.impl.UncountedTask.uncountedAsyncAt(UncountedTask.java:70)
+	at apgas.impl.GlobalRuntimeImpl.uncountedAsyncAt(GlobalRuntimeImpl.java:498)
+	at apgas.Constructs.uncountedAsyncAt(Constructs.java:96)
+	at nfjglbswft.multiworker.GLBcomputer.uncountedAsyncAt(GLBcomputer.java:91)
+	at nfjglbswft.multiworker.GLBWorker.doRandomSteals(GLBWorker.java:1108)
+	at nfjglbswft.multiworker.GLBWorker.workerProcess(GLBWorker.java:1630)
+	at nfjglbswft.multiworker.GLBWorker.run(GLBWorker.java:1087)
+	at nfjglbswft.multiworker.GLBWorker.lambda$deal$d663733d$1(GLBWorker.java:937)
+	at apgas.impl.Task.compute(Task.java:90)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+apgas.DeadPlaceException
+	at apgas.impl.Transport.send(Transport.java:215)
+	at apgas.impl.UncountedTask.uncountedAsyncAt(UncountedTask.java:70)
+	at apgas.impl.GlobalRuntimeImpl.uncountedAsyncAt(GlobalRuntimeImpl.java:498)
+	at apgas.Constructs.uncountedAsyncAt(Constructs.java:96)
+	at nfjglbswft.multiworker.GLBcomputer.uncountedAsyncAt(GLBcomputer.java:91)
+	at nfjglbswft.multiworker.GLBWorker.doRandomSteals(GLBWorker.java:1108)
+	at nfjglbswft.multiworker.GLBWorker.workerProcess(GLBWorker.java:1630)
+	at nfjglbswft.multiworker.GLBWorker.run(GLBWorker.java:1087)
+	at nfjglbswft.multiworker.GLBWorker.lambda$deal$d663733d$1(GLBWorker.java:937)
+	at apgas.impl.Task.compute(Task.java:90)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+apgas.DeadPlaceException
+	at apgas.impl.Transport.send(Transport.java:215)
+	at apgas.impl.UncountedTask.uncountedAsyncAt(UncountedTask.java:70)
+	at apgas.impl.GlobalRuntimeImpl.uncountedAsyncAt(GlobalRuntimeImpl.java:498)
+	at apgas.Constructs.uncountedAsyncAt(Constructs.java:96)
+	at nfjglbswft.multiworker.GLBcomputer.uncountedAsyncAt(GLBcomputer.java:91)
+	at nfjglbswft.multiworker.GLBWorker.doRandomSteals(GLBWorker.java:1108)
+	at nfjglbswft.multiworker.GLBWorker.workerProcess(GLBWorker.java:1630)
+	at nfjglbswft.multiworker.GLBWorker.run(GLBWorker.java:1087)
+	at nfjglbswft.multiworker.GLBWorker.lambda$deal$d663733d$1(GLBWorker.java:937)
+	at apgas.impl.Task.compute(Task.java:90)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 977017.3 ON node55-003 CANCELLED AT 2023-03-09T11:41:49 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 977017.13 ON node55-011 CANCELLED AT 2023-03-09T11:41:49 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 977017.4 ON node55-004 CANCELLED AT 2023-03-09T11:41:49 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 977017.5 ON node55-006 CANCELLED AT 2023-03-09T11:41:49 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 977017.12 ON node55-013 CANCELLED AT 2023-03-09T11:41:49 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 977017.10 ON node55-008 CANCELLED AT 2023-03-09T11:41:49 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 977017.0 ON node54-040 CANCELLED AT 2023-03-09T11:41:49 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 977017.6 ON node55-005 CANCELLED AT 2023-03-09T11:41:49 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 977017.1 ON node55-001 CANCELLED AT 2023-03-09T11:41:49 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 977017.14 ON node55-012 CANCELLED AT 2023-03-09T11:41:49 DUE TO TIME LIMIT ***
+slurmstepd: error: *** JOB 977017 ON node54-039 CANCELLED AT 2023-03-09T11:41:49 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 977017.7 ON node55-007 CANCELLED AT 2023-03-09T11:41:49 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 977017.8 ON node55-009 CANCELLED AT 2023-03-09T11:41:49 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 977017.11 ON node55-014 CANCELLED AT 2023-03-09T11:41:49 DUE TO TIME LIMIT ***

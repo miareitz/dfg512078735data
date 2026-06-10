@@ -1,0 +1,156 @@
+JobId=1368997 JobName=itoyorifutures-numNodes16-numCores640-totalCores640-._itoyoriFBC_examples_nqueens.out-n16-r1-c6
+   UserId=reitz(59092) GroupId=apgas(58116) MCS_label=N/A
+   Priority=1065256 Nice=0 Account=apgas QOS=normal
+   JobState=RUNNING Reason=Prolog Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   DerivedExitCode=0:0
+   RunTime=00:00:00 TimeLimit=00:03:00 TimeMin=N/A
+   SubmitTime=2024-12-16T07:51:57 EligibleTime=2024-12-16T07:51:57
+   AccrueTime=2024-12-16T07:51:57
+   StartTime=2024-12-16T08:14:17 EndTime=2024-12-16T08:17:17 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2024-12-16T08:14:17 Scheduler=Backfill
+   Partition=general1 AllocNode:Sid=login02:3813011
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=node45-022,node46-[004-007,009,012,014,035-036],node47-[014-015],node48-[014-015,028-029]
+   BatchHost=node45-022
+   NumNodes=16 NumCPUs=1280 NumTasks=640 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=640,mem=1280G,node=16,billing=640
+   AllocTRES=cpu=1280,mem=2.50T,node=16,billing=1280
+   Socks/Node=* NtasksPerN:B:S:C=40:0:*:* CoreSpec=*
+   JOB_GRES=(null)
+     Nodes=node45-022,node46-[004-007,009,012,014,035-036],node47-[014-015],node48-[014-015,028-029] CPU_IDs=0-79 Mem=163840 GRES=
+   MinCPUsNode=40 MinMemoryCPU=2G MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null)
+   Command=/tmp/tmp.DDOpgNy14I
+   WorkDir=/home/apgas/reitz/itoyorifuture/scripts
+   StdErr=/home/apgas/reitz/out/itoyorifutures-numNodes16-numCores640-totalCores640-._itoyoriFBC_examples_nqueens.out-n16-r1-c6.err.1368997
+   StdIn=/dev/null
+   StdOut=/home/apgas/reitz/out/itoyorifutures-numNodes16-numCores640-totalCores640-._itoyoriFBC_examples_nqueens.out-n16-r1-c6.out.1368997
+   Power=
+   
+
+rank=0 create_win() with { 4526176, 0x1554ebe00000, 2097152 }rank=0 create_win() with { 4526176, 0x14b4c0000000, 1073741824 }=============================================================
+[NQueens]
+# of processes:               640
+N:                            16
+Cutoff:                       1
+# of repeats:                 1
+Verify result:                0
+-------------------------------------------------------------
+[Compile Options]
+ITYR_MAX_VERBOSE_LEVEL=0
+ITYR_PROFILER_MODE=disabled
+ITYR_RMA_IMPL=mpi
+ITYR_ALLOCATOR_USE_BOOST=0
+ITYR_ALLOCATOR_USE_DYNAMIC_WIN=false
+ITYR_ITO_SCHEDULER=randws
+ITYR_ITO_DAG_PROF=disabled
+ITYR_ORI_CORE=default
+ITYR_ORI_BLOCK_SIZE=65536
+ITYR_ORI_DEFAULT_MEM_MAPPER=cyclic
+ITYR_ORI_ENABLE_WRITE_THROUGH=false
+ITYR_ORI_ENABLE_LAZY_RELEASE=true
+ITYR_ORI_ENABLE_VM_MAP=true
+ITYR_ORI_FORCE_GETPUT=false
+ITYR_ORI_CACHE_PROF=disabled
+ITYR_ORI_CACHE_TLB_SIZE=3
+ITYR_ORI_HOME_TLB_SIZE=3
+-------------------------------------------------------------
+[Runtime Options]
+ITYR_ENABLE_SHARED_MEMORY=1
+ITYR_GLOBAL_CLOCK_SYNC_ROUND_TRIPS=100
+ITYR_PROF_OUTPUT_PER_RANK=0
+ITYR_RMA_USE_MPI_WIN_ALLOCATE=0
+ITYR_ALLOCATOR_BLOCK_SIZE=2097152
+ITYR_ALLOCATOR_MAX_UNFLUSHED_FREE_OBJS=10
+ITYR_ITO_STACK_SIZE=2097152
+ITYR_ITO_WSQUEUE_CAPACITY=1024
+ITYR_ITO_THREAD_STATE_ALLOCATOR_SIZE=2097152
+ITYR_ITO_SUSPENDED_THREAD_ALLOCATOR_SIZE=2097152
+ITYR_ITO_SCHED_LOOP_MAKE_MPI_PROGRESS=1
+ITYR_ITO_ADWS_ENABLE_STEAL=1
+ITYR_ITO_ADWS_WSQUEUE_CAPACITY=256
+ITYR_ITO_ADWS_MAX_DEPTH=20
+ITYR_ITO_ADWS_MAX_DTREE_REUSE=10
+ITYR_ITO_ADWS_MIN_DRANGE_SIZE=0.01
+ITYR_ORI_CACHE_SIZE=16777216
+ITYR_ORI_SUB_BLOCK_SIZE=4096
+ITYR_ORI_MAX_DIRTY_CACHE_SIZE=8388608
+ITYR_ORI_NONCOLL_ALLOCATOR_SIZE=4194304
+ITYR_ORI_LAZY_RELEASE_CHECK_INTERVAL=10
+ITYR_ORI_LAZY_RELEASE_MAKE_MPI_PROGRESS=1
+=============================================================
+
+rank=127 create_win() with { 4526176, 0x1554fbc00000, 2097152 }rank=127 create_win() with { 4526176, 0x14d480000000, 1073741824 }[1734333270.508991] [node46-006:178867:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178864/fd/58 flags=0x0) failed: Permission denied
+[1734333270.509009] [node46-006:178867:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002bab0: Shared memory error
+rank=291 create_win() with { 4526176, 0x155510400000, 2097152 }rank=291 create_win() with { 4526176, 0x14fd80000000, 1073741824 }rank=348 create_win() with { 4526176, 0x155517600000, 2097152 }rank=348 create_win() with { 4526176, 0x150bc0000000, 1073741824 }rank=139 create_win() with { 4526176, 0x1554fd400000, 2097152 }rank=139 create_win() with { 4526176, 0x14d780000000, 1073741824 }[1734333270.509140] [node46-006:178880:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178864/fd/58 flags=0x0) failed: Permission denied
+[1734333270.509156] [node46-006:178880:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002bab0: Shared memory error
+rank=460 create_win() with { 4526176, 0x155525600000, 2097152 }rank=460 create_win() with { 4526176, 0x1527c0000000, 1073741824 }rank=591 create_win() with { 4526176, 0x155535c00000, 2097152 }rank=591 create_win() with { 4526176, 0x154880000000, 1073741824 }rank=378 create_win() with { 4526176, 0x15551b200000, 2097152 }rank=378 create_win() with { 4526176, 0x151340000000, 1073741824 }rank=496 create_win() with { 4526176, 0x155529e00000, 2097152 }rank=496 create_win() with { 4526176, 0x1530c0000000, 1073741824 }rank=266 create_win() with { 4526176, 0x15550d200000, 2097152 }rank=266 create_win() with { 4526176, 0x14f740000000, 1073741824 }rank=632 create_win() with { 4526176, 0x15553ae00000, 2097152 }rank=632 create_win() with { 4526176, 0x1552c0000000, 1073741824 }rank=233 create_win() with { 4526176, 0x155509000000, 2097152 }rank=233 create_win() with { 4526176, 0x14ef00000000, 1073741824 }rank=77 create_win() with { 4526176, 0x1554f5800000, 2097152 }rank=77 create_win() with { 4526176, 0x14c800000000, 1073741824 }rank=104 create_win() with { 4526176, 0x1554f8e00000, 2097152 }rank=104 create_win() with { 4526176, 0x14cec0000000, 1073741824 }rank=189 create_win() with { 4526176, 0x155503800000, 2097152 }rank=189 create_win() with { 4526176, 0x14e400000000, 1073741824 }rank=129 create_win() with { 4526176, 0x1554fc000000, 2097152 }rank=129 create_win() with { 4526176, 0x14d500000000, 1073741824 }[1734333270.509793] [node46-006:178870:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178864/fd/58 flags=0x0) failed: Permission denied
+[1734333270.509806] [node46-006:178870:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002bab0: Shared memory error
+rank=456 create_win() with { 4526176, 0x155524e00000, 2097152 }rank=456 create_win() with { 4526176, 0x1526c0000000, 1073741824 }rank=495 create_win() with { 4526176, 0x155529c00000, 2097152 }rank=495 create_win() with { 4526176, 0x153080000000, 1073741824 }rank=273 create_win() with { 4526176, 0x15550e000000, 2097152 }rank=273 create_win() with { 4526176, 0x14f900000000, 1073741824 }rank=630 create_win() with { 4526176, 0x15553aa00000, 2097152 }rank=630 create_win() with { 4526176, 0x155240000000, 1073741824 }rank=227 create_win() with { 4526176, 0x155508400000, 2097152 }rank=227 create_win() with { 4526176, 0x14ed80000000, 1073741824 }rank=67 create_win() with { 4526176, 0x1554f4400000, 2097152 }rank=67 create_win() with { 4526176, 0x14c580000000, 1073741824 }rank=193 create_win() with { 4526176, 0x155504000000, 2097152 }rank=193 create_win() with { 4526176, 0x14e500000000, 1073741824 }rank=353 create_win() with { 4526176, 0x155518000000, 2097152 }rank=353 create_win() with { 4526176, 0x150d00000000, 1073741824 }rank=124 create_win() with { 4526176, 0x1554fb600000, 2097152 }rank=124 create_win() with { 4526176, 0x14d3c0000000, 1073741824 }[1734333270.510238] [node46-006:178865:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178864/fd/58 flags=0x0) failed: Permission denied
+[1734333270.510252] [node46-006:178865:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002bab0: Shared memory error
+rank=429 create_win() with { 4526176, 0x155521800000, 2097152 }rank=429 create_win() with { 4526176, 0x152000000000, 1073741824 }rank=571 create_win() with { 4526176, 0x155533400000, 2097152 }rank=571 create_win() with { 4526176, 0x154380000000, 1073741824 }rank=389 create_win() with { 4526176, 0x15551c800000, 2097152 }rank=389 create_win() with { 4526176, 0x151600000000, 1073741824 }rank=306 create_win() with { 4526176, 0x155512200000, 2097152 }rank=306 create_win() with { 4526176, 0x150140000000, 1073741824 }rank=119 create_win() with { 4526176, 0x1554fac00000, 2097152 }rank=119 create_win() with { 4526176, 0x14d280000000, 1073741824 }rank=143 create_win() with { 4526176, 0x1554fdc00000, 2097152 }rank=143 create_win() with { 4526176, 0x14d880000000, 1073741824 }[1734333270.510446] [node46-006:178883:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178870/fd/58 flags=0x0) failed: Permission denied
+[1734333270.510463] [node46-006:178883:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002bab6: Shared memory error
+rank=466 create_win() with { 4526176, 0x155526200000, 2097152 }rank=466 create_win() with { 4526176, 0x152940000000, 1073741824 }rank=574 create_win() with { 4526176, 0x155533a00000, 2097152 }rank=574 create_win() with { 4526176, 0x154440000000, 1073741824 }rank=392 create_win() with { 4526176, 0x15551ce00000, 2097152 }rank=392 create_win() with { 4526176, 0x1516c0000000, 1073741824 }rank=254 create_win() with { 4526176, 0x15550ba00000, 2097152 }rank=254 create_win() with { 4526176, 0x14f440000000, 1073741824 }rank=284 create_win() with { 4526176, 0x15550f600000, 2097152 }rank=284 create_win() with { 4526176, 0x14fbc0000000, 1073741824 }rank=202 create_win() with { 4526176, 0x155505200000, 2097152 }rank=202 create_win() with { 4526176, 0x14e740000000, 1073741824 }rank=61 create_win() with { 4526176, 0x1554f3800000, 2097152 }rank=61 create_win() with { 4526176, 0x14c400000000, 1073741824 }rank=80 create_win() with { 4526176, 0x1554f5e00000, 2097152 }rank=80 create_win() with { 4526176, 0x14c8c0000000, 1073741824 }rank=357 create_win() with { 4526176, 0x155518800000, 2097152 }rank=357 create_win() with { 4526176, 0x150e00000000, 1073741824 }rank=145 create_win() with { 4526176, 0x1554fe000000, 2097152 }rank=145 create_win() with { 4526176, 0x14d900000000, 1073741824 }[1734333270.510477] [node46-006:178902:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178870/fd/58 flags=0x0) failed: Permission denied
+[1734333270.510492] [node46-006:178902:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002bab6: Shared memory error
+rank=518 create_win() with { 4526176, 0x15552ca00000, 2097152 }rank=518 create_win() with { 4526176, 0x153640000000, 1073741824 }rank=611 create_win() with { 4526176, 0x155538400000, 2097152 }rank=611 create_win() with { 4526176, 0x154d80000000, 1073741824 }rank=169 create_win() with { 4526176, 0x155501000000, 2097152 }rank=169 create_win() with { 4526176, 0x14df00000000, 1073741824 }rank=150 create_win() with { 4526176, 0x1554fea00000, 2097152 }rank=150 create_win() with { 4526176, 0x14da40000000, 1073741824 }[1734333270.510594] [node46-006:178893:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178880/fd/58 flags=0x0) failed: Permission denied
+[1734333270.510607] [node46-006:178893:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002bac0: Shared memory error
+rank=479 create_win() with { 4526176, 0x155527c00000, 2097152 }rank=479 create_win() with { 4526176, 0x152c80000000, 1073741824 }rank=569 create_win() with { 4526176, 0x155533000000, 2097152 }rank=569 create_win() with { 4526176, 0x154300000000, 1073741824 }rank=481 create_win() with { 4526176, 0x155528000000, 2097152 }rank=481 create_win() with { 4526176, 0x152d00000000, 1073741824 }rank=264 create_win() with { 4526176, 0x15550ce00000, 2097152 }rank=264 create_win() with { 4526176, 0x14f6c0000000, 1073741824 }rank=607 create_win() with { 4526176, 0x155537c00000, 2097152 }rank=607 create_win() with { 4526176, 0x154c80000000, 1073741824 }rank=289 create_win() with { 4526176, 0x155510000000, 2097152 }rank=289 create_win() with { 4526176, 0x14fd00000000, 1073741824 }rank=221 create_win() with { 4526176, 0x155507800000, 2097152 }rank=221 create_win() with { 4526176, 0x14ec00000000, 1073741824 }rank=92 create_win() with { 4526176, 0x1554f7600000, 2097152 }rank=92 create_win() with { 4526176, 0x14cbc0000000, 1073741824 }rank=175 create_win() with { 4526176, 0x155501c00000, 2097152 }rank=175 create_win() with { 4526176, 0x14e080000000, 1073741824 }rank=132 create_win() with { 4526176, 0x1554fc600000, 2097152 }rank=132 create_win() with { 4526176, 0x14d5c0000000, 1073741824 }[1734333270.510663] [node46-006:178872:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178870/fd/58 flags=0x0) failed: Permission denied
+[1734333270.510676] [node46-006:178872:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002bab6: Shared memory error
+rank=381 create_win() with { 4526176, 0x15551b800000, 2097152 }rank=381 create_win() with { 4526176, 0x151400000000, 1073741824 }rank=103 create_win() with { 4526176, 0x1554f8c00000, 2097152 }rank=103 create_win() with { 4526176, 0x14ce80000000, 1073741824 }rank=149 create_win() with { 4526176, 0x1554fe800000, 2097152 }rank=149 create_win() with { 4526176, 0x14da00000000, 1073741824 }[1734333270.511110] [node46-006:178887:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178867/fd/58 flags=0x0) failed: Permission denied
+[1734333270.511123] [node46-006:178887:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002bab3: Shared memory error
+rank=457 create_win() with { 4526176, 0x155525000000, 2097152 }rank=457 create_win() with { 4526176, 0x152700000000, 1073741824 }rank=269 create_win() with { 4526176, 0x15550d800000, 2097152 }rank=269 create_win() with { 4526176, 0x14f800000000, 1073741824 }rank=614 create_win() with { 4526176, 0x155538a00000, 2097152 }rank=614 create_win() with { 4526176, 0x154e40000000, 1073741824 }rank=311 create_win() with { 4526176, 0x155512c00000, 2097152 }rank=311 create_win() with { 4526176, 0x150280000000, 1073741824 }rank=211 create_win() with { 4526176, 0x155506400000, 2097152 }rank=211 create_win() with { 4526176, 0x14e980000000, 1073741824 }rank=53 create_win() with { 4526176, 0x1554f2800000, 2097152 }rank=53 create_win() with { 4526176, 0x14c200000000, 1073741824 }rank=191 create_win() with { 4526176, 0x155503c00000, 2097152 }rank=191 create_win() with { 4526176, 0x14e480000000, 1073741824 }rank=154 create_win() with { 4526176, 0x1554ff200000, 2097152 }rank=154 create_win() with { 4526176, 0x14db40000000, 1073741824 }[1734333270.511193] [node46-006:178904:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178893/fd/58 flags=0x0) failed: Permission denied
+[1734333270.511205] [node46-006:178904:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002bacd: Shared memory error
+rank=585 create_win() with { 4526176, 0x155535000000, 2097152 }rank=585 create_win() with { 4526176, 0x154700000000, 1073741824 }rank=198 create_win() with { 4526176, 0x155504a00000, 2097152 }rank=198 create_win() with { 4526176, 0x14e640000000, 1073741824 }rank=148 create_win() with { 4526176, 0x1554fe600000, 2097152 }rank=148 create_win() with { 4526176, 0x14d9c0000000, 1073741824 }[1734333270.511391] [node46-006:178896:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178880/fd/58 flags=0x0) failed: Permission denied
+[1734333270.511406] [node46-006:178896:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002bac0: Shared memory error
+rank=461 create_win() with { 4526176, 0x155525800000, 2097152 }rank=461 create_win() with { 4526176, 0x152800000000, 1073741824 }rank=385 create_win() with { 4526176, 0x15551c000000, 2097152 }rank=385 create_win() with { 4526176, 0x151500000000, 1073741824 }rank=619 create_win() with { 4526176, 0x155539400000, 2097152 }rank=619 create_win() with { 4526176, 0x154f80000000, 1073741824 }rank=318 create_win() with { 4526176, 0x155513a00000, 2097152 }rank=318 create_win() with { 4526176, 0x150440000000, 1073741824 }rank=135 create_win() with { 4526176, 0x1554fcc00000, 2097152 }rank=135 create_win() with { 4526176, 0x14d680000000, 1073741824 }[1734333270.511459] [node46-006:178875:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178865/fd/58 flags=0x0) failed: Permission denied
+[1734333270.511473] [node46-006:178875:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002bab1: Shared memory error
+rank=257 create_win() with { 4526176, 0x15550c000000, 2097152 }rank=257 create_win() with { 4526176, 0x14f500000000, 1073741824 }rank=48 create_win() with { 4526176, 0x1554f1e00000, 2097152 }rank=48 create_win() with { 4526176, 0x14c0c0000000, 1073741824 }rank=83 create_win() with { 4526176, 0x1554f6400000, 2097152 }rank=83 create_win() with { 4526176, 0x14c980000000, 1073741824 }rank=141 create_win() with { 4526176, 0x1554fd800000, 2097152 }rank=141 create_win() with { 4526176, 0x14d800000000, 1073741824 }[1734333270.511489] [node46-006:178881:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178865/fd/58 flags=0x0) failed: Permission denied
+[1734333270.511502] [node46-006:178881:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002bab1: Shared memory error
+rank=586 create_win() with { 4526176, 0x155535200000, 2097152 }rank=586 create_win() with { 4526176, 0x154740000000, 1073741824 }rank=362 create_win() with { 4526176, 0x155519200000, 2097152 }rank=362 create_win() with { 4526176, 0x150f40000000, 1073741824 }rank=236 create_win() with { 4526176, 0x155509600000, 2097152 }rank=236 create_win() with { 4526176, 0x14efc0000000, 1073741824 }rank=178 create_win() with { 4526176, 0x155502200000, 2097152 }rank=178 create_win() with { 4526176, 0x14e140000000, 1073741824 }rank=151 create_win() with { 4526176, 0x1554fec00000, 2097152 }rank=151 create_win() with { 4526176, 0x14da80000000, 1073741824 }[1734333270.511571] [node46-006:178901:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178883/fd/58 flags=0x0) failed: Permission denied
+[1734333270.511583] [node46-006:178901:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002bac3: Shared memory error
+rank=303 create_win() with { 4526176, 0x155511c00000, 2097152 }rank=303 create_win() with { 4526176, 0x150080000000, 1073741824 }rank=140 create_win() with { 4526176, 0x1554fd600000, 2097152 }rank=140 create_win() with { 4526176, 0x14d7c0000000, 1073741824 }[1734333270.511708] [node46-006:178882:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178880/fd/58 flags=0x0) failed: Permission denied
+[1734333270.511721] [node46-006:178882:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002bac0: Shared memory error
+rank=584 create_win() with { 4526176, 0x155534e00000, 2097152 }rank=584 create_win() with { 4526176, 0x1546c0000000, 1073741824 }rank=241 create_win() with { 4526176, 0x15550a000000, 2097152 }rank=241 create_win() with { 4526176, 0x14f100000000, 1073741824 }rank=100 create_win() with { 4526176, 0x1554f8600000, 2097152 }rank=100 create_win() with { 4526176, 0x14cdc0000000, 1073741824 }rank=194 create_win() with { 4526176, 0x155504200000, 2097152 }rank=194 create_win() with { 4526176, 0x14e540000000, 1073741824 }rank=157 create_win() with { 4526176, 0x1554ff800000, 2097152 }rank=157 create_win() with { 4526176, 0x14dc00000000, 1073741824 }[1734333270.511749] [node46-006:178910:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178883/fd/58 flags=0x0) failed: Permission denied
+[1734333270.511761] [node46-006:178910:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002bac3: Shared memory error
+rank=396 create_win() with { 4526176, 0x15551d600000, 2097152 }rank=396 create_win() with { 4526176, 0x1517c0000000, 1073741824 }rank=153 create_win() with { 4526176, 0x1554ff000000, 2097152 }rank=153 create_win() with { 4526176, 0x14db00000000, 1073741824 }[1734333270.511769] [node46-006:178900:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178883/fd/58 flags=0x0) failed: Permission denied
+[1734333270.511782] [node46-006:178900:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002bac3: Shared memory error
+rank=492 create_win() with { 4526176, 0x155529600000, 2097152 }rank=492 create_win() with { 4526176, 0x152fc0000000, 1073741824 }rank=146 create_win() with { 4526176, 0x1554fe200000, 2097152 }rank=146 create_win() with { 4526176, 0x14d940000000, 1073741824 }[1734333270.512041] [node46-006:178886:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178883/fd/58 flags=0x0) failed: Permission denied
+[1734333270.512055] [node46-006:178886:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002bac3: Shared memory error
+rank=250 create_win() with { 4526176, 0x15550b200000, 2097152 }rank=250 create_win() with { 4526176, 0x14f340000000, 1073741824 }rank=635 create_win() with { 4526176, 0x15553b400000, 2097152 }rank=635 create_win() with { 4526176, 0x155380000000, 1073741824 }rank=286 create_win() with { 4526176, 0x15550fa00000, 2097152 }rank=286 create_win() with { 4526176, 0x14fc40000000, 1073741824 }rank=76 create_win() with { 4526176, 0x1554f5600000, 2097152 }rank=76 create_win() with { 4526176, 0x14c7c0000000, 1073741824 }rank=159 create_win() with { 4526176, 0x1554ffc00000, 2097152 }rank=159 create_win() with { 4526176, 0x14dc80000000, 1073741824 }[1734333270.512065] [node46-006:178909:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178875/fd/58 flags=0x0) failed: Permission denied
+rank=171 create_win() with { 4526176, 0x155501400000, 2097152 }rank=171 create_win() with { 4526176, 0x14df80000000, 1073741824 }[1734333270.512078] [node46-006:178909:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002babb: Shared memory error
+rank=152 create_win() with { 4526176, 0x1554fee00000, 2097152 }rank=152 create_win() with { 4526176, 0x14dac0000000, 1073741824 }[1734333270.512121] [node46-006:178898:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178875/fd/58 flags=0x0) failed: Permission denied
+[1734333270.512135] [node46-006:178898:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002babb: Shared memory error
+rank=593 create_win() with { 4526176, 0x155536000000, 2097152 }rank=593 create_win() with { 4526176, 0x154900000000, 1073741824 }rank=158 create_win() with { 4526176, 0x1554ffa00000, 2097152 }rank=158 create_win() with { 4526176, 0x14dc40000000, 1073741824 }[1734333270.512278] [node46-006:178908:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178881/fd/58 flags=0x0) failed: Permission denied
+[1734333270.512290] [node46-006:178908:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002bac1: Shared memory error
+rank=155 create_win() with { 4526176, 0x1554ff400000, 2097152 }rank=155 create_win() with { 4526176, 0x14db80000000, 1073741824 }[1734333270.512565] [node46-006:178903:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178870/fd/58 flags=0x0) failed: Permission denied
+rank=65 create_win() with { 4526176, 0x1554f4000000, 2097152 }rank=65 create_win() with { 4526176, 0x14c500000000, 1073741824 }[1734333270.512578] [node46-006:178903:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002bab6: Shared memory error
+rank=156 create_win() with { 4526176, 0x1554ff600000, 2097152 }rank=156 create_win() with { 4526176, 0x14dbc0000000, 1073741824 }[1734333270.512809] [node46-006:178907:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178867/fd/58 flags=0x0) failed: Permission denied
+[1734333270.512822] [node46-006:178907:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002bab3: Shared memory error
+rank=91 create_win() with { 4526176, 0x1554f7400000, 2097152 }rank=91 create_win() with { 4526176, 0x14cb80000000, 1073741824 }rank=137 create_win() with { 4526176, 0x1554fd000000, 2097152 }rank=137 create_win() with { 4526176, 0x14d700000000, 1073741824 }[1734333270.513183] [node46-006:178879:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178864/fd/58 flags=0x0) failed: Permission denied
+[1734333270.513198] [node46-006:178879:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002bab0: Shared memory error
+rank=438 create_win() with { 4526176, 0x155522a00000, 2097152 }rank=438 create_win() with { 4526176, 0x152240000000, 1073741824 }rank=364 create_win() with { 4526176, 0x155519600000, 2097152 }rank=364 create_win() with { 4526176, 0x150fc0000000, 1073741824 }rank=134 create_win() with { 4526176, 0x1554fca00000, 2097152 }rank=134 create_win() with { 4526176, 0x14d640000000, 1073741824 }[1734333270.513544] [node46-006:178874:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178870/fd/58 flags=0x0) failed: Permission denied
+[1734333270.513558] [node46-006:178874:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002bab6: Shared memory error
+rank=147 create_win() with { 4526176, 0x1554fe400000, 2097152 }rank=147 create_win() with { 4526176, 0x14d980000000, 1073741824 }[1734333270.515450] [node46-006:178888:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178881/fd/58 flags=0x0) failed: Permission denied
+[1734333270.515464] [node46-006:178888:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002bac1: Shared memory error
+rank=397 create_win() with { 4526176, 0x15551d800000, 2097152 }rank=397 create_win() with { 4526176, 0x151800000000, 1073741824 }rank=131 create_win() with { 4526176, 0x1554fc400000, 2097152 }rank=131 create_win() with { 4526176, 0x14d580000000, 1073741824 }[1734333270.515571] [node46-006:178873:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178870/fd/58 flags=0x0) failed: Permission denied
+[1734333270.515585] [node46-006:178873:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002bab6: Shared memory error
+rank=528 create_win() with { 4526176, 0x15552de00000, 2097152 }rank=528 create_win() with { 4526176, 0x1538c0000000, 1073741824 }rank=142 create_win() with { 4526176, 0x1554fda00000, 2097152 }rank=142 create_win() with { 4526176, 0x14d840000000, 1073741824 }[1734333270.516535] [node46-006:178885:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178879/fd/58 flags=0x0) failed: Permission denied
+[1734333270.516548] [node46-006:178885:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002babf: Shared memory error
+rank=71 create_win() with { 4526176, 0x1554f4c00000, 2097152 }rank=71 create_win() with { 4526176, 0x14c680000000, 1073741824 }rank=144 create_win() with { 4526176, 0x1554fde00000, 2097152 }rank=144 create_win() with { 4526176, 0x14d8c0000000, 1073741824 }[1734333270.516654] [node46-006:178884:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178880/fd/58 flags=0x0) failed: Permission denied
+[1734333270.516668] [node46-006:178884:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002bac0: Shared memory error
+rank=536 create_win() with { 4526176, 0x15552ee00000, 2097152 }rank=536 create_win() with { 4526176, 0x153ac0000000, 1073741824 }rank=130 create_win() with { 4526176, 0x1554fc200000, 2097152 }rank=130 create_win() with { 4526176, 0x14d540000000, 1073741824 }[1734333270.517851] [node46-006:178869:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178867/fd/58 flags=0x0) failed: Permission denied
+[1734333270.517867] [node46-006:178869:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002bab3: Shared memory error
+rank=455 create_win() with { 4526176, 0x155524c00000, 2097152 }rank=455 create_win() with { 4526176, 0x152680000000, 1073741824 }rank=133 create_win() with { 4526176, 0x1554fc800000, 2097152 }rank=133 create_win() with { 4526176, 0x14d600000000, 1073741824 }[1734333270.518776] [node46-006:178876:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178870/fd/58 flags=0x0) failed: Permission denied
+[1734333270.518792] [node46-006:178876:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002bab6: Shared memory error
+rank=125 create_win() with { 4526176, 0x1554fb800000, 2097152 }rank=125 create_win() with { 4526176, 0x14d400000000, 1073741824 }[1734333270.520139] [node46-006:178863:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178865/fd/58 flags=0x0) failed: Permission denied
+[1734333270.520153] [node46-006:178863:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002bab1: Shared memory error
+rank=126 create_win() with { 4526176, 0x1554fba00000, 2097152 }rank=126 create_win() with { 4526176, 0x14d440000000, 1073741824 }[1734333270.520260] [node46-006:178868:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178865/fd/58 flags=0x0) failed: Permission denied
+[1734333270.520275] [node46-006:178868:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002bab1: Shared memory error
+rank=136 create_win() with { 4526176, 0x1554fce00000, 2097152 }rank=136 create_win() with { 4526176, 0x14d6c0000000, 1073741824 }[1734333270.521334] [node46-006:178877:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178874/fd/58 flags=0x0) failed: Permission denied
+[1734333270.521348] [node46-006:178877:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002baba: Shared memory error
+rank=545 create_win() with { 4526176, 0x155530000000, 2097152 }rank=545 create_win() with { 4526176, 0x153d00000000, 1073741824 }rank=128 create_win() with { 4526176, 0x1554fbe00000, 2097152 }rank=128 create_win() with { 4526176, 0x14d4c0000000, 1073741824 }[1734333270.522739] [node46-006:178871:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178865/fd/58 flags=0x0) failed: Permission denied
+[1734333270.522754] [node46-006:178871:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002bab1: Shared memory error
+rank=138 create_win() with { 4526176, 0x1554fd200000, 2097152 }rank=138 create_win() with { 4526176, 0x14d740000000, 1073741824 }[1734333270.524619] [node46-006:178878:0]        mm_posix.c:233  UCX  ERROR   open(file_name=/proc/178877/fd/58 flags=0x0) failed: Permission denied
+[1734333270.524634] [node46-006:178878:0]           mm_ep.c:171  UCX  ERROR   mm ep failed to connect to remote FIFO id 0xc000000e8002babd: Shared memory error

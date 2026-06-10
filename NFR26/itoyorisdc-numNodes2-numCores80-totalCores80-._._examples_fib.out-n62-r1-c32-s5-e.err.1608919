@@ -1,0 +1,19 @@
+[node20-023:1153981:0:1153981] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+==== backtrace (tid:1153981) ====
+ 0  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_handle_error+0x294) [0x1555549c4f04]
+ 1  /cluster/ucx/1.19.1/lib/libucs.so.0(+0x340c5) [0x1555549c50c5]
+ 2  /cluster/ucx/1.19.1/lib/libucs.so.0(+0x34396) [0x1555549c5396]
+ 3  /lib64/libc.so.6(+0x3fc30) [0x155554a3fc30]
+ 4  ././examples/fib.out() [0x41348c]
+ 5  ././examples/fib.out() [0x41a04e]
+ 6  ././examples/fib.out() [0x41ba34]
+ 7  ././examples/fib.out() [0x40a4a7]
+ 8  ././examples/fib.out() [0x40bfaf]
+ 9  ././examples/fib.out() [0x41c76c]
+10  ././examples/fib.out() [0x40f1c0]
+11  [0x155542759e60]
+=================================
+--------------------------------------------------------------------------
+prterun noticed that process rank 0 with PID 1153981 on node node20-023 exited on
+signal 11 (Segmentation fault).
+--------------------------------------------------------------------------

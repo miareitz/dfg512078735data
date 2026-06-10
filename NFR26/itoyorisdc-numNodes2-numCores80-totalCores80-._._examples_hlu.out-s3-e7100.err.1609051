@@ -1,0 +1,71 @@
+[node20-023:1155098:0:1155098] Caught signal 11 (Segmentation fault: invalid permissions for mapped object at address 0x15554275b250)
+==== backtrace (tid:1155098) ====
+ 0  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_handle_error+0x294) [0x1555549c4f04]
+ 1  /cluster/ucx/1.19.1/lib/libucs.so.0(+0x340c5) [0x1555549c50c5]
+ 2  /cluster/ucx/1.19.1/lib/libucs.so.0(+0x34396) [0x1555549c5396]
+ 3  /lib64/libc.so.6(+0x3fc30) [0x155554a3fc30]
+ 4  [0x15554275b250]
+=================================
+[node20-024:3449242:0:3449242] ib_mlx5_log.c:179  Remote access error on mlx5_0:1/IB (synd 0x13 vend 0x88 hw_synd 0/0)
+[node20-024:3449242:0:3449242] ib_mlx5_log.c:179  DCI QP 0xbe00 wqe[7422]: MASKED_FETCH_ADD s-- [rqpn 0x17f91 rlid 164] [rva 0x1549000002c8 rkey 0xcd000] [32bit add 4294967295/0x0] [va 0x15553eb4cef8 len 4 lkey 0x15f9e8] 
+==== backtrace (tid:3449242) ====
+ 0  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_handle_error+0x294) [0x1555549c4f04]
+ 1  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_fatal_error_message+0xb2) [0x1555549c20f2]
+ 2  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_log_default_handler+0xee9) [0x1555549c6b29]
+ 3  /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_log_dispatch+0xd4) [0x1555549c6e74]
+ 4  /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(uct_ib_mlx5_completion_with_err+0x5f0) [0x155554110ae0]
+ 5  /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(uct_dc_mlx5_ep_handle_failure+0xb6) [0x155554144816]
+ 6  /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(uct_ib_mlx5_check_completion+0x35) [0x155554111b85]
+ 7  /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(+0x4893f) [0x15555414693f]
+ 8  /cluster/ucx/1.19.1/lib/libucp.so.0(ucp_worker_progress+0x2a) [0x155554c5fbaa]
+ 9  /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_common_ucx_winfo_flush+0xe6) [0x155554d9c336]
+10  /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_common_ucx_ctx_flush+0x92) [0x155554d9c742]
+11  /cluster/mpi/openmpi/5.0.5/lib/libmpi.so.40(MPI_Win_flush+0x57) [0x155555262397]
+12  ././examples/hlu.out() [0x40a09c]
+13  ././examples/hlu.out() [0x4d1eab]
+14  ././examples/hlu.out() [0x4d3825]
+15  ././examples/hlu.out() [0x417fe7]
+16  ././examples/hlu.out() [0x4af6bc]
+17  ././examples/hlu.out() [0x4af472]
+18  ././examples/hlu.out() [0x4b0fc0]
+19  ././examples/hlu.out() [0x4b145f]
+20  ././examples/hlu.out() [0x4d111d]
+21  ././examples/hlu.out() [0x4d2e25]
+22  ././examples/hlu.out() [0x417947]
+23  ././examples/hlu.out() [0x4893ae]
+=================================
+[node20-024:3449242] *** Process received signal ***
+[node20-024:3449242] Signal: Aborted (6)
+[node20-024:3449242] Signal code:  (-6)
+[node20-024:3449242] [ 0] /lib64/libc.so.6(+0x3fc30)[0x155554a3fc30]
+[node20-024:3449242] [ 1] /lib64/libc.so.6(+0x8d02c)[0x155554a8d02c]
+[node20-024:3449242] [ 2] /lib64/libc.so.6(raise+0x16)[0x155554a3fb86]
+[node20-024:3449242] [ 3] /lib64/libc.so.6(abort+0xd3)[0x155554a29873]
+[node20-024:3449242] [ 4] /cluster/ucx/1.19.1/lib/libucs.so.0(+0x310f7)[0x1555549c20f7]
+[node20-024:3449242] [ 5] /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_log_default_handler+0xee9)[0x1555549c6b29]
+[node20-024:3449242] [ 6] /cluster/ucx/1.19.1/lib/libucs.so.0(ucs_log_dispatch+0xd4)[0x1555549c6e74]
+[node20-024:3449242] [ 7] /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(uct_ib_mlx5_completion_with_err+0x5f0)[0x155554110ae0]
+[node20-024:3449242] [ 8] /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(uct_dc_mlx5_ep_handle_failure+0xb6)[0x155554144816]
+[node20-024:3449242] [ 9] /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(uct_ib_mlx5_check_completion+0x35)[0x155554111b85]
+[node20-024:3449242] [10] /cluster/ucx/1.19.1/lib/ucx/libuct_ib_mlx5.so.0(+0x4893f)[0x15555414693f]
+[node20-024:3449242] [11] /cluster/ucx/1.19.1/lib/libucp.so.0(ucp_worker_progress+0x2a)[0x155554c5fbaa]
+[node20-024:3449242] [12] /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_common_ucx_winfo_flush+0xe6)[0x155554d9c336]
+[node20-024:3449242] [13] /cluster/mpi/openmpi/5.0.5/lib/libopen-pal.so.80(opal_common_ucx_ctx_flush+0x92)[0x155554d9c742]
+[node20-024:3449242] [14] /cluster/mpi/openmpi/5.0.5/lib/libmpi.so.40(MPI_Win_flush+0x57)[0x155555262397]
+[node20-024:3449242] [15] ././examples/hlu.out[0x40a09c]
+[node20-024:3449242] [16] ././examples/hlu.out[0x4d1eab]
+[node20-024:3449242] [17] ././examples/hlu.out[0x4d3825]
+[node20-024:3449242] [18] ././examples/hlu.out[0x417fe7]
+[node20-024:3449242] [19] ././examples/hlu.out[0x4af6bc]
+[node20-024:3449242] [20] ././examples/hlu.out[0x4af472]
+[node20-024:3449242] [21] ././examples/hlu.out[0x4b0fc0]
+[node20-024:3449242] [22] ././examples/hlu.out[0x4b145f]
+[node20-024:3449242] [23] ././examples/hlu.out[0x4d111d]
+[node20-024:3449242] [24] ././examples/hlu.out[0x4d2e25]
+[node20-024:3449242] [25] ././examples/hlu.out[0x417947]
+[node20-024:3449242] [26] ././examples/hlu.out[0x4893ae]
+[node20-024:3449242] *** End of error message ***
+--------------------------------------------------------------------------
+prterun noticed that process rank 23 with PID 1155098 on node node20-023 exited on
+signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
